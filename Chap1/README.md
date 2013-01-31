@@ -7,7 +7,7 @@ Script shell, il est parfois necessaire de changer ses permissions avant de l'ex
 
 chmod +x loop.sh
 
-Les modulos servent a accelerer le procesus en n'executant le programme C que tous les %X arguments rajouter
+Les modulos servent a accelerer le procesus en n'executant le programme C que tous les %X arguments rajoutes
 
 Vous etes libre de changer les conditions comme vous le voulez
 
