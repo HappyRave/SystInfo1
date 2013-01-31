@@ -20,14 +20,14 @@ echo "}" >> test.c
 
 # FIN création programme C
 
-gcc -o test.o test.c # Compilation du programme "test.c"
+gcc -o test test.c # Compilation du programme "test.c"
 
 # DEBUT script d'execution arguments
 
 touch exe.sh
 
 echo "#!/bin/bash" >> exe.sh
-echo -n "./test.o" >> exe.sh # seul commande au debut: ./test sans arguments
+echo -n "./test" >> exe.sh # seul commande au debut: ./test sans arguments
 chmod +x exe.sh # donner les bonnes permissions au script
 
 ./exe.sh 
