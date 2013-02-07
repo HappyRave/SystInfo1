@@ -40,6 +40,5 @@ Sur MAC OSX MOUNTAIN LION (x64)
  La taille d'un char* est de : 8 octets soit de : 64 bits
  La taille d'un size_t est de : 8 octets soit de : 64 bits
  La taille d'un uint64_t est de : 8 octets soit de : 64 bits
- Resultat identique sur Sirius
 
 */
