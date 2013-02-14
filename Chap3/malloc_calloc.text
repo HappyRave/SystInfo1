@@ -1,0 +1,2 @@
+La différence entre malloc (mem alloc) et calloc (clear alloc) est que calloc va mettre toute les valeurs dans l'space mémoire allouer à 0, alors que malloc se contente seulement de l'allouer, sans s'interesser à ce qu'il y a déjà dedans.
+Malloc est plus rapide
