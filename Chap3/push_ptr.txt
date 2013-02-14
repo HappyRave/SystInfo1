@@ -1,0 +1,1 @@
+Oui on pourrait, mais du coup vaudrait caster des elements par ci par là en pointeur

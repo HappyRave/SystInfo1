@@ -1,0 +1,1 @@
+Non, sert à rien. On utilise presque jamais calloc d'ailleurs
