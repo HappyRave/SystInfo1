@@ -66,7 +66,7 @@ size_t bitstring_len(bitstring_t *b)
 
 void bitstring_free(bitstring_t *b)
 {
-	if (b!=NULL) {
+	if (b!=NULL) { // ne libère la mémoire que si b n'est pas déjà null
 	free(b->bits);
 	free(b);
 	}
