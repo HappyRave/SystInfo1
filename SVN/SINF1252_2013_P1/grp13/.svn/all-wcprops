@@ -7,13 +7,19 @@ test.c
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/studentsvn/SINF1252_2013_P1/!svn/ver/30/grp13/test.c
+/studentsvn/SINF1252_2013_P1/!svn/ver/32/grp13/test.c
+END
+test_bitstring
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/studentsvn/SINF1252_2013_P1/!svn/ver/33/grp13/test_bitstring
 END
 bitstring.c
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/studentsvn/SINF1252_2013_P1/!svn/ver/30/grp13/bitstring.c
+/studentsvn/SINF1252_2013_P1/!svn/ver/32/grp13/bitstring.c
 END
 bitstring.h
 K 25

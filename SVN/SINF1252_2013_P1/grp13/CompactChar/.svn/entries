@@ -1,15 +1,15 @@
 10
 
 dir
-31
-https://scm.info.ucl.ac.be/studentsvn/SINF1252_2013_P1/grp13
+33
+https://scm.info.ucl.ac.be/studentsvn/SINF1252_2013_P1/grp13/CompactChar
 https://scm.info.ucl.ac.be/studentsvn/SINF1252_2013_P1
 
 
 
-2013-02-20T19:28:24.276070Z
-30
-cyril.debodt
+2013-02-21T16:00:19.902327Z
+33
+maxime.demol
 
 
 
@@ -28,14 +28,14 @@ cyril.debodt
 
 test.c
 file
-32
+
 
 
 
 2013-02-21T13:43:11.000000Z
 da6010ec6940babeb8de327bb813454c
-2013-02-21T14:27:17.185791Z
-32
+2013-02-21T16:00:19.902327Z
+33
 maxime.demol
 
 
@@ -60,17 +60,14 @@ maxime.demol
 
 8575
 
-CompactChar
-dir
-
 test_bitstring
 file
-33
 
 
 
-2013-02-21T13:46:02.000000Z
-67e9591500d001ca9e0e0f5b13596c1b
+
+2013-02-21T15:57:14.000000Z
+419eeca59d7c7dbd301b3d0179cc0115
 2013-02-21T16:00:19.902327Z
 33
 maxime.demol
@@ -95,18 +92,18 @@ has-props
 
 
 
-18156
+18060
 
 bitstring.c
 file
-32
 
 
 
-2013-02-21T13:46:00.000000Z
-9557a02d9f0f1878a7f734455000470b
-2013-02-21T14:27:17.185791Z
-32
+
+2013-02-21T15:59:00.000000Z
+db469dcbfc5f0c3a55fd60d4e6f90e82
+2013-02-21T16:00:19.902327Z
+33
 maxime.demol
 
 
@@ -129,7 +126,7 @@ maxime.demol
 
 
 
-3666
+1973
 
 bitstring.h
 file
@@ -139,8 +136,8 @@ file
 
 2013-02-11T16:49:13.000000Z
 1696019eeb04c4e9da8b5da81938dde7
-2013-02-18T08:50:56.481603Z
-15
+2013-02-21T16:00:19.902327Z
+33
 maxime.demol
 
 
@@ -173,9 +170,9 @@ file
 
 2013-02-20T19:32:10.000000Z
 1d7ffbd45e52e0c0672425c123e7c36d
-2013-02-20T19:28:24.276070Z
-30
-cyril.debodt
+2013-02-21T16:00:19.902327Z
+33
+maxime.demol
 
 
 
