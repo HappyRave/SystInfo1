@@ -1,0 +1,1 @@
+L'implementation constituer de 2 tableau différent sera plus performante que l'implementation en structure. Acceder à un élement dans une structure dans un array prend plus de temps que juste acceder à un élement d'un tableau.
