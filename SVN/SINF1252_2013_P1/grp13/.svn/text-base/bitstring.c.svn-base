@@ -1,94 +1,76 @@
+//
+//  Created by Cyril De Bodt and Maxime De Mol on 22/02/13.
+//  Copyright (c) 2013 grp13. All rights reserved.
+//
+
 #include "bitstring.h"
 #include <stdio.h>
 
 struct bitstring
 {
 	int len; // longueur du bitstring
-	char *bits; // tableau de bits (0 ou 1)
+	char *bytes; // tableau de bytes (8 bits)
 };
-
 
 bitstring_t *bitstring_alloc(size_t n)
 {
-	if (n <= 0) 
-	{ // la longueur d'un bistring doit être naturelment strictement supérieur à 0
-		return NULL;
-	} 
-	else if ( n%8!=0 ) 
-	{ // n doit être un multiple de 8
-		return NULL;
-	}
-	char *bits = (char*)calloc(n, sizeof(bit_t)); // alloue la mémoire pour la chaine de bits. calloc initialise cette mémoire à 0
+	if (n <= 0) return NULL;
+	// la longueur d'un bistring doit être naturelment strictement supérieur à 0. Sinon pas de bitstring :-(
 	
-	if (bits == NULL)
-	{
-	  return NULL;
-	}
+	if ( n%8!=0 ) return NULL;
+	// n doit être un multiple de 8. L'ordinateur manipule les bits par octets, et un char contient exactement 8 bits
+
+	char *bytes = (char*)calloc(n/8, sizeof(char));
+	// alloue la mémoire pour la chaine de bits. calloc initialise cette mémoire à 0
+	
+	if (bytes == NULL) return NULL;
+	// toujours vérifier si l'allocation s'est bien déroulé
 	
 	bitstring_t* bitstring = (bitstring_t*)malloc(sizeof(bitstring_t));
 	
-	if (bitstring == NULL)
-	{
-	  return NULL;
-	}
-
+	if (bitstring == NULL) return NULL;
+	
 	// renplir notre structure
 	bitstring->len = n;
-	bitstring->bits = bits;
+	bitstring->bytes = bytes;
 	
 	return bitstring;
 }
 
 bitstring_t *bitstring_alloc_from_int(unsigned int x)
 {
-	char *bits = (char*)malloc(sizeof(bit_t)*32);
-
-	if (bits == NULL)
-	{
-	  return NULL;
-	}
+	bitstring_t *b = bitstring_alloc(32);
+	// les int ont une longeur de 4 bytes
+	
+	if (b == NULL) return NULL;
 	
 	int i;
-	for (i=0; i<32; i++) {
-	        char b = (x >> i) & 1;
-		*(bits+i)=b;
-	}
+	for (i=0; i<32; i++)
+		bitstring_set(b,i,((x >> i) & 1));
 	
-	bitstring_t* bitstring = (bitstring_t*)malloc(sizeof(bitstring_t));
-
-	if (bitstring == NULL)
-	{
-	  return NULL;
-	}
-	
-	// renplir notre structure
-	bitstring->len = 32;
-	bitstring->bits = bits;
-
-	return bitstring;
+	return b;
 }
 
 void bitstring_set(bitstring_t *b, unsigned int n, bit_t bit)
 {
-        if (n >= (b->len)) 
-	{
-	  fprintf(stderr,"Erreur dans bitstring_set(bitstring_t *b, unsigned int n, bit_t bit)\n'n' est plus grand ou égal à 0 et strictement plus petit que bitstring_len(b)\n");
-	  exit(-1);
+	if (n >= (b->len)) {
+		fprintf(stderr,"Erreur dans bitstring_set(bitstring_t *b, unsigned int n, bit_t bit)\n'n' est plus grand ou égal à 0 et strictement plus petit que bitstring_len(b)\n");
+		exit(-1);
 	}
-	char *bits = b->bits;
-	*(bits+n) = (char)bit;
+	
+	if (bitstring_get(b,n) != bit)
+		*(b->bytes + n/8) ^= (1 << n%8);
+	// Un peu tricky comme opération. Comme nous allons utiliser set (et get) quasi tout le temps, on voulait rendre la fonction la plus efficace possible. 'n/8' renvoit permet de se trouver le char qui contient le n ième bit, et 'n%8' permet de trouver la place du n ième bit dans ce char. 
 }
 
 bit_t bitstring_get(bitstring_t *b, int n)
 {
-        if ((n < 0) || (n >= (b->len))) 
-        {
-	  fprintf(stderr,"Erreur dans bitstring_get(bitstring_t *b, int n, bit_t bit)\n'n' est plus grand ou égal à 0 et strictement plus petit que bitstring_len(b)\n");
-	  exit(-1);
+	if ((n < 0) || (n >= (b->len))) {
+		fprintf(stderr,"Erreur dans bitstring_get(bitstring_t *b, int n, bit_t bit)\n'n' est plus grand ou égal à 0 et strictement plus petit que bitstring_len(b)\n");
+		exit(-1);
 	}
-
-	char *bits = b->bits;
-	return *(bits+n);
+	
+	return((*(b->bytes+n/8) >> n%8) & 1);
 }
 
 size_t bitstring_len(bitstring_t *b)
@@ -96,71 +78,163 @@ size_t bitstring_len(bitstring_t *b)
 	return((size_t)b->len);
 }
 
+
 void bitstring_rotate(bitstring_t *b, int n)
 {
-        n = n%(b->len);//appliquer une rotation où n vaut le nombre de bit n'a aucun effet
-	int nbshift = 0;//variable qui donne le nombre d'élément qu'on a shifté
-	char toshift = *(b->bits);//bit_t qu'on va déplacer au prochain passage dans la boucle
-	int shift = 0;//indice dans le bitstring du bit qu'on va shifter
-	int depl;
-       
-	char transfer;//variable permettant le transfer des bit dans la boucle
+	n = n%(b->len);//appliquer une rotation où n vaut le nombre de bit n'a aucun effet
 	
-        while (nbshift<(b->len))//il faut shifter tous les éléments
-        {
-	  depl = shift - n;//depl est l'indice où l'on va changer le bit dans le bitstring. Il faut traiter le cas où il est négatif ou plus grand que l'indice len-1 (le dernier indice dans le bitstring correspond à len-1 car le 1e élément est d'indice 0)
-	  if (depl<0)
-	  {
-	    depl = b->len + depl;
-	  }
-	  else if (depl>((b->len)-1))
-	  {
-	    depl = depl - (b->len);
-	  }
-	  
-	  transfer = toshift;
-	  
-	  toshift = *((b->bits)+depl);//élément qu'on garde pour le déplacement dans le prochain passage dans la boucle
-
-	  *((b->bits)+depl) = transfer;
-	  
-	  shift = depl;
-	  
-	  nbshift = nbshift + 1;
-        }
+	bitstring_t *copi = bitstring_alloc(b->len);//on crée une nouvelle structure qui va contenir la rotation de la première
+	
+	//Remarque : si n est positif, on décale vers la gauche, donc on augmente l'indice du bit dans la structure.
+	//si n est négatif, on décale vers la droite, donc on diminue l'indice du bit dans la structure
+	int i;
+	for(i=0;i<32;i++)
+	{
+		if (i+n<0)
+		{
+			bitstring_set(copi,32+i+n,bitstring_get(b,i));
+		}
+		else if(i+n>31)
+		{
+			bitstring_set(copi,i+n-32,bitstring_get(b,i));
+		}
+		else
+		{
+			bitstring_set(copi,i+n,bitstring_get(b,i));
+		}
+	}
+	
+	//on met à jour les bits du bitstring passe en arguments.
+	
+	b->bytes = copi->bytes;
+	
+	//on libère la mémoire déagée pour la première structure :
+	
+	bitstring_free(copi);
+	
 }
+
+int bitstring_concat(bitstring_t *b1, bitstring_t *b2)
+{
+        //on crée une plus grande structure.
+        bitstring_t *gd = bitstring_alloc((b1->len)+(b2->len));
+
+	//cas d'erreur :
+	if (gd == NULL)
+	{
+	  return -1;
+	}
+	
+	//on y met les éléments
+	int i;
+	for(i=0;i<(gd->len);i++)
+	{
+	  if(i<(b1->len))
+	  {
+	    bitstring_set(gd,i,bitstring_get(b1,i));
+	  }
+	  else
+	  {
+	    bitstring_set(gd,i,bitstring_get(b2,i-(b1->len)));
+	  }
+	  
+	}
+  
+	//on met à jour b1 : 
+	b1->len = gd->len;
+	b1->bytes = gd->bytes;
+
+        bitstring_free(gd);
+	return 0;
+}
+
+
+
+int bitstring_xor(bitstring_t *b1, bitstring_t *b2, bitstring_t *res)
+{
+       if((b1->len) != (b2->len))
+       {
+	 return -1;
+       }
+
+       res = bistring_alloc(b1->len);
+       
+       int i;
+       for(i=0;i<(b1->len);i++)
+       {
+	 if (bitstring_get(b1,i)==bitstring_get(b2,i))
+	 {
+	   bitstring_set(res,i,bit_t BITNULL);
+	 }
+	 else
+	 {
+	   bitstring_set(res,i,bit_t BITSET);
+	 }
+       }
+
+
+       return 0;
+}
+
+
 
 int bitstring_print(bitstring_t *b, char *buf, size_t len)
 {
-	size_t bitLen = (size_t)b->len;
-	size_t hexLen = bitLen/4;
-	if (hexLen>len) {
+	int hexLen = b->len/4; // longeur max du bitstring en hexa
+	char *tmp = (char*)malloc(sizeof(char)*hexLen+1); // alloc d'un char* temporaire
+	if (tmp == NULL) fprintf(stderr, "Erreur à la création d'un char* dans bitstring_print\n");
+	
+	*(tmp+hexLen) = '\0'; // symbole de terminaison
+	
+	int i;
+	for (i=0; i<(b->len)/8; i++) {
+		unsigned char c = *(b->bytes + i);
+		// nous allons convertir notre char c (8 bits) en 2 nombres hexadecimaux
+		char hex1 = c%16;
+		if (hex1 <= 9) hex1 +='0';
+		else hex1 = hex1 - 10 + 'A';
+		
+		char hex2 = c/16;
+		if (hex2 <= 9) hex2 +='0';
+		else hex2 = hex2 - 10 + 'A';
+		
+		*(tmp+hexLen - 1 - 2*i) = hex1;
+		*(tmp+hexLen - 2 - 2*i) = hex2;
+	}
+	
+	int firstDigit=0;
+	while (*(tmp+firstDigit) == '0') firstDigit++; // nous determinons le nombre de 0 avant le debut de la representation hexa
+	
+	if (len-1 < hexLen - firstDigit) { // si bu n'est pas assez grand pour contenir notre nombre
+		free(tmp); // pas oublierde free tmp
 		return(-1);
 	}
 	
-	char *bits = b->bits;
-	
-	int i;
-	for (i=0; i<(int)hexLen; i++) {
-		char *tmp = malloc(sizeof(char)*(4+1));
-		*(tmp+4)='\0';
-		int j;
-		for (j=0; j<4; j++) {
-			*(tmp+j) = (char)*(bits+(i*4)+j);
-		}
-		
+	if (firstDigit == hexLen ) // cas particulier où nous avons que des 0
+	{
+		*buf = '0';
+		*(buf + 1) = '\0';
+		free(tmp);
+		return 2;
 	}
-	return 0;
+	
+	int k;
+	for (k = 0; k < hexLen - firstDigit; k++) *(buf + k) = *(tmp + k + firstDigit);
+	// placer dans le buf la représentation hexa sans les 0 devant
+	*(buf + k) = '\0';
+	
+	free(tmp);
+	return k;
 }
 
 void bitstring_free(bitstring_t *b)
 {
-	if (b!=NULL) 
-	{ // ne libère la mémoire que si b n'est pas déjà null
-	  if (b->bits != NULL)
-	  {
-	    free(b->bits);
-	  }
-	  free(b);
+	if (b!=NULL) { // ne libère la mémoire que si b n'est pas déjà null
+		if (b->bytes != NULL) {// on verifie la même chose pour bytes, même si, théoriquement, ceci ne va jamais trigger
+			free(b->bytes);
+		}
+		free(b);
 	}
 }
+
+

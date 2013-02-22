@@ -5,20 +5,14 @@
 
 #include <stdlib.h>
 
+struct bitstring;
+/* A vous de définir votre structure dans bitstring.c */
+
+typedef struct bitstring bitstring_t;
 typedef enum {
         BITNULL = 0,
         BITSET = 1
 } bit_t;
-
-struct bitstring
-{
-	int len; // longueur du bitstring
-	bit_t *bits; // tableau de bits (0 ou 1)
-};
-/* A vous de définir votre structure dans bitstring.c */
-
-typedef struct bitstring bitstring_t;
-
 
 /* Alloue un bitstring de 'n' bits initialisés à 0.
  * 'n' est un multiple de 8!

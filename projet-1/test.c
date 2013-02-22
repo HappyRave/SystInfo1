@@ -78,7 +78,7 @@ void testAlloc() {
 /* Teste bitstring_alloc_from_int */
 void testAllocInt() {
 	int i;
-	int testInt = 42;
+	unsigned int testInt = 42*1337*7;
 	b = bitstring_alloc_from_int(testInt);
 
 	printf("\n");
@@ -101,9 +101,87 @@ void testAllocInt() {
                      " que l'espace mémoire pour les données du bitstring soit bien mis,"
                      " et que la fonction alloc_from_int soit correct\n", testInt);
 	}
-	
-	
 	bitstring_free(b);
+	
+	// test valeur particulière: 0
+	testInt = 0;
+	b = bitstring_alloc_from_int(testInt);
+	
+	printf("\n");
+	/* verif mémoire allouée */
+	MY_CU_ASSERT(b != NULL,
+				 "Erreur : Le ptr bitstring 'b' ne pointe vers aucune addresse"
+				 " mémoire. Lui avez-vous alloué de la mémoire (malloc()) ?"
+				 " Renvoyez-vous le bon pointeur ?\n");
+	
+	MY_CU_ASSERT(bitstring_len(b) == (int)(sizeof(int)*8),
+				 "Erreur : Le bitstring n'a pas la bonne longueur (en bits)."
+				 " Avez-vous pensé à l'affecter à une variable de la structure après avoir"
+				 " alloué la mémoire ? Il se peut que ce soit votre fonction 'bitstring_len()'"
+				 " qui n'est pas correcte.\n");
+	
+	for (i=0; i<(int)(sizeof(int)*8); i++) {
+		bit_t testBit = ((testInt >> i) & 1);
+		MY_CU_ASSERT(bitstring_get(b, i) == testBit,
+                     "Erreur : Au moins un des bits du bitstring ne correspond pas au int %d. Assurez-vous"
+                     " que l'espace mémoire pour les données du bitstring soit bien mis,"
+                     " et que la fonction alloc_from_int soit correct\n", testInt);
+	}
+	bitstring_free(b);
+	
+	// test valeur particulière: gros int
+	testInt = 3405643994; // gros int
+	b = bitstring_alloc_from_int(testInt);
+	
+	printf("\n");
+	/* verif mémoire allouée */
+	MY_CU_ASSERT(b != NULL,
+				 "Erreur : Le ptr bitstring 'b' ne pointe vers aucune addresse"
+				 " mémoire. Lui avez-vous alloué de la mémoire (malloc()) ?"
+				 " Renvoyez-vous le bon pointeur ?\n");
+	
+	MY_CU_ASSERT(bitstring_len(b) == (int)(sizeof(int)*8),
+				 "Erreur : Le bitstring n'a pas la bonne longueur (en bits)."
+				 " Avez-vous pensé à l'affecter à une variable de la structure après avoir"
+				 " alloué la mémoire ? Il se peut que ce soit votre fonction 'bitstring_len()'"
+				 " qui n'est pas correcte.\n");
+	
+	for (i=0; i<(int)(sizeof(int)*8); i++) {
+		bit_t testBit = ((testInt >> i) & 1);
+		MY_CU_ASSERT(bitstring_get(b, i) == testBit,
+                     "Erreur : Au moins un des bits du bitstring ne correspond pas au int %d. Assurez-vous"
+                     " que l'espace mémoire pour les données du bitstring soit bien mis,"
+                     " et que la fonction alloc_from_int soit correct\n", testInt);
+	}
+	bitstring_free(b);
+	
+	// test valeur particulière: MAX_INT
+	testInt = 4294967295; //MAX_UNINT
+	b = bitstring_alloc_from_int(testInt);
+	
+	printf("\n");
+	/* verif mémoire allouée */
+	MY_CU_ASSERT(b != NULL,
+				 "Erreur : Le ptr bitstring 'b' ne pointe vers aucune addresse"
+				 " mémoire. Lui avez-vous alloué de la mémoire (malloc()) ?"
+				 " Renvoyez-vous le bon pointeur ?\n");
+	
+	MY_CU_ASSERT(bitstring_len(b) == (int)(sizeof(int)*8),
+				 "Erreur : Le bitstring n'a pas la bonne longueur (en bits)."
+				 " Avez-vous pensé à l'affecter à une variable de la structure après avoir"
+				 " alloué la mémoire ? Il se peut que ce soit votre fonction 'bitstring_len()'"
+				 " qui n'est pas correcte.\n");
+	
+	for (i=0; i<(int)(sizeof(int)*8); i++) {
+		bit_t testBit = ((testInt >> i) & 1);
+		MY_CU_ASSERT(bitstring_get(b, i) == testBit,
+                     "Erreur : Au moins un des bits du bitstring ne correspond pas au int %d. Assurez-vous"
+                     " que l'espace mémoire pour les données du bitstring soit bien mis,"
+                     " et que la fonction alloc_from_int soit correct\n", testInt);
+	}
+	bitstring_free(b);
+
+	
     b = NULL;
     printf("\n\tVotre fonction 'bitstring_alloc_from_int()' a l'air correcte. :-)\n");
     printf("\t");
@@ -189,6 +267,109 @@ pour voir s'il n'y a pas d'effet de bord : les numéros de bits allant de 0 à b
     printf("\t");
 }
 
+/* teste bitstring_print() */
+void testPrint()
+{
+	int i;
+	char *c;
+	char *hex;
+	int ret;
+	for (i=0; i<256; i++) { // nous testons TOUS les nombre entre 00 et FF, pour être sûr que ça marche dans tous les cas
+		b = bitstring_alloc_from_int(i);
+		c = (char*)malloc(sizeof(char)*3);
+		ret = bitstring_print(b,c,3);
+		hex = (char*)malloc(sizeof(char)*3);
+		sprintf(hex,"%X",i);
+		MY_CU_ASSERT(ret != -1,
+					 "Erreur : bitstring_print() n'as pas reussi à caser un hexa de 2 chhiffre dans un buffer"
+					 " de taille 3. Verfier les conditions dans bitstring_print()");
+		MY_CU_ASSERT(*c == *hex,
+					 "Erreur : bitstring_print() n'e pas bien converti %d en hexadecimal",i);
+		free(hex);
+		free(c);
+		b=NULL;
+		bitstring_free(b);
+	}
+	
+	/* On test si bitsring_print() fonctionne avec de très gros nombre, et dans les cas limites comme int = 0 et
+	 int = INT_MAX */
+	unsigned int testInt=0;
+	b = bitstring_alloc_from_int(testInt);
+	c = (char*)malloc(sizeof(char)*33);
+	ret = bitstring_print(b,c,33);
+	hex = (char*)malloc(sizeof(char)*33);
+	sprintf(hex,"%X",testInt);
+	printf("%X (hexa natif) == %s (hexa bitstring_print())\n",testInt,c);
+	printf("\t");
+	MY_CU_ASSERT(ret != -1,
+				 "Erreur : bitstring_print() n'as pas reussi à caser un hexa de 1 chhiffre dans un buffer"
+				 " de taille 3. Verfier les conditions dans bitstring_print()");
+	MY_CU_ASSERT(*c == *hex,
+				 "Erreur : bitstring_print() n'e pas bien converti %d en hexadecimal",testInt);
+	free(hex);
+	free(c);
+	bitstring_free(b);
+	
+	testInt=4294967295; //MAX_UNINT
+	b = bitstring_alloc_from_int(testInt);
+	MY_CU_ASSERT(b != NULL,
+				 "bitstrind_alloc_from_int() n'as pa ssu initialiser %d\n",testInt);
+	c = (char*)malloc(sizeof(char)*33);
+	ret = bitstring_print(b,c,33);
+	hex = (char*)malloc(sizeof(char)*33);
+	sprintf(hex,"%X",testInt);
+	printf("%X (hexa natif) == %s (hexa bitstring_print())\n",testInt,c);
+	printf("\t");
+	MY_CU_ASSERT(ret != -1,
+				 "Erreur : bitstring_print() n'as pas reussi à caser un hexa de 32 chhiffre dans un buffer"
+				 " de taille 33. Verfier les conditions dans bitstring_print()");
+	MY_CU_ASSERT(*c == *hex,
+				 "Erreur : bitstring_print() n'e pas bien converti %d (max int) en hexadecimal",testInt);
+	free(hex);
+	free(c);
+	bitstring_free(b);
+	
+	testInt=3405643994; // gros int
+	b = bitstring_alloc_from_int(testInt);
+	c = (char*)malloc(sizeof(char)*33);
+	ret = bitstring_print(b,c,33);
+	hex = (char*)malloc(sizeof(char)*33);
+	sprintf(hex,"%X",testInt);
+	printf("%X (hexa natif) == %s (hexa bitstring_print())\n",testInt,c);
+	printf("\t");
+	MY_CU_ASSERT(ret != -1,
+				 "Erreur : bitstring_print() n'as pas reussi à caser un hexa de 32 chhiffre dans un buffer"
+				 " de taille 33. Verfier les conditions dans bitstring_print()");
+	MY_CU_ASSERT(*c == *hex,
+				 "Erreur : bitstring_print() n'a pas bien converti %d (gros int) en hexadecimal",testInt);
+	free(hex);
+	free(c);
+	bitstring_free(b);
+	
+	// test des valeurs de renvoi
+	
+	testInt=255; // en hexa: 2 chiffre, donc buf de 3 suffit
+	b = bitstring_alloc_from_int(testInt);
+	c = (char*)malloc(sizeof(char)*3);
+	ret = bitstring_print(b,c,3);
+	MY_CU_ASSERT(ret != -1,
+				 "Erreur : bitstring_print() n'as pas reussi à caser un hexa de 2 chhiffre dans un buffer"
+				 " de taille 3. Verfier les conditions dans bitstring_print()");
+	free(c);
+	c = (char*)malloc(sizeof(char)*2);//buffer trop petit
+		ret = bitstring_print(b,c,2);
+	MY_CU_ASSERT(ret == -1,
+				 "Erreur : bitstring_print() as reussi à caser un hexa de 2 chhiffre dans un buffer"
+				 " de taille 2, ce qui avec le char de terminaison ets imposible. Verfier les conditions dans bitstring_print()");
+	free(c);
+	bitstring_free(b);
+
+	
+    b = NULL;
+    printf("\n\tVotre fonction 'bitstring_print()' a l'air correcte. :-)\n");
+    printf("\t");
+}
+
 /* The main() function for setting up and running the tests.
 * Returns a CUE_SUCCESS on successful running, another
 * CUnit error code on failure.
@@ -211,7 +392,7 @@ int main()
     /* add the tests to the suite */
     /* NOTE - ORDER IS IMPORTANT - first fct added = first to be run */
     if(NULL == CU_add_test(pSuite, "test de 'bitstring_alloc()'", testAlloc) ||
-       NULL == CU_add_test(pSuite, "test de 'bitstring_alloc_from_int()'", testAllocInt) || NULL == CU_add_test(pSuite, "test de 'bitstring_set()'", testSet)) {
+       NULL == CU_add_test(pSuite, "test de 'bitstring_alloc_from_int()'", testAllocInt) || NULL == CU_add_test(pSuite, "test de 'bitstring_set()'", testSet) || NULL == CU_add_test(pSuite, "test de 'bitstring_print()'", testPrint)) {
        CU_cleanup_registry();
        return CU_get_error();
     }
@@ -220,5 +401,6 @@ int main()
     CU_basic_set_mode(CU_BRM_SILENT);
     CU_basic_run_tests();
     CU_cleanup_registry();
+    
     return CU_get_error();
 }
