@@ -1,0 +1,1 @@
+SELECT DISTINCT R.nom, P.nom FROM Client C, PrefPlat PP, Plat P, Restaurant R WHERE C.idClient = 2 AND C.idClient = PP.idClient AND R.placeDispo AND PP.idPlat = P.idPlat AND P.idRest = R.idRest

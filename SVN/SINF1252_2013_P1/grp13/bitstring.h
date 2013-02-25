@@ -69,7 +69,7 @@ int bitstring_concat(bitstring_t *b1, bitstring_t *b2);
  *
  * La valeur de retour est 0 en cas de succès, -1 en cas d'erreur.
  */
-int bitstring_xor(bitstring_t *b1, bitstring_t *b2, bitstring_t **res);
+int bitstring_xor(bitstring_t *b1, bitstring_t *b2, bitstring_t *res);
 
 /* Affiche en représentation hexadécimale le bitstring 'b' dans
  * le buffer 'buf' de taille 'len'.

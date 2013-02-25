@@ -4,6 +4,19 @@
 #include <string.h>
 #include <CUnit/Basic.h>
 
+#define ANSI_COLOR_RED     "\x1b[31m"
+#define ANSI_COLOR_GREEN   "\x1b[32m"
+#define ANSI_COLOR_YELLOW  "\x1b[33m"
+#define ANSI_COLOR_BLUE    "\x1b[34m"
+#define ANSI_COLOR_MAGENTA "\x1b[35m"
+#define ANSI_COLOR_CYAN    "\x1b[36m"
+#define ANSI_COLOR_RESET   "\x1b[0m"
+#define ANSI_BOLD		   "\x1b[1m"
+#define ANSI_BOLD_OFF	   "\x1b[21m"
+
+#define CHECK printf(ANSI_COLOR_YELLOW " |"ANSI_COLOR_GREEN " √ "ANSI_COLOR_YELLOW "|\n" ANSI_COLOR_RESET)
+#define FUNOK(X) printf("\n\tThe function "ANSI_COLOR_RED ANSI_BOLD X ANSI_COLOR_RESET ANSI_BOLD_OFF " successfully passed the tests\n")
+
 #define LEN 24
 
 #define MY_CU_ASSERT(value, args...) do { \
@@ -12,6 +25,8 @@
     CU_ASSERT_FATAL(__b__); \
 } while(0)
 
+void aperture();
+void cake();
 /* Ptr vers les bitstring employés pour les tests */
 static bitstring_t * b;
 
@@ -71,7 +86,9 @@ void testAlloc() {
 
     bitstring_free(b);
     b = NULL;
-    printf("\n\tVotre fonction 'bitstring_alloc()' a l'air correcte.\n");
+    FUNOK("'bitstring_alloc()'");
+	printf("\tBistring_alloc() seems fully functional");
+	CHECK;
     printf("\t");
 }
 
@@ -107,7 +124,6 @@ void testAllocInt() {
 	testInt = 0;
 	b = bitstring_alloc_from_int(testInt);
 	
-	printf("\n");
 	/* verif mémoire allouée */
 	MY_CU_ASSERT(b != NULL,
 				 "Erreur : Le ptr bitstring 'b' ne pointe vers aucune addresse"
@@ -133,7 +149,6 @@ void testAllocInt() {
 	testInt = 3405643994u; // gros int
 	b = bitstring_alloc_from_int(testInt);
 	
-	printf("\n");
 	/* verif mémoire allouée */
 	MY_CU_ASSERT(b != NULL,
 				 "Erreur : Le ptr bitstring 'b' ne pointe vers aucune addresse"
@@ -159,7 +174,6 @@ void testAllocInt() {
 	testInt = 4294967295u; //MAX_UNINT
 	b = bitstring_alloc_from_int(testInt);
 	
-	printf("\n");
 	/* verif mémoire allouée */
 	MY_CU_ASSERT(b != NULL,
 				 "Erreur : Le ptr bitstring 'b' ne pointe vers aucune addresse"
@@ -183,7 +197,9 @@ void testAllocInt() {
 
 	
     b = NULL;
-    printf("\n\tVotre fonction 'bitstring_alloc_from_int()' a l'air correcte. :-)\n");
+    FUNOK("'bitstring_alloc_from_int()'");
+	printf("\tBistring_alloc_from_int() seems fully functional");
+	CHECK;
     printf("\t");
 }
 
@@ -197,7 +213,7 @@ void testSet() {
 
     printf("\n");
 
-    printf("\tMise du bit %d à 1\n", testbit);
+    printf("\tSetting bit %d to 1\n", testbit);
     bitstring_set(b, testbit, 1); /*on met le bit testbit à 1*/
 
     /* vérifie que tous les bits sont à 0 (ignore le testbit) */
@@ -218,7 +234,7 @@ void testSet() {
 
 
     /* on assigne un autre bit dans le même octet pour voir si ça n'efface pas l'autre */
-    printf("\tMise du bit %d à 1\n", testbit+2);
+    printf("\tSetting bit %d to 1\n", testbit+2);
     bitstring_set(b, testbit + 2, 1);
 
     /* revérifie tous les bits */
@@ -246,14 +262,14 @@ pour voir s'il n'y a pas d'effet de bord : les numéros de bits allant de 0 à b
 	/* C'est fait! */
 	int last = LEN-1;
 	int first = 0;
-	printf("\tMise du bit %d à 1\n", last);
+	printf("\tSetting bit %d to 1\n", last);
 	bitstring_set(b,last,1);
 		MY_CU_ASSERT(bitstring_get(b, last) == 1,
 				 "Erreur : Impossible de tester la fonction 'bitstring_set()' car"
 				 " votre fonction 'bitstring_get()' ou 'bitstring_alloc()' n'est pas correcte.\n"
 				 "Pensez aussi à vérifier si n=31 correspond bien au 32eme bit\n");
 	
-	printf("\tMise du bit %d à 1\n", first);
+	printf("\tSetting bit %d to 1\n", first);
 	bitstring_set(b,first,1);
 	MY_CU_ASSERT(bitstring_get(b, first) == 1,
 				"Erreur : Impossible de tester la fonction 'bitstring_set()' car"
@@ -263,13 +279,74 @@ pour voir s'il n'y a pas d'effet de bord : les numéros de bits allant de 0 à b
 	bitstring_free(b);
 	b = NULL;
     /* succès */
-    printf("\n\tVos fonctions 'bitstring_set()' et 'bitstring_get' ont l'air correctes.\n");
+    printf("\n\tThe functions "ANSI_COLOR_RED ANSI_BOLD"'bitstring_set() and get()'"ANSI_COLOR_RESET ANSI_BOLD_OFF" successfully passed the tests\n");
+	printf("\tBistring_set() and get() seem fully functional");
+	CHECK;
     printf("\t");
 }
+
+//test de rotate : 
+
+void testRotate()
+{
+	printf("\b");
+	unsigned int gdInt=3405643994u;
+	b = bitstring_alloc_from_int(gdInt);
+	
+        //essai de bitstring_rotate(b,0) avec un grand entier non-signé
+
+        bitstring_rotate(b,0);	
+
+	int i = 0;
+	
+	for(i=0;i<(bitstring_len(b));i++)//on va vérifier chaque bit
+	{
+	  bit_t our = bitstring_get(b,i);
+	  
+      
+	  MY_CU_ASSERT( ((gdInt>>i) & 1) ==  our,
+			"Erreur : les bits ont changé dans le cas bitstring_rotate(b,0) pour le gdInt, alors qu'ils n'auraient pas dû\n. L'erreur est pour ce i = %d\n",i
+				 );
+	}
+
+	bitstring_free(b);
+
+	//essai de bitstring_rotate(b,0) avec un petit entier non-signé
+	
+	unsigned int pttInt = 42u; 
+	b = bitstring_alloc_from_int(pttInt);
+
+	bitstring_rotate(b,0);	
+
+	i = 0;
+	
+	for(i=0;i<(bitstring_len(b));i++)//on va vérifier chaque bit
+	{
+	  bit_t our = bitstring_get(b,i);
+	  
+      
+	  MY_CU_ASSERT( ((pttInt>>i) & 1) ==  our,
+			"Erreur : les bits ont changé dans le cas bitstring_rotate(b,0) pour le pttInt, alors qu'ils n'auraient pas dû\n. L'erreur est pour ce i = %d\n",i
+				 );
+	}
+
+	bitstring_free(b);
+
+	
+	
+	
+    FUNOK("'bitstring_rotate()'");
+	printf("\tBistring_rotate() seems fully functional");
+	CHECK;
+    printf("\t");
+}
+
+
 
 /* teste bitstring_print() */
 void testPrint()
 {
+	printf("\n");
 	int i;
 	char *c;
 	char *hex;
@@ -280,15 +357,15 @@ void testPrint()
 		ret = bitstring_print(b,c,3);
 		hex = (char*)malloc(sizeof(char)*3);
 		sprintf(hex,"%X",i);
-		MY_CU_ASSERT(ret != -1,
-					 "Erreur : bitstring_print() n'as pas reussi à caser un hexa de 2 chhiffre dans un buffer"
-					 " de taille 3. Verfier les conditions dans bitstring_print()");
+		MY_CU_ASSERT(ret != -1 && ret <= 3 && ret >=2,
+					 "Erreur : bitstring_print() n'as pas reussi à caser un hexa de 2 (int == %d && ret == %2d) chhiffre dans un buffer"
+					 " de taille 3. Verfier les conditions dans bitstring_print()", i,ret);
 		MY_CU_ASSERT(*c == *hex,
 					 "Erreur : bitstring_print() n'e pas bien converti %d en hexadecimal",i);
 		free(hex);
 		free(c);
-		b=NULL;
 		bitstring_free(b);
+		b=NULL;
 	}
 	
 	/* On test si bitsring_print() fonctionne avec de très gros nombre, et dans les cas limites comme int = 0 et
@@ -299,9 +376,10 @@ void testPrint()
 	ret = bitstring_print(b,c,33);
 	hex = (char*)malloc(sizeof(char)*33);
 	sprintf(hex,"%X",testInt);
-	printf("%X (hexa natif) == %s (hexa bitstring_print())\n",testInt,c);
 	printf("\t");
-	MY_CU_ASSERT(ret != -1,
+	printf("%u ([unsigned] int) == %X (natif hex) == %s (bitstring_print())\n",testInt,testInt,c);
+	printf("\t");
+	MY_CU_ASSERT(ret != -1 && ret == 2,
 				 "Erreur : bitstring_print() n'as pas reussi à caser un hexa de 1 chhiffre dans un buffer"
 				 " de taille 3. Verfier les conditions dans bitstring_print()");
 	MY_CU_ASSERT(*c == *hex,
@@ -318,9 +396,9 @@ void testPrint()
 	ret = bitstring_print(b,c,33);
 	hex = (char*)malloc(sizeof(char)*33);
 	sprintf(hex,"%X",testInt);
-	printf("%X (hexa natif) == %s (hexa bitstring_print())\n",testInt,c);
+	printf("%u ([unsigned] int) == %X (natif hex) == %s (bitstring_print())\n",testInt,testInt,c);
 	printf("\t");
-	MY_CU_ASSERT(ret != -1,
+	MY_CU_ASSERT(ret != -1 && ret == 9,
 				 "Erreur : bitstring_print() n'as pas reussi à caser un hexa de 32 chhiffre dans un buffer"
 				 " de taille 33. Verfier les conditions dans bitstring_print()");
 	MY_CU_ASSERT(*c == *hex,
@@ -335,9 +413,9 @@ void testPrint()
 	ret = bitstring_print(b,c,33);
 	hex = (char*)malloc(sizeof(char)*33);
 	sprintf(hex,"%X",testInt);
-	printf("%X (hexa natif) == %s (hexa bitstring_print())\n",testInt,c);
+	printf("%u ([unsigned] int) == %X (natif hex) == %s (bitstring_print())\n",testInt,testInt,c);
 	printf("\t");
-	MY_CU_ASSERT(ret != -1,
+	MY_CU_ASSERT(ret != -1 && ret == 9,
 				 "Erreur : bitstring_print() n'as pas reussi à caser un hexa de 32 chhiffre dans un buffer"
 				 " de taille 33. Verfier les conditions dans bitstring_print()");
 	MY_CU_ASSERT(*c == *hex,
@@ -352,7 +430,7 @@ void testPrint()
 	b = bitstring_alloc_from_int(testInt);
 	c = (char*)malloc(sizeof(char)*3);
 	ret = bitstring_print(b,c,3);
-	MY_CU_ASSERT(ret != -1,
+	MY_CU_ASSERT(ret != -1 && ret == 3,
 				 "Erreur : bitstring_print() n'as pas reussi à caser un hexa de 2 chhiffre dans un buffer"
 				 " de taille 3. Verfier les conditions dans bitstring_print()");
 	free(c);
@@ -366,7 +444,9 @@ void testPrint()
 
 	
     b = NULL;
-    printf("\n\tVotre fonction 'bitstring_print()' a l'air correcte. :-)\n");
+    FUNOK("'bitstring_print()'");
+	printf("\tBistring_print() seems fully functional");
+	CHECK;
     printf("\t");
 }
 
@@ -376,6 +456,7 @@ void testPrint()
 */
 int main()
 {
+	aperture();
     CU_pSuite pSuite = NULL;
 
     /* initialize the CUnit test registry */
@@ -392,7 +473,7 @@ int main()
     /* add the tests to the suite */
     /* NOTE - ORDER IS IMPORTANT - first fct added = first to be run */
     if(NULL == CU_add_test(pSuite, "test de 'bitstring_alloc()'", testAlloc) ||
-       NULL == CU_add_test(pSuite, "test de 'bitstring_alloc_from_int()'", testAllocInt) || NULL == CU_add_test(pSuite, "test de 'bitstring_set()'", testSet) || NULL == CU_add_test(pSuite, "test de 'bitstring_print()'", testPrint)) {
+       NULL == CU_add_test(pSuite, "test de 'bitstring_alloc_from_int()'", testAllocInt) || NULL == CU_add_test(pSuite, "test de 'bitstring_set()'", testSet) || NULL == CU_add_test(pSuite, "test de 'bitstring_set()'", testRotate) || NULL == CU_add_test(pSuite, "test de 'bitstring_print()'", testPrint)) {
        CU_cleanup_registry();
        return CU_get_error();
     }
@@ -402,5 +483,68 @@ int main()
     CU_basic_run_tests();
     CU_cleanup_registry();
     
+	cake();
     return CU_get_error();
+}
+
+void aperture()
+{
+	printf(ANSI_COLOR_CYAN ANSI_BOLD"                                         \n\t");
+	printf("                  .,-:;//;:=,\n\t");
+	printf("              . :H@@@MM@M#H/.,+%%;,\n\t");
+	printf("           ,/X+ +M@@M@MM%%=,-%%HMMM@X/,\n\t");
+	printf("         -+@MM; $M@@MH+-,;XMMMM@MMMM@+-\n\t");
+	printf("        ;@M@@M- XM@X;. -+XXXXXHHH@M@M#@/.\n\t");
+	printf("      ,%%MM@@MH ,@%%=            .---=-=:=,.\n\t");
+	printf("      =@#@@@MX .,              -%%HX$$%%%%%%+;\n\t");
+	printf("     =-./@M@M$                  .;@MMMM@MM:\n\t");
+	printf("     X@/ -$MM/                    .+MM@@@M$\n\t");
+	printf("    ,@M@H: :@:                    . =X#@@@@-\n\t");
+	printf("    ,@@@MMX, .                    /H- ;@M@M=\n\t");
+	printf("    .H@@@@M@+,                    %%MM+..%%#$.\n\t");
+	printf("     /MMMM@MMH/.                  XM@MH; =;\n\t");
+	printf("      /%%+%%$XHH@$=              , .H@@@@MX,\n\t");
+	printf("       .=--------.           -%%H.,@@@@@MX,\n\t");
+	printf("       .%%MM@@@HHHXX$$$%%+- .:$MMX =M@@MM%%.\n\t");
+	printf("         =XMMM@MM@MM#H;,-+HMM@M+ /MMMX=\n\t");
+	printf("           =%%@M@M#@$-.=$@MM@@@M; %%M%%=\n\t");
+	printf("    	     ,:+$+-,/H#MMMMMMM@= =,\n\t");
+	printf("                   =++%%%%%%%%+/:-.\n\t");
+	printf("    ........................................\n\t");
+	printf("    ....... Aperture Laboratories(R)  ......\n\t");
+	printf("    ........................................\n\t");
+	printf("\n\t");
+	printf("\n\tWelcome to the Aperture Science Enrichment Center\n\t" ANSI_BOLD_OFF ANSI_COLOR_RESET);
+	printf("\n\t");
+	printf(ANSI_COLOR_YELLOW "We will now proceed to a meticulously composed battery of tests" ANSI_COLOR_RESET);
+}
+
+void cake()
+{
+	printf( ANSI_COLOR_RED"\n");
+	printf( ANSI_BOLD "\tCongratulation, you brilliantly passed all our extremely difficult tests !\t\n");
+	printf("\n");
+	printf("\tHere, take this piece of delicious cake.\n");
+	printf("\t\n");
+	printf("\t               "ANSI_COLOR_YELLOW",:/+/-\t\n"ANSI_COLOR_RED);
+	printf("\t               "ANSI_COLOR_YELLOW"/M/              .,-=;//;-\t\n"ANSI_COLOR_RED);
+	printf("\t          "ANSI_COLOR_YELLOW".:/= ;MH/,    ,=/+$$XH@MM#@:\t\n"ANSI_COLOR_RED);
+	printf("\t         "ANSI_COLOR_YELLOW"-$##@+$###@H@MMM#######H:.  "ANSI_COLOR_RED"  -/H#\t\n");
+	printf("\t    "ANSI_COLOR_YELLOW".,H@H@ X######@ -H#####@+-  "ANSI_COLOR_RED"   -+H###@X\t\n");
+	printf("\t    "ANSI_COLOR_YELLOW" .,@##H;      +XM##M/,  "ANSI_COLOR_RED"   =$@###@X;-\t\n");
+	printf("\t   X$- "ANSI_COLOR_YELLOW" :M##########$. "ANSI_COLOR_RED"   .:$M###@$:\t\n");
+	printf("\t   M##H, "ANSI_COLOR_YELLOW"  +H@@@$/-. "ANSI_COLOR_RED" ,;$M###@$,          -\t\n");
+	printf("\t   M####M=,,---,.-$$H####M$:          ,+@##\t\n");
+	printf("\t   @##################@/.         :$H##@$-\t\n");
+	printf("\t   M###############H,         ;HM##M$=\t\n");
+	printf("\t   #################.    .=$M##M$=\t\n");
+	printf("\t   ################H..;XM##M$=          .:+\t\n");
+	printf("\t   M###################@$=           =+@MH$\t\n");
+	printf("\t   @################M/.          =+H#X$=\t\n");
+	printf("\t   =+M##############M,       -/X#X+;.\t\n");
+	printf("\t     .;XM##########H=    ,/X#H+:,\t\n");
+	printf("\t        .=+HM######M+/+HM@+=.\t\n");
+	printf("\t            ,:/$XM####H/.\t\n");
+	printf("\t                 ,.:=-.\t\n" ANSI_BOLD_OFF);
+	printf("\t\n"ANSI_COLOR_RESET);
 }

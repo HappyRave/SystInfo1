@@ -88,29 +88,30 @@ void bitstring_rotate(bitstring_t *b, int n)
 	//Remarque : si n est positif, on décale vers la gauche, donc on augmente l'indice du bit dans la structure.
 	//si n est négatif, on décale vers la droite, donc on diminue l'indice du bit dans la structure
 	int i;
-	for(i=0;i<32;i++)
+	for(i=0;i<(b->len);i++)
 	{
 		if (i+n<0)
 		{
-			bitstring_set(copi,32+i+n,bitstring_get(b,i));
+		  bitstring_set(copi,(unsigned int)((b->len)+i+n),bitstring_get(b,i));
 		}
-		else if(i+n>31)
+		else if(i+n>(b->len)-1)
 		{
-			bitstring_set(copi,i+n-32,bitstring_get(b,i));
+		  bitstring_set(copi,(unsigned int)(i+n-(b->len)),bitstring_get(b,i));
 		}
 		else
 		{
-			bitstring_set(copi,i+n,bitstring_get(b,i));
+		  bitstring_set(copi,(unsigned int)(i+n),bitstring_get(b,i));
 		}
+	       
+		
 	}
 	
-	//on met à jour les bits du bitstring passe en arguments.
 	
+	//on met b à jour
+	free(b->bytes);
 	b->bytes = copi->bytes;
+	free(copi);
 	
-	//on libère la mémoire déagée pour la première structure :
-	
-	bitstring_free(copi);
 	
 }
 
@@ -157,18 +158,18 @@ int bitstring_xor(bitstring_t *b1, bitstring_t *b2, bitstring_t *res)
 	 return -1;
        }
 
-       res = bistring_alloc(b1->len);
+       res = bitstring_alloc(b1->len);
        
        int i;
        for(i=0;i<(b1->len);i++)
        {
 	 if (bitstring_get(b1,i)==bitstring_get(b2,i))
 	 {
-	   bitstring_set(res,i,bit_t BITNULL);
+	   bitstring_set(res,i,BITNULL);
 	 }
 	 else
 	 {
-	   bitstring_set(res,i,bit_t BITSET);
+	   bitstring_set(res,i,BITSET);
 	 }
        }
 
@@ -219,12 +220,13 @@ int bitstring_print(bitstring_t *b, char *buf, size_t len)
 	}
 	
 	int k;
-	for (k = 0; k < hexLen - firstDigit; k++) *(buf + k) = *(tmp + k + firstDigit);
+	for (k = 0; k < hexLen - firstDigit; k++) 
+	        *(buf + k) = *(tmp + k + firstDigit);
 	// placer dans le buf la représentation hexa sans les 0 devant
 	*(buf + k) = '\0';
 	
 	free(tmp);
-	return k;
+	return k+1;
 }
 
 void bitstring_free(bitstring_t *b)
@@ -235,6 +237,7 @@ void bitstring_free(bitstring_t *b)
 		}
 		free(b);
 	}
+	b=NULL;
 }
 
 
