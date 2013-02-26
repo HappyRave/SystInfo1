@@ -99,7 +99,7 @@ void bitstring_rotate(bitstring_t *b, int n) {
 
 int bitstring_concat(bitstring_t *b1, bitstring_t *b2) {
 	
-	if (b1 == NULL || b2 == NULL) { printf("Yo biatch!\n"); return(-1);}
+	if (b1 == NULL || b2 == NULL)return(-1);
 	printf("yo\n");
 	//on crée une plus grande structure.
 	bitstring_t *gd = bitstring_alloc((b1->len) + (b2->len));
@@ -175,5 +175,4 @@ void bitstring_free(bitstring_t *b)
 		}
 		free(b);
 	}
-	b = NULL;
 }
