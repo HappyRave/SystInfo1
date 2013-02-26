@@ -1,14 +1,14 @@
 10
 
 dir
-50
+56
 https://scm.info.ucl.ac.be/studentsvn/SINF1252_2013_P1/grp13
 https://scm.info.ucl.ac.be/studentsvn/SINF1252_2013_P1
 
 
 
-2013-02-24T14:37:32.091515Z
-50
+2013-02-25T23:21:21.786147Z
+56
 maxime.demol
 
 
@@ -28,14 +28,14 @@ maxime.demol
 
 test.c
 file
+57
 
 
 
-
-2013-02-24T14:32:51.000000Z
-25d0c085b8584aa7df88d0d3c7eb72ff
-2013-02-24T14:37:32.091515Z
-50
+2013-02-26T09:24:53.000000Z
+eceab7b902336cacb8d09718649406dd
+2013-02-26T11:49:41.028597Z
+57
 maxime.demol
 
 
@@ -58,18 +58,18 @@ maxime.demol
 
 
 
-21355
+25808
 
 bitstring.c
 file
+57
 
 
 
-
-2013-02-24T14:33:23.000000Z
-fc08d62f8f85e5aff55a8f43fc4d579d
-2013-02-24T14:37:32.091515Z
-50
+2013-02-26T09:23:56.000000Z
+880ab9e7ccb857af922bd7406914c7ed
+2013-02-26T11:49:41.028597Z
+57
 maxime.demol
 
 
@@ -92,7 +92,7 @@ maxime.demol
 
 
 
-5815
+5119
 
 bitstring.h
 file
