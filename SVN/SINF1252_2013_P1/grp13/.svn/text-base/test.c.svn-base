@@ -122,10 +122,10 @@ void testAllocInt() {
 	
 	for (i=0; i<(int)(sizeof(int)*8); i++) {
 		bit_t testBit = ((TEST_INT >> i) & 1);
-		MY_CU_ASSERT(bitstring_get(b, i) == testBit,
-                     "Erreur : Au moins un des bits du bitstring ne correspond pas au int %d. Assurez-vous"
+		MY_CU_ASSERT(bitstring_get(b, 31 - i) == testBit,
+                     "Erreur : Au moins un des bits du bitstring ne correspond pas au int %d au bit %2d. Assurez-vous"
                      " que l'espace mémoire pour les données du bitstring soit bien mis,"
-                     " et que la fonction alloc_from_int soit correct\n", TEST_INT);
+                     " et que la fonction alloc_from_int soit correct\n", TEST_INT,i);
 	}
 	bitstring_free(b);
 	
@@ -145,7 +145,7 @@ void testAllocInt() {
 				 " qui n'est pas correcte.\n");
 	
 	for (i=0; i<(int)(sizeof(int)*8); i++) {
-		bit_t testBit = ((NULL_INT >> i) & 1);
+		bit_t testBit = ((NULL_INT >> (31 - i)) & 1);
 		MY_CU_ASSERT(bitstring_get(b, i) == testBit,
                      "Erreur : Au moins un des bits du bitstring ne correspond pas au int %d. Assurez-vous"
                      " que l'espace mémoire pour les données du bitstring soit bien mis,"
@@ -169,11 +169,11 @@ void testAllocInt() {
 				 " qui n'est pas correcte.\n");
 	
 	for (i=0; i<(int)(sizeof(int)*8); i++) {
-		bit_t testBit = ((BIG_INT >> i) & 1);
+		bit_t testBit = ((BIG_INT >> (31 - i)) & 1);
 		MY_CU_ASSERT(bitstring_get(b, i) == testBit,
-                     "Erreur : Au moins un des bits du bitstring ne correspond pas au int %d. Assurez-vous"
+                     "Erreur : Au moins un des bits du bitstring ne correspond pas au int %d, au bit %2d. Assurez-vous"
                      " que l'espace mémoire pour les données du bitstring soit bien mis,"
-                     " et que la fonction alloc_from_int soit correct\n", BIG_INT);
+                     " et que la fonction alloc_from_int soit correct\n", BIG_INT,i);
 	}
 	bitstring_free(b);
 	
@@ -193,11 +193,11 @@ void testAllocInt() {
 				 " qui n'est pas correcte.\n");
 	
 	for (i=0; i<(int)(sizeof(int)*8); i++) {
-		bit_t testBit = ((MAX_INT >> i) & 1);
+		bit_t testBit = ((MAX_INT >> (31 - i)) & 1);
 		MY_CU_ASSERT(bitstring_get(b, i) == testBit,
                      "Erreur : Au moins un des bits du bitstring ne correspond pas au int %d. Assurez-vous"
                      " que l'espace mémoire pour les données du bitstring soit bien mis,"
-                     " et que la fonction alloc_from_int soit correct\n", MAX_INT);
+                     " et que la fonction alloc_from_int soit correct YO\n", MAX_INT);
 	}
 	bitstring_free(b);
 	b = NULL;
@@ -316,11 +316,10 @@ void testRotate() {
 	//essai de bitstring_rotate(b,0) avec BIG_INT
 	b = bitstring_alloc_from_int(BIG_INT);
 	bitstring_rotate(b,0);	
-
 	int i;
 	for(i=0;i<(bitstring_len(b));i++) {//on va vérifier chaque bit
 	  bit_t our = bitstring_get(b,i);
-	  MY_CU_ASSERT( ((BIG_INT >> i) & 1) ==  our,
+	  MY_CU_ASSERT( ((BIG_INT >> (sizeof(BIG_INT)*8-1-i)) & 1) ==  our,
 				   "Erreur (les bits ont changé alors qu'ils n'auraient pas dû) : dans le test avec un gdInt"
 				   " et une rotation de 0. Erreur pour i = %d\n",i);
 	}
@@ -334,7 +333,7 @@ void testRotate() {
 	i = 0;
 	for(i=0;i<(bitstring_len(b));i++) {//on va vérifier chaque bit
 	  bit_t our = bitstring_get(b,i);
-	  MY_CU_ASSERT( ((BIG_INT >> i) & 1) ==  our,
+	  MY_CU_ASSERT( ((BIG_INT >> (sizeof(BIG_INT)*8-1-i)) & 1) ==  our,
 				   "Erreur (les bits ont changé alors qu'ils n'auraient pas dû) : dans le test avec un gdInt"
 				   " et une rotation de bitstring_len(b). Erreur pour i = %d\n",i);
 	}
@@ -348,16 +347,16 @@ void testRotate() {
 		bitstring_rotate(b,i);
 		//cas i >=0
 		for (j=0;j<(bitstring_len(b))-(i%bitstring_len(b));j++) {//les (longueur-i) premiers bit
-	      bit_t our = bitstring_get(b,(j+i)%(bitstring_len(b)));
-	      MY_CU_ASSERT( ((BIG_INT >> j) & 1) ==  our,
+		  bit_t our = bitstring_get(b,(j+i)%(bitstring_len(b)));
+		  MY_CU_ASSERT( ((BIG_INT >> (sizeof(BIG_INT)*8-1-j)) & 1) ==  our,
 					   "Erreur (mauvaise rotation) : dans le test avec un gdInt et dans la boucle de rotation"
-					   " (i>+0, pour les longueur-i premiers bits). Erreur pour i = %d,j = %d\n",i,j);
+					   " (i>=0, pour les longueur-i premiers bits). Erreur pour i = %d,j = %d\n",i,j);
 		}
 		for (j=(bitstring_len(b))-(i%bitstring_len(b));j<bitstring_len(b);j++) {//les i derniers bit
-	      bit_t our = bitstring_get(b,(i+j-bitstring_len(b))%(bitstring_len(b)));
-	      MY_CU_ASSERT( ((BIG_INT >> j) & 1) ==  our,
+		  bit_t our = bitstring_get(b,(i+j-bitstring_len(b))%(bitstring_len(b)));
+		  MY_CU_ASSERT( ((BIG_INT >> (sizeof(BIG_INT)*8-1-j)) & 1) ==  our,
 					   "Erreur (mauvaise rotation) : dans le test avec un gdInt et dans la boucle de rotation"
-					   " (i>+0, pour les i derniers bits). Erreur pour i = %d,j = %d\n",i,j);
+					   " (i>=0, pour les i derniers bits). Erreur pour i = %d,j = %d\n",i,j);
 		}
 		bitstring_free(b);
 		b = bitstring_alloc_from_int(BIG_INT);
@@ -365,22 +364,22 @@ void testRotate() {
 		i = -i;
 		bitstring_rotate(b,i);
 		for(j=0;j<(-i)%bitstring_len(b);j++) {//pour les i premiers bits
-	    bit_t our = bitstring_get(b,bitstring_len(b)+j-(bitstring_len(b)-(i%bitstring_len(b))));
-	    MY_CU_ASSERT( ((BIG_INT >> j) & 1) ==  our,
+		  bit_t our = bitstring_get(b,bitstring_len(b)+j-(bitstring_len(b)-(i%bitstring_len(b))));
+		  MY_CU_ASSERT( ((BIG_INT >> (sizeof(BIG_INT)*8-1-j)) & 1) ==  our,
 					 "Erreur (mauvaise rotation) : dans le test avec un gdInt et dans la boucle de rotation"
 					 " (i<0, pour les i premiers bits). Erreur pour i = %d,j = %d\n",i,j);
 		}
 	  
 		for(j=(-i)%bitstring_len(b);j<bitstring_len(b);j++) {//les bitstring_len-i derniers bits
-	    bit_t our;
-	    if (i%bitstring_len(b) == 0) {
+		  bit_t our;
+		  if (i%bitstring_len(b) == 0) {
 			our = bitstring_get(b,j);
-		} else {
+		  } else {
 			our = bitstring_get(b,j-(bitstring_len(b)-i%bitstring_len(b)));
-		}
-			MY_CU_ASSERT( ((BIG_INT >> j) & 1) ==  our,
+		  }
+			MY_CU_ASSERT( ((BIG_INT >> (sizeof(BIG_INT)*8-1-j)) & 1) ==  our,
 						 "Erreur (mauvaise rotation) : dans le test avec un gdInt et dans la boucle de rotation"
-						 " (i>+0, pour les longueur-i derniers bits). Erreur pour i = %d,j = %d\n",i,j);
+						 " (i<0, pour les longueur-i derniers bits). Erreur pour i = %d,j = %d\n",i,j);
 		}
 	  i = -i;
 	  bitstring_free(b);
@@ -430,25 +429,115 @@ void testCat() {
 				 "Erreur : bitstring_concat() a renvoyé une erreur (ret != 0) \n"
 				 " ret : %d",ret);
 	
+	free(hex2);
+	free(c);
+	c = (char*)malloc(sizeof(char)*19);
+	hex2 = (char*)malloc(sizeof(char)*19);
+	sprintf(hex2,"%08X",TEST_INT);
 	bitstring_free(b2);
-	b2 = NULL; // dafuq???
+	b2 = NULL;
+	strcat(hex1, hex2); // nous verifions si concat fonctionne si on lui donne 2 fois le même *bitstring_t
+	ret = bitstring_concat(b, b); // Fait à remarquer: strcat ne fonctionne pas avec 2 fois le même string
+	bitstring_print(b, c, 19);
+	MY_CU_ASSERT(*c == *hex1,
+				 "Erreur : bitstring_concat() n'a pas bien concatener b à b2. \n"
+				 " strcat : %s ; bitstring_concat : %2s", hex1, c);
+	MY_CU_ASSERT(ret == 0,
+				 "Erreur : bitstring_concat() a renvoyé une erreur (ret != 0) \n"
+				 " ret : %d",ret);
+
+	free(hex1);
+	free(hex2);
+	free(c);
+	bitstring_free(b);
+	b = NULL;
 	ret = bitstring_concat(b2, b);
 	MY_CU_ASSERT(ret == -1,
 				 "Erreur : bitstring_concat() n'a pas renvoyé d'erreur (ret == 0) alors que b2 == NULL \n"
 				 " ret : %d",ret);
 
-	
-	
-	free(hex1);
-	free(hex2);
-	free(c);
-	bitstring_free(b2);
-	bitstring_free(b);
-	b = NULL;
-    FUNOK("'bitstring_concat()'");
+	FUNOK("'bitstring_concat()'");
 	printf("\tBistring_concat() seems fully functional");
 	CHECK;
     printf("\t");	
+}
+
+void testXor() {
+	//Test 1 : on donne deux bitstring de même longueur
+	b = bitstring_alloc_from_int(TEST_INT);
+	bitstring_t * b2 = bitstring_alloc_from_int(TEST_INT);
+	bitstring_t *ptr;
+	bitstring_t **res;
+	res = &ptr;
+	int nb = bitstring_xor(b,b2,res);
+	MY_CU_ASSERT(nb == 0,
+				 "\nErreur dans le 1e test de btstring_xor, sur les deux bitstring de même taille,"
+				 " de même entier  : bitstring_xor devrait renvoyer 0\n");
+
+	//on regarde chaque bit : 
+	int i =0;
+	for (i=0;i<bitstring_len(b);i++)
+	{
+	  bit_t our = bitstring_get(*res,31-i);
+	  MY_CU_ASSERT((((TEST_INT>>i)^(TEST_INT>>i))&1)==our,
+				   "\nErreur dans la boucle du 1e test de btstring_xor, sur les deux bitstring de même taille,"
+				   " de même entier  : pour i = %d le ou exclusif est incorrect\n",i);
+	}
+
+	bitstring_free(ptr);
+	res = NULL;
+	ptr = NULL;
+	bitstring_free(b);
+	bitstring_free(b2);
+
+	//même test mais avec deux int différent, mais de même longueur
+	unsigned int other = 13u;
+	b = bitstring_alloc_from_int(TEST_INT);
+	b2 = bitstring_alloc_from_int(other);
+	bitstring_t *ptr2;
+	bitstring_t **res2;
+	res2 = &ptr2;
+	nb = bitstring_xor(b,b2,res2);
+
+	MY_CU_ASSERT(nb == 0,
+				 "\nErreur dans le 2e test de bitstring_xor, sur les deux bitstring de même taille"
+				 "mais de deux entiers différents  : bitstring_xor devrait renvoyer 0\n");
+
+	//on regarde chaque bit :
+	i =0;
+	for (i=0;i<bitstring_len(b);i++)
+	{
+    bit_t our = bitstring_get(*res2,31-i);
+    MY_CU_ASSERT((((TEST_INT>>i)^(other>>i))&1)==our,
+				 "\nErreur dans la boucle du 2e test de bitstring_xor, sur les deux bitstring de même taille"
+				 " mais de deux entiers différents  : pour i = %d le ou exclusif est incorrect\n",i);
+	}
+	bitstring_free(ptr2);
+	ptr2 = NULL;
+	res2 = NULL;
+	bitstring_free(b);
+	bitstring_free(b2);
+
+	//test 3 : pour deux bitstring de longueur différentes
+
+	b = bitstring_alloc((size_t) 8);
+	b2 = bitstring_alloc((size_t) 16);
+	bitstring_t *ptr3;
+	bitstring_t **res3;
+	res3 = &ptr3;
+	nb = bitstring_xor(b,b2,res3);
+	MY_CU_ASSERT(nb == -1,
+				 "\nErreur dans le 3e test de bitstring_xor, sur les deux bitstring de taille différente"
+				 " : bitstring_xor devrait renvoyer 1\n");
+
+	res3 = NULL;
+	bitstring_free(b);
+	bitstring_free(b2);
+	b = NULL;
+	FUNOK("'bitstring_xor()'");
+	printf("\tBistring_xor() seems fully functional");
+	CHECK;
+    printf("\t");
 }
 
 /* teste bitstring_print() */
@@ -529,7 +618,6 @@ void testPrint() {
 	bitstring_free(b);
 	
 	// test des valeurs de renvoi
-	
 	int testInt=255; // en hexa: 8 chiffre, donc buf de 9 suffit
 	b = bitstring_alloc_from_int(testInt);
 	c = (char*)malloc(sizeof(char)*9);
@@ -576,7 +664,7 @@ int main()
     /* add the tests to the suite */
     /* NOTE - ORDER IS IMPORTANT - first fct added = first to be run */
     if(NULL == CU_add_test(pSuite, "test de 'bitstring_alloc()'", testAlloc) ||
-       NULL == CU_add_test(pSuite, "test de 'bitstring_alloc_from_int()'", testAllocInt) || NULL == CU_add_test(pSuite, "test de 'bitstring_set()'", testSet)|| NULL == CU_add_test(pSuite, "test de 'bitstring_len()'", testLen) || NULL == CU_add_test(pSuite, "test de 'bitstring_set()'", testRotate) || NULL == CU_add_test(pSuite, "test de 'bitstring_concat()'", testCat) || NULL == CU_add_test(pSuite, "test de 'bitstring_print()'", testPrint)) {
+       NULL == CU_add_test(pSuite, "test de 'bitstring_alloc_from_int()'", testAllocInt) || NULL == CU_add_test(pSuite, "test de 'bitstring_set()'", testSet)|| NULL == CU_add_test(pSuite, "test de 'bitstring_len()'", testLen) || NULL == CU_add_test(pSuite, "test de 'bitstring_set()'", testRotate) || NULL == CU_add_test(pSuite, "test de 'bitstring_concat()'", testCat) || NULL == CU_add_test(pSuite, "test de 'bitstring_xor()'", testXor) || NULL == CU_add_test(pSuite, "test de 'bitstring_print()'", testPrint)) {
        CU_cleanup_registry();
        return CU_get_error();
     }
@@ -590,8 +678,7 @@ int main()
     return CU_get_error();
 }
 
-void aperture()
-{
+void aperture() {
 	printf(ANSI_COLOR_CYAN ANSI_BOLD"\n\t");
 	printf("                  .,-:;//;:=,\n\t");
 	printf("              . :H@@@MM@M#H/.,+%%;,\n\t");
@@ -622,8 +709,7 @@ void aperture()
 	printf(ANSI_COLOR_YELLOW "We will now proceed to a meticulously composed battery of tests" ANSI_COLOR_RESET);
 }
 
-void cake()
-{
+void cake() {
 	printf( ANSI_COLOR_RED"\n");
 	printf( ANSI_BOLD "\tCongratulation, you brilliantly passed all our extremely difficult tests !\t\n");
 	printf("\n");
