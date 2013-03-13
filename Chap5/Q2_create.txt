@@ -1,0 +1,4 @@
+A votre avis, pourquoi le premier argument de la fonction pthread_create(3) est-il un pointeur de type pthread_t * alors que le premier argument de la fonction pthread_join(3) est lui simplement de type pthread_t?
+
+create doit donner à la structure pthread_t, doc elle doit savoir la modifier, donc pointeur.
+join doit seulement savoir identifier un thread.

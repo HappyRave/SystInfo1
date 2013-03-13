@@ -1,0 +1,13 @@
+Solution Initiale
+Ligne/ligne
+
+./filter -f red -t 4 lavande.bmp lavandeRed.bmp
+
+Temps d'éxécution est de 40960 usec
+
+Seconde Solution
+Bande/bande
+
+./filter -f red -t 4 lavande.bmp lavandeRed.bmp
+
+Temps d'éxécution est de 8652 usec

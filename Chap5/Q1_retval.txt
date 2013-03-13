@@ -1,0 +1,47 @@
+La fonction pthread_join(3) utilise un deuxième argument de type void **. Pourquoi est-il nécessaire d'utiliser un pointeur vers un pointeur et pas simplement un pointeur void * ?
+
+In pthread_exit the ret is input parameter, you are passing the address of variable that you are passing to the function.
+
+In pthread_join the ret is output parameter, you get back returned value from function, it can be set to NULL.
+
+Long explanation:
+
+Because in pthread_join you get back an address of a location where the returned value is stored the ret needs to be updated to point to new location. If you pass just plain pointer, it is passed by value so you can't change where it is pointing to (you can only change the value at that location) therefore you need to pass an address of a memory where the pointer (address) is stored so that it can be updated to point to the location where the returned value from function is stored.
+
+
+===============================
+
+
+It because every time
+
+void pthread_exit(void *ret);
+will be called from thread function so which ever you want to return simply its pointer pass with pthread_exit().
+
+Now at
+
+int pthread_join(pthread_t tid, void **ret);
+will be always called from where thread is created so here to accept that returned pointer you need double pointer ..
+
+i think this code will help you to understand this
+
+#include<stdio.h>
+#include<pthread.h>
+#include<stdlib.h>
+
+void* thread_function(void)
+{
+    char *a = malloc(10);
+    strcpy(a,"hello world");
+    pthread_exit((void*)a);
+}
+int main()
+{
+    pthread_t thread_id;
+    char *b;
+
+    pthread_create (&thread_id, NULL,&thread_function, NULL);
+
+    pthread_join(thread_id,(void**)&b); //here we are receiving one pointer 
+                                        value so to use that we need double pointer 
+    printf("b is %s",b);   
+}
