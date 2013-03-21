@@ -52,3 +52,5 @@ filter_t filter_grayscale;
  */
 filter_t filter_blur;
 
+filter_t filter_shuffle;
+

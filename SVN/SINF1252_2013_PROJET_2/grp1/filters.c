@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include <time.h>
 
 typedef struct {
 	struct image* img;
@@ -12,6 +13,7 @@ typedef struct {
 	int firstLine;
 	int lastLine;
 	int line;
+	int* shuffle;
 } args;
 
 void* threadRed(void* argument);
@@ -20,6 +22,8 @@ void* threadBlue(void* argument);
 void* threadGray(void* argument);
 void* threadBlur(void* argument);
 struct pixel blur(struct image* img, struct pixel* pixels, int x, int y);
+void shuffle(int *colors);
+void* threadShuffle(void* argument);
 
 /////////////////////////////////////////////////////////////
 						 //RED//
@@ -367,4 +371,82 @@ struct pixel blur(struct image* img, struct pixel* pixels, int x, int y) {
 	
 	struct pixel pix = {(unsigned char)round(blue),(unsigned char)round(green),(unsigned char)round(red)};
 	return pix;
+}
+
+/////////////////////////////////////////////////////////////
+							//SHUFFLE//
+/////////////////////////////////////////////////////////////
+
+int filter_shuffle(struct image *img, int nThread)
+{
+	int error = 0;
+	int mod = img->height%nThread;
+	if (mod > 0)
+		mod = 1;
+	
+	pthread_t threads[nThread];
+	args arguments[nThread];
+	
+	int colors[3] = {0,1,2};
+	shuffle(colors);
+	
+	int i = 0;
+	int band = (img->height)/nThread + mod;
+	
+	for (i=0; i<nThread; i++) {
+		
+		arguments[i].img = img;
+		arguments[i].firstLine = i*band;
+		arguments[i].lastLine = (i+1)*band-1;
+		arguments[i].shuffle = (&colors[0]);
+		
+		error=pthread_create(&threads[i],NULL,threadShuffle,(void*)&arguments[i]);
+		if(error!=0)
+			err(error,"pthread_create");
+	}
+	
+	for (i=0; i<nThread; i++) {
+		error=pthread_join(threads[i],NULL);
+		if(error!=0)
+			err(error,"pthread_join");
+	}
+	return 0;
+}
+
+void* threadShuffle(void* argument) {
+	
+	// unpacking arguments
+	args* image = (args*)argument;
+	struct image* img = image->img;
+	int firstLine = image->firstLine;
+	int lastLine = image->lastLine;
+	int *colors = image->shuffle;
+	
+	int i;
+	int j;
+	int components[3];
+	for (i=firstLine; i<=lastLine; i++) {
+		if (i<img->height) {
+			for (j=0; j<img->width; j++) {
+				components[0] = img->pixels[i * img->width +j].r;
+				components[1] = img->pixels[i * img->width +j].g;
+				components[2] = img->pixels[i * img->width +j].b;
+				img->pixels[i * img->width +j].r = components[colors[0]];
+				img->pixels[i * img->width +j].g = components[colors[1]];
+				img->pixels[i * img->width +j].b = components[colors[2]];
+			}
+		}
+	}
+	pthread_exit(NULL);
+}
+
+void shuffle(int *colors) {
+	
+	int i;
+	srand ( time(NULL) );
+	
+	while (colors[0] == 0 || colors[1] == 1 || colors[2] == 2) {
+		for (i=0; i<3; i++)
+			colors[i] = rand() % 3;
+	}
 }
