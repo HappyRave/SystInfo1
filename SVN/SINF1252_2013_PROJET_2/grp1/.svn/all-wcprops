@@ -1,25 +1,43 @@
 K 25
 svn:wc:ra_dav:version-url
-V 51
-/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/37/grp1
+V 52
+/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/671/grp1
+END
+rapport.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/665/grp1/rapport.pdf
+END
+filterBand.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/649/grp1/filterBand.h
 END
 bitmap.h
 K 25
 svn:wc:ra_dav:version-url
-V 59
-/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/1/grp1/bitmap.h
+V 61
+/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/424/grp1/bitmap.h
+END
+threadpool.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/663/grp1/threadpool.c
 END
 bitmapio.c
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/1/grp1/bitmapio.c
+V 63
+/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/424/grp1/bitmapio.c
 END
 main.c
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/121/grp1/main.c
+/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/661/grp1/main.c
 END
 prerapport.pdf
 K 25
@@ -27,21 +45,27 @@ svn:wc:ra_dav:version-url
 V 66
 /studentsvn/SINF1252_2013_PROJET_2/!svn/ver/37/grp1/prerapport.pdf
 END
+threadpool.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/661/grp1/threadpool.h
+END
 filters.c
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/32/grp1/filters.c
+V 62
+/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/649/grp1/filters.c
 END
 filter.h
 K 25
 svn:wc:ra_dav:version-url
-V 60
-/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/32/grp1/filter.h
+V 61
+/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/190/grp1/filter.h
 END
 Makefile
 K 25
 svn:wc:ra_dav:version-url
-V 60
-/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/29/grp1/Makefile
+V 61
+/studentsvn/SINF1252_2013_PROJET_2/!svn/ver/671/grp1/Makefile
 END

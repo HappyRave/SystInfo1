@@ -5,7 +5,7 @@
  * lui applique une opération. Retourne 0 en cas
  * de succès, -1 sinon.
  */
-typedef int(filter_t)(struct image *, int nThread);
+typedef int(filter_t)(struct image *);
 
 /* Retire la composante rouge de l'image */
 filter_t filter_red;

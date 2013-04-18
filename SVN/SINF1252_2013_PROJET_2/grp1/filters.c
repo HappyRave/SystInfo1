@@ -1,74 +1,62 @@
-#include "filter.h"
-#include <pthread.h>
-#include <err.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <math.h>
-#include <time.h>
+#include "filterBand.h"
 
-typedef struct {
-	struct image* img;
-	struct pixel* pixels; // just for blur
-	int firstLine;
-	int lastLine;
-	int line;
-	int* shuffle;
-} args;
+#define FILTERS_NUM 24
 
-void* threadRed(void* argument);
-void* threadGreen(void* argument);
-void* threadBlue(void* argument);
-void* threadGray(void* argument);
-void* threadBlur(void* argument);
-struct pixel blur(struct image* img, struct pixel* pixels, int x, int y);
-void shuffle(int *colors);
-void* threadShuffle(void* argument);
+static char* filters[FILTERS_NUM];
+static int colors[3] = {0,1,2};
 
-/////////////////////////////////////////////////////////////
-						 //RED//
-/////////////////////////////////////////////////////////////
-
-int filter_red(struct image *img, int nThread)
-{
-	int error = 0;
-	int mod = img->height%nThread;
-	if (mod > 0)
-		mod = 1;
-	
-	pthread_t threads[nThread];
-	args arguments[nThread];
-	
-	int i = 0;
-	int band = (img->height)/nThread + mod;
-	
-	for (i=0; i<nThread; i++) {
-
-		arguments[i].img = img;
-		arguments[i].firstLine = i*band;
-		arguments[i].lastLine = (i+1)*band-1;
-		
-		error=pthread_create(&threads[i],NULL,threadRed,(void*)&arguments[i]);
-		if(error!=0)
-			err(error,"pthread_create");
+void initShuffle(char* filter[], int filterLen){
+	int i;
+	for (i=0;i<filterLen;i++) {
+		if (!strncasecmp(filter[i],"shuffle",7)) {
+			shuffle(colors);
+			break;
+		}
 	}
-	
-	for (i=0; i<nThread; i++) {
-		error=pthread_join(threads[i],NULL);
-		if(error!=0)
-			err(error,"pthread_join");
-	}
-	return 0;
 }
 
-void* threadRed(void* argument) {
+void initFilters(char* filter[]) {
+	memcpy(filters,filter,sizeof(filters));
+}
+
+void apply_filter(elem_buf *band, int n) {
+	int lineFirst = band->begin;
+	int lineLast = band->finish;
 	
-	// unpacking arguments
-	args* image = (args*)argument;
-	struct image* img = image->img;
-	int firstLine = image->firstLine;
-	int lastLine = image->lastLine;
-	
+	if (!strncasecmp(filters[n],"red",3)) {
+		if (filterBand_red(band->img,lineFirst,lineLast, NULL)) {
+			fprintf(stderr,"Error calling filter_red\n");
+		}
+	} else if (!strncasecmp(filters[n],"green",5)) {
+		if (filterBand_green(band->img,lineFirst,lineLast, NULL)) {
+			fprintf(stderr,"Error calling filter_green\n");
+		}
+	} else if (!strncasecmp(filters[n],"blue",4)) {
+		if (filterBand_blue(band->img,lineFirst,lineLast, NULL)) {
+			fprintf(stderr,"Error calling filter_blue\n");
+		}
+	} else if (!strncasecmp(filters[n],"grayscale",9)) {
+		if (filterBand_grayscale(band->img,lineFirst,lineLast, NULL)) {
+			fprintf(stderr,"Error calling filter_grayscale\n");
+		}
+	} else if (!strncasecmp(filters[n],"blur",4)) {
+		if (filterBand_blur(band->img,lineFirst,lineLast, band->read_only)) {
+			fprintf(stderr,"Error calling filter_blur\n");
+		}
+	} else if (!strncasecmp(filters[n],"shuffle",7)) {
+		if (filterBand_shuffle(band->img,lineFirst,lineLast, NULL)) {
+			fprintf(stderr,"Error calling filter_shuffle\n");
+		}
+	} else {
+		fprintf(stderr,"Wrong filter format : %s\n", filters[n]);
+	}
+}
+
+///////////////////
+//      RED      //
+/////////////////// 
+
+int filterBand_red(struct image *img, int firstLine, int lastLine, struct image *read) {
 	int i;
 	int j;
 	for (i=firstLine; i<=lastLine; i++) {
@@ -78,54 +66,14 @@ void* threadRed(void* argument) {
 			}
 		}
 	}
-	pthread_exit(NULL);
-}
-
-
-/////////////////////////////////////////////////////////////
-						//GREEN//
-/////////////////////////////////////////////////////////////
-
-int filter_green(struct image *img, int nThread)
-{
-	int error = 0;
-	int mod = img->height%nThread;
-	if (mod > 0)
-		mod = 1;
-	
-	pthread_t threads[nThread];
-	args arguments[nThread];
-	
-	int i = 0;
-	int band = (img->height)/nThread + mod;
-	
-	for (i=0; i<nThread; i++) {
-		
-		arguments[i].img = img;
-		arguments[i].firstLine = i*band;
-		arguments[i].lastLine = (i+1)*band-1;
-		
-		error=pthread_create(&threads[i],NULL,threadGreen,(void*)&arguments[i]);
-		if(error!=0)
-			err(error,"pthread_create");
-	}
-	
-	for (i=0; i<nThread; i++) {
-		error=pthread_join(threads[i],NULL);
-		if(error!=0)
-			err(error,"pthread_join");
-	}
 	return 0;
 }
 
-void* threadGreen(void* argument) {
-	
-	// unpacking arguments
-	args* image = (args*)argument;
-	struct image* img = image->img;
-	int firstLine = image->firstLine;
-	int lastLine = image->lastLine;
-	
+///////////////////
+//     GREEN     //
+///////////////////
+
+int filterBand_green(struct image *img, int firstLine, int lastLine, struct image *read) {
 	int i;
 	int j;
 	for (i=firstLine; i<=lastLine; i++) {
@@ -135,53 +83,14 @@ void* threadGreen(void* argument) {
 			}
 		}
 	}
-	pthread_exit(NULL);
-}
-
-/////////////////////////////////////////////////////////////
-						  //BLUE//
-/////////////////////////////////////////////////////////////
-
-int filter_blue(struct image *img, int nThread)
-{
-	int error = 0;
-	int mod = img->height%nThread;
-	if (mod > 0)
-		mod = 1;
-	
-	pthread_t threads[nThread];
-	args arguments[nThread];
-	
-	int i = 0;
-	int band = (img->height)/nThread + mod;
-	
-	for (i=0; i<nThread; i++) {
-		
-		arguments[i].img = img;
-		arguments[i].firstLine = i*band;
-		arguments[i].lastLine = (i+1)*band-1;
-		
-		error=pthread_create(&threads[i],NULL,threadBlue,(void*)&arguments[i]);
-		if(error!=0)
-			err(error,"pthread_create");
-	}
-	
-	for (i=0; i<nThread; i++) {
-		error=pthread_join(threads[i],NULL);
-		if(error!=0)
-			err(error,"pthread_join");
-	}
 	return 0;
 }
 
-void* threadBlue(void* argument) {
-	
-	// unpacking arguments
-	args* image = (args*)argument;
-	struct image* img = image->img;
-	int firstLine = image->firstLine;
-	int lastLine = image->lastLine;
-	
+///////////////////
+//      BLUE     //
+///////////////////
+
+int filterBand_blue(struct image *img, int firstLine, int lastLine, struct image *read) {
 	int i;
 	int j;
 	for (i=firstLine; i<=lastLine; i++) {
@@ -191,56 +100,17 @@ void* threadBlue(void* argument) {
 			}
 		}
 	}
-	pthread_exit(NULL);
-}
-
-/////////////////////////////////////////////////////////////
-						 //GRAYSCALE//
-/////////////////////////////////////////////////////////////
-
-int filter_grayscale(struct image *img, int nThread)
-{
-	int error = 0;
-	int mod = img->height%nThread;
-	if (mod > 0)
-		mod = 1;
-	
-	pthread_t threads[nThread];
-	args arguments[nThread];
-	
-	int i = 0;
-	int band = (img->height)/nThread + mod;
-	
-	for (i=0; i<nThread; i++) {
-		
-		arguments[i].img = img;
-		arguments[i].firstLine = i*band;
-		arguments[i].lastLine = (i+1)*band-1;
-		
-		error=pthread_create(&threads[i],NULL,threadGray,(void*)&arguments[i]);
-		if(error!=0)
-			err(error,"pthread_create");
-	}
-	
-	for (i=0; i<nThread; i++) {
-		error=pthread_join(threads[i],NULL);
-		if(error!=0)
-			err(error,"pthread_join");
-	}
 	return 0;
 }
 
-void* threadGray(void* argument) {
-	
-	// unpacking arguments
-	args* image = (args*)argument;
-	struct image* img = image->img;
-	int firstLine = image->firstLine;
-	int lastLine = image->lastLine;
-	
-	int moy;
+///////////////////
+//      GRAY     //
+///////////////////
+
+int filterBand_grayscale(struct image *img, int firstLine, int lastLine, struct image *read) {
 	int i;
 	int j;
+	int moy;
 	for (i=firstLine; i<=lastLine; i++) {
 		if (i<img->height) {
 			for (j=0; j<img->width; j++) {
@@ -255,69 +125,47 @@ void* threadGray(void* argument) {
 			}
 		}
 	}
-	pthread_exit(NULL);
-}
-
-/////////////////////////////////////////////////////////////
-				          //BLUR//
-/////////////////////////////////////////////////////////////
-
-
-int filter_blur(struct image *img, int nThread)
-{
-	int error = 0;
-	int mod = img->height%nThread;
-	if (mod > 0)
-		mod = 1;
-	
-	pthread_t threads[nThread];
-	args arguments[nThread];
-	
-	struct pixel* pixels = (struct pixel*)malloc(sizeof(struct pixel)*img->width*img->height);
-	memcpy(pixels,img->pixels,sizeof(struct pixel)*img->width*img->height);
-	
-	int i = 0;
-	int band = (img->height)/nThread + mod;
-	
-	for (i=0; i<nThread; i++) {
-		
-		arguments[i].img = img;
-		arguments[i].firstLine = i*band;
-		arguments[i].lastLine = (i+1)*band-1;
-		arguments[i].pixels = pixels;
-		
-		error=pthread_create(&threads[i],NULL,threadBlur,(void*)&arguments[i]);
-		if(error!=0)
-			err(error,"pthread_create");
-	}
-	
-	for (i=0; i<nThread; i++) {
-		error=pthread_join(threads[i],NULL);
-		if(error!=0)
-			err(error,"pthread_join");
-	}
 	return 0;
 }
 
-void* threadBlur(void* argument) {
-	
-	// unpacking arguments
-	args* image = (args*)argument;
-	struct image* img = image->img;
-	struct pixel* pixels = image->pixels;
-	int firstLine = image->firstLine;
-	int lastLine = image->lastLine;
-	
+///////////////////
+//      BLUR     //
+///////////////////
+
+int filterBand_blur(struct image *img, int firstLine, int lastLine, struct image *read) {
 	int i;
 	int j;
 	for (i=firstLine; i<=lastLine; i++) {
 		if (i<img->height) {
 			for (j=0; j<img->width; j++) {
-				img->pixels[i * img->width +j] = blur(img,pixels,j,i);
+				img->pixels[i * img->width +j] = blur(img,read->pixels,j,i);
 			}
 		}
 	}
-	pthread_exit(NULL);
+	return 0;
+}
+
+///////////////////
+//    SHUFFLE    //
+///////////////////
+
+int filterBand_shuffle(struct image *img, int firstLine, int lastLine, struct image *read) {
+	int i;
+	int j;
+	int components[3];
+	for (i=firstLine; i<=lastLine; i++) {
+		if (i<img->height) {
+			for (j=0; j<img->width; j++) {
+				components[0] = img->pixels[i * img->width +j].r;
+				components[1] = img->pixels[i * img->width +j].g;
+				components[2] = img->pixels[i * img->width +j].b;
+				img->pixels[i * img->width +j].r = components[colors[0]];
+				img->pixels[i * img->width +j].g = components[colors[1]];
+				img->pixels[i * img->width +j].b = components[colors[2]];
+			}
+		}
+	}
+	return 0;
 }
 
 struct pixel blur(struct image* img, struct pixel* pixels, int x, int y) {
@@ -373,80 +221,13 @@ struct pixel blur(struct image* img, struct pixel* pixels, int x, int y) {
 	return pix;
 }
 
-/////////////////////////////////////////////////////////////
-							//SHUFFLE//
-/////////////////////////////////////////////////////////////
-
-int filter_shuffle(struct image *img, int nThread)
-{
-	int error = 0;
-	int mod = img->height%nThread;
-	if (mod > 0)
-		mod = 1;
-	
-	pthread_t threads[nThread];
-	args arguments[nThread];
-	
-	int colors[3] = {0,1,2};
-	shuffle(colors);
-	
-	int i = 0;
-	int band = (img->height)/nThread + mod;
-	
-	for (i=0; i<nThread; i++) {
-		
-		arguments[i].img = img;
-		arguments[i].firstLine = i*band;
-		arguments[i].lastLine = (i+1)*band-1;
-		arguments[i].shuffle = (&colors[0]);
-		
-		error=pthread_create(&threads[i],NULL,threadShuffle,(void*)&arguments[i]);
-		if(error!=0)
-			err(error,"pthread_create");
-	}
-	
-	for (i=0; i<nThread; i++) {
-		error=pthread_join(threads[i],NULL);
-		if(error!=0)
-			err(error,"pthread_join");
-	}
-	return 0;
-}
-
-void* threadShuffle(void* argument) {
-	
-	// unpacking arguments
-	args* image = (args*)argument;
-	struct image* img = image->img;
-	int firstLine = image->firstLine;
-	int lastLine = image->lastLine;
-	int *colors = image->shuffle;
-	
-	int i;
-	int j;
-	int components[3];
-	for (i=firstLine; i<=lastLine; i++) {
-		if (i<img->height) {
-			for (j=0; j<img->width; j++) {
-				components[0] = img->pixels[i * img->width +j].r;
-				components[1] = img->pixels[i * img->width +j].g;
-				components[2] = img->pixels[i * img->width +j].b;
-				img->pixels[i * img->width +j].r = components[colors[0]];
-				img->pixels[i * img->width +j].g = components[colors[1]];
-				img->pixels[i * img->width +j].b = components[colors[2]];
-			}
-		}
-	}
-	pthread_exit(NULL);
-}
-
-void shuffle(int *colors) {
+void shuffle(int *array) {
 	
 	int i;
 	srand ( time(NULL) );
 	
-	while (colors[0] == 0 || colors[1] == 1 || colors[2] == 2) {
+	while (array[0] == 0 || array[1] == 1 || array[2] == 2) {
 		for (i=0; i<3; i++)
-			colors[i] = rand() % 3;
+			array[i] = rand() % 3;
 	}
 }

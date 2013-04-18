@@ -1,0 +1,762 @@
+#include "filterBand.h"
+
+//constante à initialiser en début de programme
+static int NFILTERS;
+static int NPACK; //nombre de paquet de ligne : toutes les images comprises
+static int NBLUR;
+static int NIMAGE;
+
+static elem_buf*** mat_buf; //la matrice dont les lignes sont les buffer. La première ligne de cette matrice sera remplie par la méthode qui charge et divise les images.
+
+void initializeStatic(int nFilters, int nPack, int nBlur, int nImage) {
+	NFILTERS = nFilters;
+	NPACK = nPack;
+	NBLUR = nBlur;
+	NIMAGE = nImage;
+	
+	mat_buf = (elem_buf**)malloc(sizeof(elem_buf**)*NFILTERS);
+	
+	int i;
+	for (i=0; i<NFILTERS; i++) {
+		mat_buf[i] = (elem_buf*)malloc(sizeof(elem_buf*)*NPACK);
+	}
+}
+									   									   
+void freeStatic() {
+	int i;
+	for (i=0; i<NFILTERS; i++) {
+		free(mat_buf[i]);
+	}
+	free(mat_buf);
+}
+
+#define NFILTERS_MAX 24
+#define NPACK_MAX 24000
+#define NBLUR_MAX 8
+#define NIMAGE_MAX 128
+
+int lcm(int a, int b) {
+	int i;
+	for (i=1; i<a*b; i++) {
+		if (i%a == 0 && i%b == 0) {
+			return i;
+		}
+	}
+	return i;
+}
+
+int lcmArray(int a[], int len) {
+	/*	
+	int lc = lcm(a[0],a[1]);
+	int i;
+	if (len > 2) {
+		for (i=2; i<len; i++) {
+			lc = lcm(lc,a[i]);
+		}
+	}
+	if (lc > NPACK_MAX) {
+		error(-1,"NPACK_MAX trop petit\n");
+	}
+	return lc;
+	*/
+
+	int max = a[0];
+	int i;
+	for (i =1; i<len; i++) {
+		if (max<a[i]) {
+			max = a[i];
+		}
+	}
+	return max; 
+}
+	
+static int mat_blur[NBLUR_MAX][NIMAGE_MAX]; //la matrice pour gérer les blur
+static pthread_mutex_t blur_mutex[NBLUR_MAX][NIMAGE_MAX]; //chaque élément du tableau doit être protégé par un mutex. Car, pour un blur, on peut incrémenter deux cases en même temps, mais pas en même temps la même case.
+
+static int choosen_c[NBLUR_MAX][NIMAGE_MAX]; //pour chaque blur, une ligne avec autant d'éléments que d'images. L'élément vaut 1 si l'image a déjà été copiée, 0 sinon.
+static pthread_mutex_t choosen_c_mutex[NBLUR_MAX][NIMAGE_MAX];
+static pthread_mutex_t check_for_c_mutex[NBLUR_MAX];
+
+static int copi_is_done[NBLUR_MAX][NIMAGE_MAX];
+static pthread_mutex_t copi_is_done_mutex[NBLUR_MAX][NIMAGE_MAX];
+
+static int can_i_take_c[NBLUR_MAX][NIMAGE_MAX];
+static pthread_mutex_t can_i_take_c_mutex[NBLUR_MAX];
+	
+static sem_t full[NFILTERS_MAX]; //nos sémaphores
+static sem_t empty[NFILTERS_MAX];
+static pthread_mutex_t buf_mutex[NFILTERS_MAX]; //il faut protéger les buffers, comme expliqué dans les notes du producteur-consommateur.
+	
+static int f_isblur[NFILTERS_MAX];
+static int f_beforeblur[NFILTERS_MAX];
+	
+static int isdone[NFILTERS_MAX];
+static pthread_mutex_t isdone_mutex[NFILTERS_MAX];
+
+
+/*
+pour emêcher le passage dans la boucle du producteur s'il y a déjà eu NFILTERS passage.
+*/
+static int to_pass[NFILTERS_MAX];
+static pthread_mutex_t to_pass_mutex[NFILTERS_MAX];
+
+
+void imagesCut(struct image* image[]) {
+	int nPack = NPACK/NIMAGE;
+	int i;
+	printf("NIMAGE : %d\n", NIMAGE);
+	for (i=0; i<NIMAGE; i++) {
+		
+		int mod = image[i]->height%nPack;
+		if (mod > 0)
+			mod = 1;
+		int band = (image[i]->height)/nPack + mod;
+		
+		int j;
+		for (j=0; j<nPack; j++) {
+			mat_buf[0][i*nPack+j] = (elem_buf*)malloc(sizeof(elem_buf));
+			mat_buf[0][i*nPack+j]->img = image[i];
+			mat_buf[0][i*nPack+j]->num_img = i;
+			mat_buf[0][i*nPack+j]->begin = j*band;
+			mat_buf[0][i*nPack+j]->finish = (j+1)*band-1;
+		}
+	}
+}
+
+int initializeBlur(char* filters[]){
+	int i;
+	int n = 1;
+	for (i=0; i<NFILTERS; i++) {
+		if (!strncasecmp(filters[i],"blur",4)) {
+			f_isblur[i] = n;
+			if (i>0) {
+				f_beforeblur[i-1] = n;
+			}
+			n++;
+		} else {
+			f_isblur[i] = 0;
+			if (i>0) {
+				f_beforeblur[i-1] = 0;
+			}
+		}
+	}
+	if(f_isblur[0]!=0) {
+		for (i=0;i<NIMAGE; i++) {
+			mat_blur[0][i] = NPACK/NIMAGE;
+		}
+	}
+	else {
+		for (i=0;i<NIMAGE; i++) {
+			mat_blur[0][i] = 0;
+		}
+	}
+	return n-1;
+}
+
+int numberBlur(char* filters[], int len) {
+	int n = 0;
+	int i;
+	for (i=0; i<len; i++) {
+		if (!strncasecmp(filters[i],"blur",4))
+			n++;
+	}
+	return n;
+}
+
+int image_copi(int img, int num) {
+	int i;
+	int j = 0;
+	struct image* image;
+	struct pixel* pixels;
+	for(i=0;i<NPACK;i++) {
+		if(mat_buf[num][i]!=NULL) {
+			if(mat_buf[num][i]->num_img==img) {
+				if(j==0) {
+					image = (struct image*)malloc(sizeof(struct image));
+					if (image == NULL) 
+						error(-1,"Erreur de malloc dans image_copi\n");
+					image->width = mat_buf[num][i]->img->width;
+					image->height = mat_buf[num][i]->img->height;
+					pixels = (struct pixel*)malloc(sizeof(struct pixel)*image->width*image->height);
+					if (pixels == NULL) {
+						free(image);
+						error(-1,"Erreur de malloc dans image_copi\n");
+					}
+		
+					memcpy(pixels,mat_buf[num][i]->img->pixels,sizeof(struct pixel)*image->width*image->height);
+	
+					image->pixels = pixels;
+					mat_buf[num][i]->read_only = image;//plop
+					j++;
+				}
+				else {
+					mat_buf[num][i]->read_only = image;
+				}
+			}
+		}
+	}
+	return 0;
+}
+
+int image_copi_destroy(int img, int num) {
+	int i;
+	int j = 0;
+	for(i=0;i<NPACK;i++) {
+		if(mat_buf[num][i]!=NULL) {
+			if((mat_buf[num][i]->num_img==img)&&(mat_buf[num][i]->read_only!=NULL)) {
+				if(j==0) {
+					if ((mat_buf[num][i]->read_only)->pixels != NULL) {
+						free((mat_buf[num][i]->read_only)->pixels);
+					}
+					free(mat_buf[num][i]->read_only);
+					mat_buf[num][i]->read_only = NULL;
+					j++;
+				}
+				else {
+					mat_buf[num][i]->read_only = NULL;
+				}
+			}	
+		}
+	}
+	return 0;
+}
+
+void free_mat_buf() {
+	int i;
+	int j;
+	for(i=0;i<NPACK;i++) {
+		for(j=0;j<NFILTERS+1;j++) {
+			//puts("Je suis dans la boucle des free du malloc");
+			if(mat_buf[j][i]!=NULL) {
+				//printf("Je libère\n");
+				free(mat_buf[j][i]);
+			}
+		}
+	}
+}
+
+void clean_up_image_copi() {
+	int i;
+	int j;
+	for(i=0;i<NFILTERS_MAX;i++) {
+		for(j=0;j<NIMAGE;j++) {
+			image_copi_destroy(j,i);
+		}
+	}
+}
+
+void error(int err, char *msg) {
+	fprintf(stderr,"%s a retourné %d. Message d'erreur : %s\n",msg,err,strerror(errno));
+	clean_up_image_copi();
+	free_mat_buf();
+	clean_malloc_file();
+	exit(EXIT_FAILURE);
+}
+
+//reçoit une ligne de mat_buffer et renvoit le premier pointeur non-NULL qu'il croise et met NULL à sa place dans la ligne de mat_buf. Erreur si tous les pointeurs sont NULL.
+elem_buf *take_elem(int ligne_mat_buf) {
+	int i=0;
+	while(i<NPACK) {
+		if(mat_buf[ligne_mat_buf][i]==NULL) {
+			i++;
+		} else {
+			elem_buf *retour = mat_buf[ligne_mat_buf][i]; 
+			mat_buf[ligne_mat_buf][i] = NULL;
+			printf("Je retourne \n");
+			return retour;
+		}
+	}
+	error(-1,"take-elem n'a pas trouvé d'éléments non-nul et ");
+	return NULL;
+}
+
+/*
+ * même principe que take_elem mais cette fois-ci, on permet de spécifier l'image qu'on veut que l'elem_buf retourné contienne. Utilisé par le productor dans le cas du filtre blur.
+ */
+elem_buf *take_elem_image(int ligne_mat_buf,int nimage) {
+	int i=0;
+	while(i<NPACK) {
+		if((mat_buf[ligne_mat_buf][i]==NULL)||(((mat_buf[ligne_mat_buf][i])->num_img)!=nimage)) {
+			i++;
+		} else {
+			elem_buf *retour = mat_buf[ligne_mat_buf][i]; 
+			mat_buf[ligne_mat_buf][i] = NULL;
+			return retour;
+		}
+	}
+	error(-1,"take-elem_image n'a pas trouvé d'éléments non-nul ayant l'image spécifié et ");
+	return NULL;
+}
+
+//utilisé par le producteur. On lui donne juste le numéro du filtre et il prend un élément du buffer précédent le filtre et le renvoit. Aussi, il faut lui donner le numéro de l'image. S'il vaut -1, c'est que toutes les images sont bonnes.
+elem_buf *consommator(int num_filter, int nimage) {
+	int err;
+	err = sem_wait(&(full[num_filter]));//le numéro du filtre désigne la ligne de mat_buf où il faut lire : si on a le filtre 0, la ligne 0 est remplie donc il faut lire dedans
+	if (err!=0) 
+		error(err,"sem_wait pour full dans consommator");
+	
+	err = pthread_mutex_lock(&(buf_mutex[num_filter]));
+	
+	if (err!=0)
+		error(err,"pthread_mutex_lock pour buf_mutex dans consommateur");
+	
+	//il faut prendre un pointeur elem_buffer de la ligne précédente, le renvoyer et mettre cet élément à null dans le buffer précédent : via take-elem
+	elem_buf *retour;
+	if(nimage==-1) {
+		retour = take_elem(num_filter);
+		
+	} else {
+		retour = take_elem_image(num_filter,nimage);
+		
+	}
+	
+	err = pthread_mutex_unlock(&(buf_mutex[num_filter]));
+	if (err!=0)
+		error(err,"pthread_mutex_unlock pour buf_mutex dans consommateur");
+	
+	err = sem_post(&(empty[num_filter]));
+	if (err!=0)
+		error(err,"sem_post pour empty dans consommator");
+
+	printf("adresse retour : %p\n",retour);
+	return retour;
+}
+
+//insère un double pointeur ver-f blur -t 2 /home/cyril/Desktop/All_my_work/images_projet_2/images /home/cyril/Desktop/All_my_work/images_projet_2/Filtered_imagess un elem_buf dans une ligne une ligne de mat_buf et le met à une case non-null de la ligne. Si toutes les case sont null, renvoit un erreur.
+void insert_elem(elem_buf **paquet, int lmat_buf) {
+	int i=0;
+	
+	while(i<NPACK) {
+		if((mat_buf[lmat_buf][i])!=NULL) {
+			i++;
+		} else {
+			mat_buf[lmat_buf][i]=*paquet;
+			i=NPACK+1;
+		}
+	}
+	if(i==NPACK)
+		error(-1,"insert_elem n'a pas trouvé de place vide et");
+}
+
+//fonction qui met à jour isdone en fonction du numéro du filtre
+void update_isdone(int nfiltre) {
+	int err;
+	err = pthread_mutex_lock(&(isdone_mutex[nfiltre]));
+	if (err!=0)
+		error(err,"pthread_mutex_lock pour isdone_mutex dans producteur");
+	
+	(isdone[nfiltre])++;
+	
+	err = pthread_mutex_unlock(&(isdone_mutex[nfiltre]));
+	if (err!=0)
+		error(err,"pthread_mutex_unlock pour isdone_mutex dans producteur");
+}
+
+/*
+ * Verifie qu'à la ligne L dans mat_blur, il y a un élément qui vaut NPACK. Si oui, il renvoie l'indice de cet élément, sinon, il renvoie -1.
+ */
+int check_lmat_blur(int L) {
+
+	int i=0;
+	int c = -1;
+	//int err;
+	while(i<NIMAGE) {
+		if(((mat_blur[L][i])==NPACK/NIMAGE)&&(can_i_take_c[L][i]<NPACK/NIMAGE)) {//&&(choosen_c[L][i]==0)) { //la 2e condition est pour indiquer que cette image n'est pas déjà prise en charge par une autre thread
+			c=i;
+			can_i_take_c[L][i]++;
+			//err = pthread_mutex_lock(&(choosen_c_mutex[L][i]));
+			//if (err!=0) 
+			//	error(err,"pthread_mutex_lock pour choosen_c_mutex dans producteur, check_lmat_blur");
+			//choosen_c[L][i]=1;
+			//err = pthread_mutex_unlock(&(choosen_c_mutex[L][i]));
+			//if (err!=0)
+			//	error(err,"pthread_mutex_unlock pour isdone_mutex dans producteur");
+			i=NIMAGE;
+		}
+		i++;
+	}
+	return c;
+}
+
+void *productor(void *params) {
+	prod_param *parg = (prod_param *) params;
+	int err;
+	
+	//3 cas : on est un blur, on est avant un blur ou bien le cas normal. Si on est avant un blur, il faut lancer la copie de l'image quand, dans mat_blur, on a, pour l'image, le nombre de paquet
+	//en lesquels elle a été divisée. Pour cela, il faut un tableau global npackim[NIMAGE] qui donne, pr chaque image, en combien de paquet elle a été divisée ou bien, on divise chaque image en
+	//NPACK/NIMAGE de paquet (on divise chacune des images avec le ppcm du nombre de thread), ce qui fait qu'on a le nombre de paquet dans une image avec le nombre de paquet total
+	//ces 3 cas sont dans le while
+	while((to_pass[parg->num_filter]<NPACK)&&((isdone[parg->num_filter])!=NPACK)) {
+
+		puts("Début du while \n");
+		err = pthread_mutex_lock(&(to_pass_mutex[parg->num_filter]));
+		if (err!=0)
+			error(err,"pthread_mutex_lock pour to_pass_mutex dans producteur");
+		if(to_pass[parg->num_filter]>=NPACK){
+			err = pthread_mutex_unlock(&(to_pass_mutex[parg->num_filter]));
+			if (err!=0)
+				error(err,"pthread_mutex_unlock pour to_pass_mutex dans producteur");
+			pthread_exit(NULL);
+		}
+		to_pass[parg->num_filter]++;
+		err = pthread_mutex_unlock(&(to_pass_mutex[parg->num_filter]));
+		if (err!=0)
+			error(err,"pthread_mutex_unlock pour to_pass_mutex dans producteur");
+		printf("Fin des conditions du début du while\n");
+
+		//cas du filtre blur
+		if((parg->isblur)!=0) {
+			
+			//1e étape : vérifer qu'il y a un des éléments de matblur en la ligne isblur-1
+			//printf("Je suis dans le cas blur\n");
+			//err = pthread_mutex_lock(&(check_for_c_mutex[(parg->isblur)-1])); //deux threads ne peuvent rechercher un c en même temps sinon ils copieront la même image
+
+			err = pthread_mutex_lock(&(can_i_take_c_mutex[(parg->isblur)-1]));
+			if (err!=0)
+				error(err,"pthread_mutex_lock pour can_i_take_c_mutex dans producteur du cas blur");
+	
+			if (err!=0)
+				error(err,"pthread_mutex_lock pour check_for_c_mutex dans producteur du cas blur");
+			int c = check_lmat_blur((parg->isblur)-1);
+			while(c==-1) {
+				c = check_lmat_blur((parg->isblur)-1);
+			}
+			printf("JE SUIS PASSE avec c = %d et mat_blur[(parg->isblur)-1][c]) = %d\n",c,mat_blur[(parg->isblur)-1][c]);
+
+			err = pthread_mutex_unlock(&(can_i_take_c_mutex[(parg->isblur)-1]));
+			if (err!=0)
+				error(err,"pthread_mutex_unlock pour can_i_take_c_mutex dans producteur du cas blur");
+
+			//err = pthread_mutex_unlock(&(check_for_c_mutex[(parg->isblur)-1]));
+			//if (err!=0)
+			//	error(err,"pthread_mutex_unlock pour check_for_c_mutex dans producteur du cas blur");
+			printf("c = %d\n",c);
+
+			//2e étape : on a une image dont le précédent a été appliquer sur toutes les parties. On la copie
+			printf("Avant copie image\n");
+
+			err = pthread_mutex_lock(&(copi_is_done_mutex[(parg->isblur)-1][c]));
+			if (err!=0)
+				error(err,"pthread_mutex_lock pour copi_is_done_mutex dans producteur du cas blur pour image_copi");
+			printf("copi_is_done[%d][%d] = %d\n",(parg->isblur)-1,c,copi_is_done[(parg->isblur)-1][c]);
+			if(copi_is_done[(parg->isblur)-1][c]==0) {
+				err = image_copi(c,parg->num_filter); //on donne le numéro correspondant à l'image et le numéro de la ligne dans le mat_buf où les parties de cette image se trouve. Il faut mettre à jour les éléments read-only des pointeur vers des elem_buf dans cette ligne (note, il est nécessaire d'avoir une structure copie par image mais pas plus ! Car quand on fait une 2e copie pour un 2e blur, alors on peut écraser l'ancienne copie !)
+				printf("Après copie image\n");
+				if (err!=0)
+					error(err,"Erreur de image_copi");				
+			}
+			copi_is_done[(parg->isblur)-1][c]++;
+			printf("copi_is_done[%d][%d] après incrémentation : %d\n",(parg->isblur)-1,c,copi_is_done[(parg->isblur)-1][c]);
+			err = pthread_mutex_unlock(&(copi_is_done_mutex[(parg->isblur)-1][c]));
+			if (err!=0)
+				error(err,"pthread_mutex_unlock pour copi_is_done_mutex dans producteur du cas blur pour image_copi");
+
+			//3e étape : on a fait les copies. Mnt, on doit appeler le consommateur en lui-disant de consommer un elem-buffer mais dont l'image est c
+			printf("Avant consommateur\n");
+			elem_buf *paquet = consommator(parg->num_filter,c);//mettre c en 2e argument permet de dire que tous les elem_buf sont bons, quelque soit l'image
+			puts("before filter");
+			apply_filter(paquet,parg->num_filter);
+			puts("image was filtered");
+			
+			err = sem_wait(&(empty[(parg->num_filter)+1])); //amélioration possible du code : ce sem_wait ne sert pas vraiment, vu que on sait de toute façon que les buffer ne vont pas être rempli
+			if (err!=0)
+				error(err,"sem_wait sur empty dans productor");
+			
+			err = pthread_mutex_lock(&(buf_mutex[(parg->num_filter)+1]));
+			if (err!=0)
+				error(err,"pthread_mutex_lock pour buf_mutex dans producteur");
+			
+			puts("before insert_elem");
+			insert_elem(&paquet,(parg->num_filter)+1);
+			puts("after insert_elem");
+			update_isdone(parg->num_filter);
+			puts("after isdone");
+
+			err = pthread_mutex_lock(&(choosen_c_mutex[(parg->isblur)-1][c]));
+			if (err!=0)
+				error(err,"pthread_mutex_lock pour choosen_c_mutex dans producteur, check_lmat_blur");
+
+			choosen_c[(parg->isblur)-1][c]++;
+
+			err = pthread_mutex_lock(&(copi_is_done_mutex[(parg->isblur)-1][c]));
+			if (err!=0)
+				error(err,"pthread_mutex_lock pour copi_is_done_mutex dans producteur du cas blur pour image_copi_destroy");
+
+			if((copi_is_done[(parg->isblur)-1][c]==NPACK/NIMAGE)&&(choosen_c[(parg->isblur)-1][c]==NPACK/NIMAGE)) {
+				err = image_copi_destroy(c,parg->num_filter+1);
+				if (err!=0)
+					error(err,"Erreur de image_copi_destroy");
+			}
+			printf("mat_buf[1][0]==NULL : %d\n",mat_buf[1][0]==NULL);
+			//copi_is_done[(parg->isblur)-1][c]++;
+			printf("Copie détruite\n");
+			err = pthread_mutex_unlock(&(copi_is_done_mutex[(parg->isblur)-1][c]));
+			if (err!=0)
+				error(err,"pthread_mutex_unlock pour copi_is_done_mutex dans producteur du cas blur pour image_copi");
+						
+			err = pthread_mutex_unlock(&(choosen_c_mutex[(parg->isblur)-1][c]));
+			if (err!=0)
+				error(err,"pthread_mutex_unlock pour isdone_mutex dans producteur");
+			
+			err = pthread_mutex_unlock(&(buf_mutex[(parg->num_filter)+1]));
+			if (err!=0)
+				error(err,"pthread_mutex_unlock pour buf_mutex dans producteur");
+			
+			err = sem_post(&(full[(parg->num_filter)+1])); //amélioration possible du code : ce sem_wait ne sert pas vraiment, vu que on sait de toute façon que les buffer ne vont pas être rempli
+			if (err!=0)
+				error(err,"sem_post sur full dans productor");
+			
+			//on est avant un filtre blur
+			printf("parg->beforeblur dans cas blur = %d\n",parg->beforeblur);
+			if((parg->beforeblur)!=0) {//parg_beforeblur contient 1 si c'est le premier blur, 2 si c'est le deuxième, ...
+
+				err = pthread_mutex_lock(&(blur_mutex[(parg->beforeblur)-1][(paquet)->num_img]));
+				if (err!=0)
+					error(err,"pthread_mutex_lock pour blur_mutex dans producteur");
+				
+				(mat_blur[(parg->beforeblur)-1][(paquet)->num_img])++;
+				printf("J'AI INCREMENTE MAT_BLUR et il vaut : %d\n",mat_blur[(parg->beforeblur)-1][(paquet)->num_img]);
+				
+				err = pthread_mutex_unlock(&(blur_mutex[(parg->beforeblur)-1][(paquet)->num_img]));
+				if (err!=0)
+					error(err,"pthread_mutex_unlock pour blur_mutex dans producteur");
+			}
+			
+		} else {
+		//cas normal
+
+			puts("before paquet");
+			elem_buf *paquet = consommator(parg->num_filter,-1);//mettre -1 en 2e argument permet de dire que tous les elem_buf sont bons, quelque soit l'image
+			printf("VALEUR DANS MAT_BLUR AU DEBUT DU CAS NORMAL : %d\n",mat_blur[(parg->beforeblur)-1][(paquet)->num_img]);
+			puts("before filter");
+			apply_filter(paquet,parg->num_filter);
+			puts("after filter");
+			err = sem_wait(&(empty[(parg->num_filter)+1])); //amélioration possible du code : ce sem_wait ne sert pas vraiment, vu que on sait de toute façon que les buffer ne vont pas être rempli
+			if (err!=0)
+				error(err,"sem_wait sur empty dans productor");
+			puts("before mutex");
+			err = pthread_mutex_lock(&(buf_mutex[(parg->num_filter)+1]));
+			if (err!=0)
+				error(err,"pthread_mutex_lock pour buf_mutex dans producteur");
+			puts("before elem");
+			insert_elem(&paquet,(parg->num_filter)+1);
+			puts("before isdone");
+			update_isdone(parg->num_filter);
+			printf("isdone[parg->num_filter] = %d\n",isdone[parg->num_filter]);
+			puts("after isdone");
+			err = pthread_mutex_unlock(&(buf_mutex[(parg->num_filter)+1]));
+			if (err!=0)
+				error(err,"pthread_mutex_unlock pour buf_mutex dans producteur");
+			
+			err = sem_post(&(full[(parg->num_filter)+1])); //amélioration possible du code : ce sem_wait ne sert pas vraiment, vu que on sait de toute façon que les buffer ne vont pas être rempli
+			if (err!=0)
+				error(err,"sem_post sur full dans productor");
+			
+			//on est avant un filtre blur
+			printf("parg->beforeblur dans cas normal = %d\n",parg->beforeblur);
+			if((parg->beforeblur)!=0) {//parg_beforeblur contient 1 si c'est le premier blur, 2 si c'est le deuxième, ...
+
+				err = pthread_mutex_lock(&(blur_mutex[(parg->beforeblur)-1][(paquet)->num_img]));
+				if (err!=0)
+					error(err,"pthread_mutex_lock pour blur_mutex dans producteur");
+				
+				(mat_blur[(parg->beforeblur)-1][(paquet)->num_img])++;
+				printf("J'AI INCREMENTE MAT_BLUR et il vaut : %d\n",mat_blur[(parg->beforeblur)-1][(paquet)->num_img]);
+
+				err = pthread_mutex_unlock(&(blur_mutex[(parg->beforeblur)-1][(paquet)->num_img]));
+				if (err!=0)
+					error(err,"pthread_mutex_unlock pour blur_mutex dans producteur");
+			}
+		}
+	}
+	puts("J'ai fini \n");
+	pthread_exit(NULL);//quand le filtre a été appliqué sur NPACK, on peut arrêter la thread
+}
+
+
+
+
+
+
+
+/*
+ * fonction qui lance les threads
+ * pre : reçoit un tableau avec le nombre de threads par filtre et le nombre de thread maximal
+ *       l'initialisation des constantes doit être effectuées
+ *       appel applyfilter via en donnant simplement des numéros comme filtre.
+ *       la premiere ligne du buffer mat_buf doit être remplie
+ * post : lance les threads et traite les images.
+ * Attention : la fonction doit faire des join sur la dernière salve de thread.
+ */
+void image_treatement(int nthreads[]) {
+	
+	printf("NBLUR = %d\n",NBLUR);
+	printf("mat_blur[0][0] = %d\n",mat_blur[0][0]);
+	
+	int nthreadmax = nthreads[0];
+	int i;
+	for (i=1; i<NFILTERS; i++) {
+		if (nthreads[i]>nthreadmax)
+			nthreadmax = nthreads[i];
+	}
+	
+	int j;
+	prod_param parg[NFILTERS][nthreadmax];
+	pthread_t threads[NFILTERS][nthreadmax];
+	int err;
+	
+	
+	
+	//initialisation des mutex de blur_mutex, choosen_c_mutex, can_i_take_c_mutex, copi_is_done_mutex et de ceux de check_for_c_mutex :
+	for(i=0;i<NBLUR;i++) {
+		err = pthread_mutex_init(&(check_for_c_mutex[i]),NULL);
+		if (err!=0)
+			error(err,"pthread_mutex_init pour check_for_c_mutex");
+
+		err=pthread_mutex_init(&(can_i_take_c_mutex[i]),NULL);
+		if (err!=0)
+			error(err,"pthread_mutex_init pour can_i_take_c_mutex");
+
+		for(j=0;j<NIMAGE;j++) {
+			choosen_c[i][j]=0;
+			copi_is_done[i][j]=0;
+			can_i_take_c[i][j]=0;
+
+			err=pthread_mutex_init(&(choosen_c_mutex[i][j]),NULL);
+			if (err!=0)
+				error(err,"pthread_mutex_init pour choosen_c_mutex");
+
+			err=pthread_mutex_init(&(blur_mutex[i][j]),NULL);
+			if (err!=0)
+				error(err,"pthread_mutex_init pour blur_mutex");
+
+			err=pthread_mutex_init(&(copi_is_done_mutex[i][j]),NULL);
+			if (err!=0)
+				error(err,"pthread_mutex_init pour copi_is_done_mutex");
+		}
+	}
+	
+	//initialisation des sémaphores full et empty et des mutex buf_mutex
+	int val_init_full; //valeur initiale des sémaphores dans full
+	int val_init_empty; //valeur initiale des sémaphores dans empty
+	
+	//initilisation des sémaphores full et empty et des mutex de isdone, de to_pass_mutex et de buf_mutex
+	for(i=0;i<NFILTERS+1;i++) {
+		if(i==0) {
+			val_init_full = NPACK;
+			val_init_empty = 0;
+		} else {
+			val_init_full = 0;
+			val_init_empty = NPACK;
+		}
+		printf("i = %d\n",i);
+		printf("NPACK = %d\n",NPACK);
+		printf("val_init_full = %d\n",val_init_full);
+		err = sem_init(&(full[i]),0,val_init_full);
+		if (err!=0)
+			error(err,"sem_init pour full");
+		
+		err = sem_init(&(empty[i]),0,val_init_empty);
+		if (err!=0)
+			error(err,"sem_init pour empty");
+		
+		err=pthread_mutex_init(&(buf_mutex[i]),NULL);
+		if (err!=0)
+			error(err,"pthread_mutex_init pour buf_mutex");
+		
+		err=pthread_mutex_init(&(isdone_mutex[i]),NULL);
+		if (err!=0)
+			error(err,"pthread_mutex_init pour isdone_mutex");
+
+		err=pthread_mutex_init(&(to_pass_mutex[i]),NULL);
+		if (err!=0)
+			error(err,"pthread_mutex_init pour to_pass_mutex");
+	}
+	
+	//lancement des threads des filtres
+	for(i=0;i<NFILTERS;i++) {
+		for(j=0;j<nthreads[i];j++) {
+			(parg[i][j]).num_filter = i;
+			(parg[i][j]).isblur = f_isblur[i];
+			(parg[i][j]).beforeblur = f_beforeblur[i];
+			err = pthread_create(&(threads[i][j]),NULL,&(productor),(void *)(&(parg[i][j])));
+			if (err!=0)
+				error(err,"pthread_create");
+		}
+	}
+	printf("Les threads sont créées\n");	
+	//Attente des threads : IL FAUT LES ATTENDRE TOUTES DANS L'ORDRE !
+	for(j=0;j<NFILTERS;j++) {
+		for(i=0;i<nthreads[j];i++) {
+			err = pthread_join(threads[j][i],NULL);
+			printf("Il y en a une qui a fini, avec n°thread = %d, n°filtre = %d, et err vaut : %d\n",i,j,err);
+			if (err!=0)
+				error(err,"pthread_join");
+		}
+	}
+	printf("Les threads ont fini\n");
+	printf("nthreads[NFILTERS-1] = %d\n",nthreads[NFILTERS-1]);
+	//libération des mutex de blur_mutex, choosen_c_mutex, can_i_take_c_mutex, copi_is_done_mutex et de check_for_c_mutex
+	for(i=0;i<NBLUR;i++) {
+		err = pthread_mutex_destroy(&(check_for_c_mutex[i]));
+		if (err!=0)
+			error(err,"pthread_mutex_destroy pour check_for_c_mutex");
+
+		err=pthread_mutex_destroy(&(can_i_take_c_mutex[i]));
+		if (err!=0)
+			error(err,"pthread_mutex_destroy pour can_i_take_c_mutex");		
+
+		for(j=0;j<NIMAGE;j++) {
+
+			err=pthread_mutex_destroy(&(choosen_c_mutex[i][j]));
+			if (err!=0)
+				error(err,"pthread_mutex_destroy pour choosen_c_mutex");
+
+			err=pthread_mutex_destroy(&(blur_mutex[i][j]));
+			if (err!=0)
+				error(err,"pthread_mutex_destroy pour blur_mutex");
+
+			err=pthread_mutex_destroy(&(copi_is_done_mutex[i][j]));
+			if (err!=0)
+				error(err,"pthread_mutex_destroy pour copi_is_done_mutex");
+		}
+	}
+
+	printf("1e phase destroy\n");	
+
+	//libération des sémaphores full et empty, des mutex de buf_mutex, de to_pass_mutex et des mutex de isdone
+	for(i=0;i<NFILTERS+1;i++) {
+		err = sem_destroy(&(full[i]));
+		if (err!=0)
+			error(err,"sem_destroy pour full");
+		
+		err = sem_destroy(&(empty[i]));
+		if (err!=0)
+			error(err,"sem_destroy pour empty");
+		
+		err=pthread_mutex_destroy(&(buf_mutex[i]));
+		if (err!=0)
+			error(err,"pthread_mutex_destroy pour buf_mutex");
+		
+		err=pthread_mutex_destroy(&(isdone_mutex[i]));
+		if (err!=0)
+			error(err,"pthread_mutex_destroy pour isdone_mutex");
+
+		err=pthread_mutex_destroy(&(to_pass_mutex[i]));
+		if (err!=0)
+			error(err,"pthread_mutex_destroy pour to_pass_mutex");
+	}
+	printf("Hello\n");
+	free_mat_buf();
+		
+
+}
+
+
+
+
+
+
+
+
+
