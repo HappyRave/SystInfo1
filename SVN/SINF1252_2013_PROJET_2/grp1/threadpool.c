@@ -348,8 +348,8 @@ int numberBlur(char* filters[], int len) {
 int image_copi(int img, int num) {
 	int i;
 	int j = 0;
-	struct image* image;
-	struct pixel* pixels;
+	struct image* image = NULL;
+	struct pixel* pixels = NULL;
 
 	int err = pthread_mutex_lock(&(buf_mutex[num])); //pour éviter que plusieurs threads accèdent a mat_buf pour faire deux copie différentes en même temps (sinon helgrind râle)
 	if (err!=0)

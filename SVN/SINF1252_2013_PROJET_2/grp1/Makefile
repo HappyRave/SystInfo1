@@ -16,7 +16,7 @@ LISTEOBJ = \
 # compilation
 #
 .c.o :
-	$(CC) -c  $(CFLAGS) -o $@ $< -lm
+	$(CC) -c  $(CFLAGS) -o $@ $<
 #
 # dependances
 #

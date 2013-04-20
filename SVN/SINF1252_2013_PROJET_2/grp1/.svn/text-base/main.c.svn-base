@@ -4,7 +4,7 @@
 #define FILES_ARRAY_LEN 1024
 #define CAT_LEN 128
 #define STRING_LEN 512
-#define BLOCK 20
+#define BLOCK 10
 
 char* files[FILES_ARRAY_LEN];
 char* save[FILES_ARRAY_LEN];
@@ -20,6 +20,7 @@ int parseThreads(char str[], int array[]);
 void treatBlock(int threadsArray[],int threadsLen, char* filtersArray[],int filtersLen, int nImage, int n);
 void* openImage(void* args);
 void* saveImage(void* args);
+int minHeight(int len);
 
 void clean_malloc_file() {
 	int j;
@@ -152,7 +153,7 @@ int main(int argc, char *argv[])
 	struct stat st = {0};
 	
 	if (stat(output, &st) == -1) { // check if outputDir already exists
-		mkdir(output, 0700); // if not => new dir!
+		mkdir(output, 0700); // if not => new dir
 		printf(ANSI_COLOR_RED"Created folder"ANSI_COLOR_BLUE" %s\n"ANSI_COLOR_RESET,output);
 	}
 	
@@ -168,7 +169,8 @@ int main(int argc, char *argv[])
 		treatBlock(threadsArray,threadsLen, filtersArray,filtersLen, BLOCK, i);
 		printf("\n");
 	}
-	treatBlock(threadsArray,threadsLen, filtersArray,filtersLen, modBlock, i);
+	if (modBlock > 0)
+		treatBlock(threadsArray,threadsLen, filtersArray,filtersLen, modBlock, i);
 
 	printf(ANSI_COLOR_RED"\nDone filtering"ANSI_COLOR_BLUE" %d"ANSI_COLOR_RED" images!!!\n"ANSI_COLOR_RESET,fileLen);
 	
@@ -237,6 +239,10 @@ void treatBlock(int threadsArray[],int threadsLen, char* filtersArray[],int filt
 		nPack = threadsArray[0];
 	} else {
 		nPack = maxArray(threadsArray,threadsLen);
+	}
+	int minP = minHeight(nImage);
+	if (nPack>minP) {
+		nPack=minP;
 	}
 	int nBlur = numberBlur(filtersArray,filtersLen);
 	initializeStatic(filtersLen,nPack*nImage,nBlur,nImage);
@@ -308,4 +314,15 @@ void cleanImage() {
 			free(images[i]);
 		}
 	}
+}
+
+int minHeight(int len) {
+	int min = images[0]->height;
+	int i;
+	for (i=1; i<len; i++) {
+		if (min>images[i]->height) {
+			min = images[i]->height;
+		}
+	}
+	return min;
 }
