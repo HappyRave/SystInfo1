@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/install
+END
+install-C.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/install/install-C.sh
+END
+strip-program.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/install/strip-program.sh
+END
+trap.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/install/trap.sh
+END
+install-C-root.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/install/install-C-root.sh
+END
+install-C-selinux.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/install/install-C-selinux.sh
+END
+basic-1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/install/basic-1.sh
+END
+d-slashdot.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/install/d-slashdot.sh
+END
+create-leading.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/install/create-leading.sh
+END

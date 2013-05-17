@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/chgrp
+END
+posix-H.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/chgrp/posix-H.sh
+END
+recurse.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/chgrp/recurse.sh
+END
+basic.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/chgrp/basic.sh
+END
+default-no-deref.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/chgrp/default-no-deref.sh
+END
+no-x.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/chgrp/no-x.sh
+END
+deref.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/chgrp/deref.sh
+END

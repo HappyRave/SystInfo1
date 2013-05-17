@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/readlink
+END
+multi.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/readlink/multi.sh
+END
+can-m.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/readlink/can-m.sh
+END
+rl-1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/readlink/rl-1.sh
+END
+can-e.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/readlink/can-e.sh
+END
+can-f.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/readlink/can-f.sh
+END

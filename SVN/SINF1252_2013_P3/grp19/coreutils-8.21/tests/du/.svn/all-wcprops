@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du
+END
+2g.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/2g.sh
+END
+hard-link.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/hard-link.sh
+END
+inacc-dest.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/inacc-dest.sh
+END
+move-dir-while-traversing.sh
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/move-dir-while-traversing.sh
+END
+slash.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/slash.sh
+END
+deref-args.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/deref-args.sh
+END
+bigtime.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/bigtime.sh
+END
+8gb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/8gb.sh
+END
+one-file-system.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/one-file-system.sh
+END
+basic.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/basic.sh
+END
+no-x.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/no-x.sh
+END
+trailing-slash.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/trailing-slash.sh
+END
+files0-from.pl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/files0-from.pl
+END
+deref.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/deref.sh
+END
+bind-mount-dir-cycle.sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/bind-mount-dir-cycle.sh
+END
+max-depth.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/max-depth.sh
+END
+inacc-dir.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/inacc-dir.sh
+END
+exclude.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/exclude.sh
+END
+long-sloop.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/long-sloop.sh
+END
+restore-wd.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/restore-wd.sh
+END
+threshold.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/threshold.sh
+END
+inaccessible-cwd.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/inaccessible-cwd.sh
+END
+files0-from-dir.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/files0-from-dir.sh
+END
+no-deref.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/no-deref.sh
+END
+long-from-unreadable.sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/long-from-unreadable.sh
+END
+fd-leak.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/fd-leak.sh
+END
+two-args.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/du/two-args.sh
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/rmdir
+END
+t-slash.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/rmdir/t-slash.sh
+END
+fail-perm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/rmdir/fail-perm.sh
+END
+ignore.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/rmdir/ignore.sh
+END

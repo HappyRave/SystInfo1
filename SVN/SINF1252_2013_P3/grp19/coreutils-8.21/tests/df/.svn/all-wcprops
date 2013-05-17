@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/df
+END
+df-P.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/df/df-P.sh
+END
+df-output.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/df/df-output.sh
+END
+header.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/df/header.sh
+END
+total-unprocessed.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/df/total-unprocessed.sh
+END
+no-mtab-status.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/df/no-mtab-status.sh
+END
+problematic-chars.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/df/problematic-chars.sh
+END
+skip-rootfs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/df/skip-rootfs.sh
+END
+skip-duplicates.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/df/skip-duplicates.sh
+END
+unreadable.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/df/unreadable.sh
+END
+total-verify.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/df/total-verify.sh
+END

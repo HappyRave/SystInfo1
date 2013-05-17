@@ -1,0 +1,4085 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/studentsvn/SINF1252_2013_P3/!svn/ver/364/grp19/coreutils-8.21/lib
+END
+sys_socket.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sys_socket.in.h
+END
+closeout.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/closeout.h
+END
+se-selinux.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/se-selinux.in.h
+END
+isnanl-nolibm.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/isnanl-nolibm.h
+END
+uinttostr.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/uinttostr.c
+END
+xalloc-die.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xalloc-die.c
+END
+spawn_faction_addopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawn_faction_addopen.c
+END
+fpurge.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fpurge.c
+END
+selinux-at.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/selinux-at.c
+END
+savewd.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/savewd.c
+END
+binary-io.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/binary-io.c
+END
+selinux-at.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/selinux-at.h
+END
+savewd.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/savewd.h
+END
+fd-safer-flag.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fd-safer-flag.c
+END
+binary-io.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/binary-io.h
+END
+xalloc-oversized.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xalloc-oversized.h
+END
+acl.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/acl.h
+END
+verify.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/verify.h
+END
+mempcpy.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mempcpy.c
+END
+trim.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/trim.c
+END
+pipe2.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/pipe2.c
+END
+sigaction.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sigaction.c
+END
+dtoastr.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dtoastr.c
+END
+hash-triple.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/hash-triple.c
+END
+trim.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/trim.h
+END
+realloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/realloc.c
+END
+fstat.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fstat.c
+END
+stdlib-safer.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stdlib-safer.h
+END
+strchrnul.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strchrnul.c
+END
+hash-triple.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/hash-triple.h
+END
+unlinkat.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unlinkat.c
+END
+sha1.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sha1.c
+END
+se-selinux.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/se-selinux.c
+END
+dirent.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dirent.in.h
+END
+xstriconv.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstriconv.c
+END
+sha1.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sha1.h
+END
+getugroups.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getugroups.c
+END
+xstriconv.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstriconv.h
+END
+regex_internal.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/regex_internal.c
+END
+fcntl.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fcntl.c
+END
+xgetgroups.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xgetgroups.c
+END
+getugroups.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getugroups.h
+END
+regex_internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/regex_internal.h
+END
+full-read.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/full-read.c
+END
+spawnattr_setsigmask.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawnattr_setsigmask.c
+END
+gethostname.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/gethostname.c
+END
+mbrlen.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbrlen.c
+END
+dtotimespec.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dtotimespec.c
+END
+full-read.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/full-read.h
+END
+nproc.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/nproc.c
+END
+buffer-lcm.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/buffer-lcm.c
+END
+stpcpy.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stpcpy.c
+END
+spawn-pipe.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawn-pipe.c
+END
+isblank.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/isblank.c
+END
+xstrtold.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstrtold.c
+END
+nproc.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/nproc.h
+END
+buffer-lcm.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/buffer-lcm.h
+END
+spawn-pipe.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawn-pipe.h
+END
+fpucw.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fpucw.h
+END
+areadlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/areadlink.c
+END
+mbchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbchar.c
+END
+stdio.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stdio.in.h
+END
+stripslash.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stripslash.c
+END
+areadlink.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/areadlink.h
+END
+stpncpy.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stpncpy.c
+END
+mbchar.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbchar.h
+END
+dirent-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dirent-private.h
+END
+lseek.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/lseek.c
+END
+xvasprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xvasprintf.c
+END
+gnulib.mk
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/gnulib.mk
+END
+langinfo.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/langinfo.in.h
+END
+malloca.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/malloca.c
+END
+fchownat.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fchownat.c
+END
+xvasprintf.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xvasprintf.h
+END
+regex.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/regex.c
+END
+iswblank.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iswblank.c
+END
+malloca.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/malloca.h
+END
+iconv_open-irix.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_open-irix.h
+END
+regex.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/regex.h
+END
+float.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/float.in.h
+END
+strtod.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strtod.c
+END
+putenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/putenv.c
+END
+utimecmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/utimecmp.c
+END
+isnanl.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/isnanl.c
+END
+localeconv.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/localeconv.c
+END
+stdio-safer.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stdio-safer.h
+END
+mbsrtowcs-impl.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbsrtowcs-impl.h
+END
+utimecmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/utimecmp.h
+END
+vprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/vprintf.c
+END
+iconv_open-osf.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_open-osf.h
+END
+stdlib.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stdlib.in.h
+END
+spawnattr_destroy.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawnattr_destroy.c
+END
+ino-map.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ino-map.c
+END
+statat.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/statat.c
+END
+config.hin
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/config.hin
+END
+sys_uio.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sys_uio.in.h
+END
+ino-map.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ino-map.h
+END
+strsignal.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strsignal.c
+END
+unistd-safer.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unistd-safer.h
+END
+basename.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/basename.c
+END
+stdalign.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stdalign.in.h
+END
+sys_ioctl.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sys_ioctl.in.h
+END
+getopt1.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getopt1.c
+END
+openat-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/openat-safer.c
+END
+md5.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/md5.c
+END
+modechange.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/modechange.c
+END
+md5.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/md5.h
+END
+memrchr.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memrchr.c
+END
+spawn_faction_adddup2.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawn_faction_adddup2.c
+END
+modechange.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/modechange.h
+END
+opendir.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/opendir.c
+END
+fts_.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fts_.h
+END
+iconv_open-osf.gperf
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_open-osf.gperf
+END
+strnlen1.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strnlen1.c
+END
+randperm.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/randperm.c
+END
+getcwd-lgpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getcwd-lgpl.c
+END
+readdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/readdir.c
+END
+cycle-check.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/cycle-check.c
+END
+itold.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/itold.c
+END
+strnlen1.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strnlen1.h
+END
+randperm.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/randperm.h
+END
+mkstemp-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mkstemp-safer.c
+END
+cycle-check.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/cycle-check.h
+END
+xmemcoll.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xmemcoll.c
+END
+anytostr.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/anytostr.c
+END
+xmemcoll.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xmemcoll.h
+END
+lstat.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/lstat.c
+END
+gettext.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/gettext.h
+END
+userspec.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/userspec.c
+END
+rpmatch.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/rpmatch.c
+END
+stdarg.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stdarg.in.h
+END
+userspec.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/userspec.h
+END
+waitpid.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/waitpid.c
+END
+sha512.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sha512.c
+END
+math.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/math.in.h
+END
+freadahead.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/freadahead.c
+END
+exitfail.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/exitfail.c
+END
+malloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/malloc.c
+END
+sha512.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sha512.h
+END
+getlogin.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getlogin.c
+END
+freadahead.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/freadahead.h
+END
+memcasecmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memcasecmp.c
+END
+exitfail.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/exitfail.h
+END
+memcasecmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memcasecmp.h
+END
+local.mk
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/local.mk
+END
+ref-del.sin
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ref-del.sin
+END
+fchmodat.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fchmodat.c
+END
+yesno.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/yesno.c
+END
+sched.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sched.in.h
+END
+stat-macros.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stat-macros.h
+END
+yesno.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/yesno.h
+END
+xstrtod.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstrtod.c
+END
+spawnattr_setflags.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawnattr_setflags.c
+END
+signbitl.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/signbitl.c
+END
+config.charset
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/config.charset
+END
+xstrtod.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstrtod.h
+END
+acl-internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/acl-internal.h
+END
+readtokens0.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/readtokens0.c
+END
+msvc-inval.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/msvc-inval.c
+END
+stdint.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stdint.in.h
+END
+mbslen.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbslen.c
+END
+allocator.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/allocator.c
+END
+unistd.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unistd.in.h
+END
+intprops.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/intprops.h
+END
+stddef.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stddef.in.h
+END
+readtokens0.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/readtokens0.h
+END
+msvc-inval.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/msvc-inval.h
+END
+rawmemchr.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/rawmemchr.c
+END
+allocator.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/allocator.h
+END
+i-ring.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/i-ring.c
+END
+wctype.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/wctype.in.h
+END
+xfreopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xfreopen.c
+END
+acl_entries.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/acl_entries.c
+END
+strnumcmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strnumcmp.c
+END
+se-context.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/se-context.c
+END
+c-strcase.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/c-strcase.h
+END
+i-ring.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/i-ring.h
+END
+xfreopen.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xfreopen.h
+END
+strnumcmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strnumcmp.h
+END
+uniwidth.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/uniwidth.in.h
+END
+msvc-nothrow.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/msvc-nothrow.c
+END
+euidaccess.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/euidaccess.c
+END
+canon-host.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/canon-host.c
+END
+msvc-nothrow.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/msvc-nothrow.h
+END
+memchr.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memchr.c
+END
+canon-host.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/canon-host.h
+END
+fd-reopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fd-reopen.c
+END
+diacrit.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/diacrit.c
+END
+strerror.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strerror.c
+END
+fd-reopen.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fd-reopen.h
+END
+dirent--.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dirent--.h
+END
+diacrit.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/diacrit.h
+END
+openat-die.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/openat-die.c
+END
+obstack.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/obstack.c
+END
+signal.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/signal.in.h
+END
+fd-hook.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fd-hook.c
+END
+obstack.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/obstack.h
+END
+mgetgroups.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mgetgroups.c
+END
+fd-hook.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fd-hook.h
+END
+filevercmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/filevercmp.c
+END
+sig-handler.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sig-handler.c
+END
+spawni.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawni.c
+END
+mgetgroups.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mgetgroups.h
+END
+filevercmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/filevercmp.h
+END
+sig-handler.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sig-handler.h
+END
+posixtm.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/posixtm.c
+END
+backupfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/backupfile.c
+END
+propername.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/propername.c
+END
+posixtm.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/posixtm.h
+END
+backupfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/backupfile.h
+END
+arpa_inet.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/arpa_inet.in.h
+END
+propername.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/propername.h
+END
+c-strcaseeq.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/c-strcaseeq.h
+END
+randread.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/randread.c
+END
+xreadlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xreadlink.c
+END
+mbsrtowcs.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbsrtowcs.c
+END
+printf-frexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/printf-frexp.c
+END
+randread.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/randread.h
+END
+xreadlink.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xreadlink.h
+END
+memcoll.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memcoll.c
+END
+dirfd.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dirfd.c
+END
+printf-frexp.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/printf-frexp.h
+END
+fpending.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fpending.c
+END
+memcoll.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memcoll.h
+END
+memchr2.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memchr2.c
+END
+fpending.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fpending.h
+END
+xmalloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xmalloc.c
+END
+printf-frexpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/printf-frexpl.c
+END
+w32sock.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/w32sock.h
+END
+isnanf-nolibm.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/isnanf-nolibm.h
+END
+memchr2.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memchr2.h
+END
+chownat.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/chownat.c
+END
+printf-frexpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/printf-frexpl.h
+END
+float.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/float.c
+END
+strtoumax.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strtoumax.c
+END
+copy-acl.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/copy-acl.c
+END
+wcwidth.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/wcwidth.c
+END
+sockets.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sockets.c
+END
+sys_wait.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sys_wait.in.h
+END
+select.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/select.c
+END
+areadlinkat.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/areadlinkat.c
+END
+sockets.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sockets.h
+END
+wait-process.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/wait-process.c
+END
+mbswidth.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbswidth.c
+END
+wait-process.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/wait-process.h
+END
+mbswidth.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbswidth.h
+END
+inttostr.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/inttostr.c
+END
+chdir-long.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/chdir-long.c
+END
+getdtablesize.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getdtablesize.c
+END
+strtoull.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strtoull.c
+END
+isapipe.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/isapipe.c
+END
+inttostr.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/inttostr.h
+END
+chdir-long.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/chdir-long.h
+END
+isapipe.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/isapipe.h
+END
+c-strtod.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/c-strtod.c
+END
+argv-iter.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/argv-iter.c
+END
+strstr.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strstr.c
+END
+closedir.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/closedir.c
+END
+c-strtod.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/c-strtod.h
+END
+argv-iter.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/argv-iter.h
+END
+unistd.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unistd.c
+END
+openat-priv.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/openat-priv.h
+END
+fdopendir.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fdopendir.c
+END
+xasprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xasprintf.c
+END
+freading.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/freading.c
+END
+getfilecon.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getfilecon.c
+END
+root-dev-ino.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/root-dev-ino.c
+END
+str-two-way.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/str-two-way.h
+END
+freading.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/freading.h
+END
+openat.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/openat.c
+END
+root-dev-ino.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/root-dev-ino.h
+END
+xstrndup.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstrndup.c
+END
+dup.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dup.c
+END
+dirent-safer.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dirent-safer.h
+END
+openat.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/openat.h
+END
+xstrndup.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstrndup.h
+END
+remove.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/remove.c
+END
+at-func.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/at-func.c
+END
+freopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/freopen.c
+END
+getpagesize.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getpagesize.c
+END
+unsetenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unsetenv.c
+END
+strchrnul.valgrind
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strchrnul.valgrind
+END
+fnmatch_loop.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fnmatch_loop.c
+END
+dirname-lgpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dirname-lgpl.c
+END
+spawn_faction_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawn_faction_init.c
+END
+linebuffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/linebuffer.c
+END
+stdio--.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stdio--.h
+END
+siglist.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/siglist.h
+END
+linebuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/linebuffer.h
+END
+xtime.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xtime.c
+END
+freadseek.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/freadseek.c
+END
+xtime.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xtime.h
+END
+wcswidth.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/wcswidth.c
+END
+freadseek.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/freadseek.h
+END
+vfprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/vfprintf.c
+END
+str-kmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/str-kmp.h
+END
+spawn_int.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawn_int.h
+END
+basename-lgpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/basename-lgpl.c
+END
+chmodat.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/chmodat.c
+END
+stdbool.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stdbool.in.h
+END
+fadvise.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fadvise.c
+END
+strdup.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strdup.c
+END
+linkat.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/linkat.c
+END
+sys_utsname.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sys_utsname.in.h
+END
+nl_langinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/nl_langinfo.c
+END
+fadvise.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fadvise.h
+END
+fflush.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fflush.c
+END
+fprintftime.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fprintftime.c
+END
+strtoimax.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strtoimax.c
+END
+mbsalign.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbsalign.c
+END
+fprintftime.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fprintftime.h
+END
+unistr.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unistr.in.h
+END
+unlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unlink.c
+END
+pthread.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/pthread.in.h
+END
+mbsalign.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbsalign.h
+END
+pipe.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/pipe.h
+END
+getopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getopt.c
+END
+iconv_close.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_close.c
+END
+xstrtoul.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstrtoul.c
+END
+netdb.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/netdb.in.h
+END
+mbuiter.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbuiter.c
+END
+striconv.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/striconv.c
+END
+sha256.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sha256.c
+END
+hard-locale.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/hard-locale.c
+END
+mbuiter.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbuiter.h
+END
+fseeko.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fseeko.c
+END
+striconv.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/striconv.h
+END
+sha256.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sha256.h
+END
+wcrtomb.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/wcrtomb.c
+END
+unlocked-io.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unlocked-io.h
+END
+gethrxtime.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/gethrxtime.c
+END
+hard-locale.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/hard-locale.h
+END
+stdlib--.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stdlib--.h
+END
+gettimeofday.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/gettimeofday.c
+END
+gethrxtime.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/gethrxtime.h
+END
+safe-read.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/safe-read.c
+END
+iconv.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv.in.h
+END
+spawn_faction_addclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawn_faction_addclose.c
+END
+safe-read.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/safe-read.h
+END
+dup-safer-flag.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dup-safer-flag.c
+END
+file-type.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/file-type.c
+END
+mbsrtowcs-state.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbsrtowcs-state.c
+END
+xsize.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xsize.c
+END
+file-type.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/file-type.h
+END
+c-ctype.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/c-ctype.c
+END
+xsize.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xsize.h
+END
+isnan.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/isnan.c
+END
+human.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/human.c
+END
+ref-add.sin
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ref-add.sin
+END
+c-ctype.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/c-ctype.h
+END
+fseterr.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fseterr.c
+END
+human.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/human.h
+END
+dirname.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dirname.c
+END
+fseterr.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fseterr.h
+END
+.dirstamp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/.dirstamp
+END
+fdutimensat.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fdutimensat.c
+END
+nanosleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/nanosleep.c
+END
+dirname.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dirname.h
+END
+alignof.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/alignof.h
+END
+filemode.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/filemode.c
+END
+getaddrinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getaddrinfo.c
+END
+filemode.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/filemode.h
+END
+sig2str.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sig2str.c
+END
+close-stream.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/close-stream.c
+END
+version-etc.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/version-etc.c
+END
+fchown-stub.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fchown-stub.c
+END
+strndup.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strndup.c
+END
+wctype-h.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/wctype-h.c
+END
+group-member.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/group-member.c
+END
+sig2str.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sig2str.h
+END
+iconv_open-hpux.gperf
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_open-hpux.gperf
+END
+close-stream.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/close-stream.h
+END
+version-etc.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/version-etc.h
+END
+spawn_faction_destroy.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawn_faction_destroy.c
+END
+close.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/close.c
+END
+getpass.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getpass.c
+END
+freadptr.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/freadptr.c
+END
+save-cwd.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/save-cwd.c
+END
+getpass.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getpass.h
+END
+freadptr.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/freadptr.h
+END
+pipe2-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/pipe2-safer.c
+END
+save-cwd.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/save-cwd.h
+END
+mkstemp.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mkstemp.c
+END
+dup-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dup-safer.c
+END
+quotearg.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/quotearg.c
+END
+getline.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getline.c
+END
+read-file.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/read-file.c
+END
+math.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/math.c
+END
+iconv_open-solaris.gperf
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_open-solaris.gperf
+END
+pipe-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/pipe-safer.c
+END
+ftruncate.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ftruncate.c
+END
+quotearg.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/quotearg.h
+END
+ldtoastr.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ldtoastr.c
+END
+read-file.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/read-file.h
+END
+open-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/open-safer.c
+END
+mkdir-p.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mkdir-p.c
+END
+netinet_in.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/netinet_in.in.h
+END
+mkdir-p.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mkdir-p.h
+END
+idcache.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/idcache.c
+END
+ftoastr.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ftoastr.c
+END
+iconv_open-aix.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_open-aix.h
+END
+idcache.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/idcache.h
+END
+ftoastr.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ftoastr.h
+END
+exclude.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/exclude.c
+END
+lchown.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/lchown.c
+END
+fnmatch.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fnmatch.in.h
+END
+write.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/write.c
+END
+termios.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/termios.in.h
+END
+exclude.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/exclude.h
+END
+snprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/snprintf.c
+END
+mktime-internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mktime-internal.h
+END
+strtoul.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strtoul.c
+END
+getcwd.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getcwd.c
+END
+verror.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/verror.c
+END
+verror.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/verror.h
+END
+xfts.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xfts.c
+END
+same-inode.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/same-inode.h
+END
+argmatch.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/argmatch.c
+END
+xfts.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xfts.h
+END
+futimens.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/futimens.c
+END
+argmatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/argmatch.h
+END
+ChangeLog-2007
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ChangeLog-2007
+END
+streq.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/streq.h
+END
+parse-datetime.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/parse-datetime.c
+END
+alloca.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/alloca.in.h
+END
+priv-set.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/priv-set.c
+END
+parse-datetime.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/parse-datetime.h
+END
+isnand.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/isnand.c
+END
+priv-set.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/priv-set.h
+END
+memchr2.valgrind
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memchr2.valgrind
+END
+sigprocmask.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sigprocmask.c
+END
+base64.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/base64.c
+END
+c-strcasecmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/c-strcasecmp.c
+END
+same.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/same.c
+END
+ftello.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ftello.c
+END
+sys_socket.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sys_socket.c
+END
+strtol.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strtol.c
+END
+xalloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xalloc.h
+END
+base64.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/base64.h
+END
+same.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/same.h
+END
+parse-datetime.y
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/parse-datetime.y
+END
+xprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xprintf.c
+END
+printf-args.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/printf-args.c
+END
+strftime.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strftime.c
+END
+memchr.valgrind
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memchr.valgrind
+END
+xprintf.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xprintf.h
+END
+wcswidth-impl.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/wcswidth-impl.h
+END
+printf-args.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/printf-args.h
+END
+strftime.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strftime.h
+END
+localcharset.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/localcharset.c
+END
+fcntl--.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fcntl--.h
+END
+safe-write.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/safe-write.c
+END
+localcharset.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/localcharset.h
+END
+set-mode-acl.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/set-mode-acl.c
+END
+safe-write.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/safe-write.h
+END
+posixver.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/posixver.c
+END
+regexec.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/regexec.c
+END
+physmem.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/physmem.c
+END
+careadlinkat.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/careadlinkat.c
+END
+hash.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/hash.c
+END
+posixver.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/posixver.h
+END
+physmem.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/physmem.h
+END
+careadlinkat.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/careadlinkat.h
+END
+hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/hash.h
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/error.c
+END
+iconv_open-irix.gperf
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_open-irix.gperf
+END
+vasnprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/vasnprintf.c
+END
+freopen-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/freopen-safer.c
+END
+savedir.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/savedir.c
+END
+error.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/error.h
+END
+errno.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/errno.in.h
+END
+vasnprintf.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/vasnprintf.h
+END
+savedir.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/savedir.h
+END
+quote.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/quote.h
+END
+gai_strerror.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/gai_strerror.c
+END
+mkancesdirs.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mkancesdirs.c
+END
+filenamecat-lgpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/filenamecat-lgpl.c
+END
+mknod.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mknod.c
+END
+mkancesdirs.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mkancesdirs.h
+END
+utimensat.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/utimensat.c
+END
+version-etc-fsf.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/version-etc-fsf.c
+END
+mkfifo.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mkfifo.c
+END
+readlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/readlink.c
+END
+getdelim.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getdelim.c
+END
+faccessat.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/faccessat.c
+END
+gettime.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/gettime.c
+END
+xstrtoumax.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstrtoumax.c
+END
+readtokens.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/readtokens.c
+END
+canonicalize.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/canonicalize.c
+END
+iconv_open.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_open.c
+END
+open.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/open.c
+END
+strnumcmp-in.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strnumcmp-in.h
+END
+readtokens.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/readtokens.h
+END
+canonicalize.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/canonicalize.h
+END
+xgetcwd.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xgetcwd.c
+END
+xstrtol-error.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstrtol-error.c
+END
+timespec.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/timespec.c
+END
+settime.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/settime.c
+END
+xgetcwd.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xgetcwd.h
+END
+areadlink-with-size.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/areadlink-with-size.c
+END
+timespec.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/timespec.h
+END
+getgroups.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getgroups.c
+END
+string.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/string.in.h
+END
+readutmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/readutmp.c
+END
+size_max.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/size_max.h
+END
+readutmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/readutmp.h
+END
+openat-proc.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/openat-proc.c
+END
+w32spawn.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/w32spawn.h
+END
+write-any-file.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/write-any-file.c
+END
+fts.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fts.c
+END
+creat-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/creat-safer.c
+END
+write-any-file.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/write-any-file.h
+END
+signbitd.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/signbitd.c
+END
+strtoll.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strtoll.c
+END
+mkdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mkdir.c
+END
+fstatat.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fstatat.c
+END
+sys_time.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sys_time.in.h
+END
+spawnp.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawnp.c
+END
+vasprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/vasprintf.c
+END
+mbrtowc.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbrtowc.c
+END
+fileblocks.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fileblocks.c
+END
+isnanf.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/isnanf.c
+END
+strncat.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strncat.c
+END
+u64.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/u64.c
+END
+xstrtol.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstrtol.c
+END
+fnmatch.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fnmatch.c
+END
+u64.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/u64.h
+END
+xstrtol.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstrtol.h
+END
+filename.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/filename.h
+END
+float+.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/float+.h
+END
+asprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/asprintf.c
+END
+stdio-impl.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stdio-impl.h
+END
+sys_select.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sys_select.in.h
+END
+long-options.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/long-options.c
+END
+alloca.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/alloca.c
+END
+long-options.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/long-options.h
+END
+isnand-nolibm.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/isnand-nolibm.h
+END
+memcmp2.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memcmp2.c
+END
+setenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/setenv.c
+END
+memcmp2.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/memcmp2.h
+END
+spawnattr_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawnattr_init.c
+END
+umaxtostr.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/umaxtostr.c
+END
+pathmax.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/pathmax.h
+END
+read.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/read.c
+END
+unicodeio.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unicodeio.c
+END
+getopt_int.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getopt_int.h
+END
+unicodeio.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unicodeio.h
+END
+mbtowc.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbtowc.c
+END
+regcomp.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/regcomp.c
+END
+fchdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fchdir.c
+END
+ignore-value.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ignore-value.h
+END
+rawmemchr.valgrind
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/rawmemchr.valgrind
+END
+mbsstr.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbsstr.c
+END
+wchar.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/wchar.in.h
+END
+xstrtoimax.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xstrtoimax.c
+END
+utimens.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/utimens.c
+END
+file-has-acl.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/file-has-acl.c
+END
+utimens.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/utimens.h
+END
+getndelim2.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getndelim2.c
+END
+malloca.valgrind
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/malloca.valgrind
+END
+closein.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/closein.c
+END
+opendir-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/opendir-safer.c
+END
+inet_ntop.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/inet_ntop.c
+END
+getndelim2.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getndelim2.h
+END
+closein.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/closein.h
+END
+mbsinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbsinit.c
+END
+dup2.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dup2.c
+END
+stat.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stat.c
+END
+btowc.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/btowc.c
+END
+chown.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/chown.c
+END
+iconv.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv.c
+END
+fsync.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fsync.c
+END
+di-set.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/di-set.c
+END
+iconv_open-hpux.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_open-hpux.h
+END
+fts-cycle.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fts-cycle.c
+END
+di-set.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/di-set.h
+END
+mbtowc-impl.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbtowc-impl.h
+END
+iconv_open-aix.gperf
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_open-aix.gperf
+END
+raise.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/raise.c
+END
+signbitf.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/signbitf.c
+END
+ftell.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ftell.c
+END
+getusershell.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getusershell.c
+END
+progname.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/progname.c
+END
+filenamecat.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/filenamecat.c
+END
+fcntl-safer.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fcntl-safer.h
+END
+xnanosleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xnanosleep.c
+END
+progname.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/progname.h
+END
+isatty.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/isatty.c
+END
+dirchownmod.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dirchownmod.c
+END
+filenamecat.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/filenamecat.h
+END
+readlinkat.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/readlinkat.c
+END
+iconv_open-solaris.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/iconv_open-solaris.h
+END
+xnanosleep.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xnanosleep.h
+END
+dirchownmod.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dirchownmod.h
+END
+mpsort.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mpsort.c
+END
+strnlen.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strnlen.c
+END
+mpsort.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mpsort.h
+END
+full-write.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/full-write.c
+END
+bitrotate.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/bitrotate.c
+END
+full-write.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/full-write.h
+END
+strerror-override.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strerror-override.c
+END
+sys_resource.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sys_resource.in.h
+END
+rand-isaac.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/rand-isaac.c
+END
+bitrotate.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/bitrotate.h
+END
+strerror-override.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strerror-override.h
+END
+fopen-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fopen-safer.c
+END
+uname.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/uname.c
+END
+dev-ino.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dev-ino.h
+END
+rand-isaac.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/rand-isaac.h
+END
+stat-time.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stat-time.c
+END
+locale.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/locale.in.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/364/grp19/coreutils-8.21/lib/config.h
+END
+stat-time.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stat-time.h
+END
+sys_types.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sys_types.in.h
+END
+mktime.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mktime.c
+END
+inttypes.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/inttypes.in.h
+END
+spawn.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/spawn.in.h
+END
+fatal-signal.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fatal-signal.c
+END
+se-context.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/se-context.in.h
+END
+unistd--.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unistd--.h
+END
+rename.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/rename.c
+END
+fatal-signal.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fatal-signal.h
+END
+fopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fopen.c
+END
+time.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/time.in.h
+END
+fclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fclose.c
+END
+fdatasync.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fdatasync.c
+END
+getloadavg.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getloadavg.c
+END
+hash-pjw.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/hash-pjw.c
+END
+mbiter.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbiter.c
+END
+cloexec.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/cloexec.c
+END
+strintcmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strintcmp.c
+END
+frexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/frexp.c
+END
+hash-pjw.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/hash-pjw.h
+END
+mbiter.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbiter.h
+END
+fd-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fd-safer.c
+END
+cloexec.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/cloexec.h
+END
+mountlist.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mountlist.c
+END
+ctype.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/ctype.in.h
+END
+frexpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/frexpl.c
+END
+c-strncasecmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/c-strncasecmp.c
+END
+mountlist.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mountlist.h
+END
+offtostr.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/offtostr.c
+END
+xgethostname.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xgethostname.c
+END
+c-strtold.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/c-strtold.c
+END
+fdopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fdopen.c
+END
+xgethostname.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/xgethostname.h
+END
+getopt.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/getopt.in.h
+END
+mbscasecmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/mbscasecmp.c
+END
+heap.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/heap.c
+END
+time_r.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/time_r.c
+END
+fcntl.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fcntl.in.h
+END
+heap.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/heap.h
+END
+pthread.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/pthread.c
+END
+strpbrk.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/strpbrk.c
+END
+stat-size.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stat-size.h
+END
+unitypes.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/unitypes.in.h
+END
+fseek.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fseek.c
+END
+fsusage.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fsusage.c
+END
+randint.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/randint.c
+END
+fsusage.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/fsusage.h
+END
+randint.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/randint.h
+END
+asnprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/asnprintf.c
+END
+tempname.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/tempname.c
+END
+root-uid.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/root-uid.h
+END
+file-set.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/file-set.c
+END
+stamp-h1
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/stamp-h1
+END
+printf-parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/printf-parse.c
+END
+tempname.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/tempname.h
+END
+rmdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/rmdir.c
+END
+file-set.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/file-set.h
+END
+printf-parse.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/printf-parse.h
+END
+at-func2.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/at-func2.c
+END
+sys_stat.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/sys_stat.in.h
+END
+symlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/symlink.c
+END
+rewinddir.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/rewinddir.c
+END
+imaxtostr.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/imaxtostr.c
+END
+dosname.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/dosname.h
+END
+link.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/link.c
+END
+closeout.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/closeout.c
+END
+calloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/lib/calloc.c
+END

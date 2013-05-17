@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/uniwidth
+END
+test-uc_width.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/uniwidth/test-uc_width.c
+END
+test-uc_width2.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/uniwidth/test-uc_width2.c
+END
+test-uc_width2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/uniwidth/test-uc_width2.sh
+END

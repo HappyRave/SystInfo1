@@ -1,0 +1,2639 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/studentsvn/SINF1252_2013_P3/!svn/ver/364/grp19/coreutils-8.21/gnulib-tests
+END
+test-freadseek.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-freadseek.sh
+END
+inet_pton.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/inet_pton.c
+END
+test-isblank.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-isblank.c
+END
+test-setlocale2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-setlocale2.sh
+END
+test-vfprintf-posix.sh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-vfprintf-posix.sh
+END
+test-readlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-readlink.c
+END
+test-userspec.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-userspec.c
+END
+test-getdelim.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getdelim.c
+END
+test-freopen-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-freopen-safer.c
+END
+test-setlocale2.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-setlocale2.c
+END
+test-readlink.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-readlink.h
+END
+test-fseeko3.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fseeko3.c
+END
+test-arpa_inet.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-arpa_inet.c
+END
+test-rand-isaac.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-rand-isaac.c
+END
+test-tls.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-tls.c
+END
+test-vc-list-files-cvs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-vc-list-files-cvs.sh
+END
+test-fopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fopen.c
+END
+test-printf-posix.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-printf-posix.h
+END
+test-malloca.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-malloca.c
+END
+test-getlogin.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getlogin.c
+END
+test-ftello4.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftello4.c
+END
+test-dup2.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-dup2.c
+END
+test-stat.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-stat.c
+END
+test-fopen.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fopen.h
+END
+test-mbrtowc-w32-2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbrtowc-w32-2.sh
+END
+init.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/init.sh
+END
+test-u64.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-u64.c
+END
+test-stat.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-stat.h
+END
+test-wcrtomb-w32-5.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-wcrtomb-w32-5.sh
+END
+test-fputc.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fputc.c
+END
+test-freadptr2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-freadptr2.sh
+END
+test-fpending.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fpending.sh
+END
+test-mbsrtowcs.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsrtowcs.c
+END
+test-fdutimensat.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fdutimensat.c
+END
+test-frexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-frexp.c
+END
+test-fchmodat.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fchmodat.c
+END
+test-sys_resource.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sys_resource.c
+END
+test-getaddrinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getaddrinfo.c
+END
+test-fpurge.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fpurge.c
+END
+test-frexp.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-frexp.h
+END
+test-thread_create.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-thread_create.c
+END
+test-xprintf-posix.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xprintf-posix.c
+END
+test-freadahead.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-freadahead.sh
+END
+test-version-etc.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-version-etc.c
+END
+test-inet_ntop.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-inet_ntop.c
+END
+test-localename.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-localename.c
+END
+test-ino-map.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ino-map.c
+END
+test-iconv-h.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-iconv-h.c
+END
+test-verify.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-verify.c
+END
+test-strtoumax.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strtoumax.c
+END
+macros.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/macros.h
+END
+test-getloadavg.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getloadavg.c
+END
+test-intprops.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-intprops.c
+END
+test-thread_self.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-thread_self.c
+END
+test-posix_spawn_file_actions_addopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-posix_spawn_file_actions_addopen.c
+END
+test-c-strcasecmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-c-strcasecmp.c
+END
+test-fseek.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fseek.sh
+END
+test-version-etc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-version-etc.sh
+END
+test-fseeko3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fseeko3.sh
+END
+test-btowc2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-btowc2.sh
+END
+test-lchown.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-lchown.c
+END
+test-memrchr.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-memrchr.c
+END
+test-fseek.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fseek.c
+END
+test-copy-acl-1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-copy-acl-1.sh
+END
+test-mbsrtowcs3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsrtowcs3.sh
+END
+test-lchown.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-lchown.h
+END
+test-fseeko4.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fseeko4.c
+END
+test-argv-iter.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-argv-iter.c
+END
+test-mbscasecmp.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbscasecmp.sh
+END
+test-getcwd.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getcwd.sh
+END
+test-exclude5.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-exclude5.sh
+END
+test-stddef.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-stddef.c
+END
+test-fdopendir.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fdopendir.c
+END
+test-set-mode-acl.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-set-mode-acl.c
+END
+test-xstrtoimax.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xstrtoimax.sh
+END
+test-file-has-acl-2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-file-has-acl-2.sh
+END
+test-mbscasecmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbscasecmp.c
+END
+test-getcwd.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getcwd.c
+END
+test-rmdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-rmdir.c
+END
+test-ftell2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftell2.sh
+END
+test-fread.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fread.c
+END
+test-rmdir.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-rmdir.h
+END
+test-strerror.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strerror.c
+END
+test-openat-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-openat-safer.c
+END
+test-mbrtowc-w32.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbrtowc-w32.c
+END
+gnulib.mk
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/gnulib.mk
+END
+test-fgetc.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fgetc.c
+END
+test-isnand-nolibm.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-isnand-nolibm.c
+END
+test-vc-list-files-git.sh
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-vc-list-files-git.sh
+END
+test-netdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-netdb.c
+END
+test-sys_time.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sys_time.c
+END
+test-bitrotate.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-bitrotate.c
+END
+test-select-stdin.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-select-stdin.c
+END
+test-sys_types.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sys_types.c
+END
+nan.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/nan.h
+END
+test-spawn-pipe-child.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-spawn-pipe-child.c
+END
+test-lutimens.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-lutimens.h
+END
+test-close.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-close.c
+END
+randomd.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/randomd.c
+END
+test-stat-time.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-stat-time.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/Makefile.am
+END
+test-mbrtowc-w32-3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbrtowc-w32-3.sh
+END
+test-gethostname.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-gethostname.c
+END
+randoml.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/randoml.c
+END
+test-strtod.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strtod.c
+END
+test-environ.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-environ.c
+END
+test-isnand.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-isnand.h
+END
+test-binary-io.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-binary-io.sh
+END
+test-base64.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-base64.c
+END
+test-ftello.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftello.c
+END
+test-mbrtowc1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbrtowc1.sh
+END
+test-isnanl.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-isnanl.h
+END
+test-freadseek.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-freadseek.c
+END
+test-posix_spawn2.in.sh
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-posix_spawn2.in.sh
+END
+test-fpending.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fpending.c
+END
+test-init.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-init.sh
+END
+sleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/sleep.c
+END
+ioctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/ioctl.c
+END
+test-pipe.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-pipe.c
+END
+test-canonicalize.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-canonicalize.c
+END
+test-freadptr.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-freadptr.sh
+END
+test-statat.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-statat.c
+END
+test-fflush2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fflush2.sh
+END
+test-perror.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-perror.sh
+END
+test-sys_wait.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sys_wait.c
+END
+test-strtoll.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strtoll.c
+END
+test-spawn-pipe-main.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-spawn-pipe-main.c
+END
+test-fstatat.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fstatat.c
+END
+test-fseek2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fseek2.sh
+END
+test-copy-acl.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-copy-acl.c
+END
+test-sys_wait.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sys_wait.h
+END
+test-sys_stat.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sys_stat.c
+END
+test-fdatasync.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fdatasync.c
+END
+test-wcrtomb-w32-1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-wcrtomb-w32-1.sh
+END
+test-mbrtowc.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbrtowc.c
+END
+test-fprintf-posix.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fprintf-posix.h
+END
+test-strncat.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strncat.c
+END
+wctomb.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/wctomb.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/364/grp19/coreutils-8.21/gnulib-tests/Makefile
+END
+test-pipe2.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-pipe2.c
+END
+test-xstrtol.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xstrtol.c
+END
+test-fnmatch.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fnmatch.c
+END
+test-fstat.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fstat.c
+END
+test-xalloc-die.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xalloc-die.c
+END
+test-sigprocmask.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sigprocmask.c
+END
+test-inttostr.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-inttostr.c
+END
+test-fseeko4.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fseeko4.sh
+END
+test-dup.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-dup.c
+END
+test-strtoull.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strtoull.c
+END
+test-vprintf-posix.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-vprintf-posix.c
+END
+test-freadptr2.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-freadptr2.c
+END
+test-strtoimax.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strtoimax.c
+END
+test-write.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-write.c
+END
+test-mbsstr1.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsstr1.c
+END
+test-perror2.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-perror2.c
+END
+test-isnanf-nolibm.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-isnanf-nolibm.c
+END
+test-copy-acl-2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-copy-acl-2.sh
+END
+test-mbsrtowcs4.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsrtowcs4.sh
+END
+test-locale.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-locale.c
+END
+test-printf-frexpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-printf-frexpl.c
+END
+test-pathmax.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-pathmax.c
+END
+test-stdalign.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-stdalign.c
+END
+test-fcntl.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fcntl.c
+END
+test-exclude6.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-exclude6.sh
+END
+test-mkfifo.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mkfifo.c
+END
+test-c-strcase.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-c-strcase.sh
+END
+test-bind.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-bind.c
+END
+test-select-out.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-select-out.sh
+END
+test-quotearg-simple.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-quotearg-simple.c
+END
+test-freading.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-freading.c
+END
+test-mkfifo.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mkfifo.h
+END
+test-stdio.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-stdio.c
+END
+test-ftruncate.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftruncate.sh
+END
+test-mbsstr2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsstr2.sh
+END
+test-closein.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-closein.sh
+END
+test-getdtablesize.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getdtablesize.c
+END
+strerror_r.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/strerror_r.c
+END
+test-posix_spawn_file_actions_adddup2.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-posix_spawn_file_actions_adddup2.c
+END
+test-link.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-link.c
+END
+test-ftello2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftello2.sh
+END
+test-link.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-link.h
+END
+test-exclude1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-exclude1.sh
+END
+test-lseek.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-lseek.c
+END
+test-posixtm.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-posixtm.c
+END
+test-wchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-wchar.c
+END
+test-unsetenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-unsetenv.c
+END
+test-xstrtol.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xstrtol.sh
+END
+test-getcwd-lgpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getcwd-lgpl.c
+END
+test-regex.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-regex.c
+END
+test-sys_utsname.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sys_utsname.c
+END
+test-symlinkat.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-symlinkat.c
+END
+test-mbrtowc-w32-4.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbrtowc-w32-4.sh
+END
+infinity.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/infinity.h
+END
+test-stdlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-stdlib.c
+END
+wctomb-impl.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/wctomb-impl.h
+END
+test-nanosleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-nanosleep.c
+END
+test-utimens.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-utimens.c
+END
+test-mbrtowc2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbrtowc2.sh
+END
+test-memcoll.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-memcoll.c
+END
+test-math.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-math.c
+END
+test-connect.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-connect.c
+END
+test-utimens.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-utimens.h
+END
+test-mbsstr2.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsstr2.c
+END
+test-closein.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-closein.c
+END
+test-netinet_in.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-netinet_in.c
+END
+test-memchr2.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-memchr2.c
+END
+test-ignore-value.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ignore-value.c
+END
+test-malloc-gnu.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-malloc-gnu.c
+END
+test-ftell.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftell.sh
+END
+test-inet_pton.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-inet_pton.c
+END
+test-xvasprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xvasprintf.c
+END
+test-mbsinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsinit.c
+END
+nap.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/nap.h
+END
+test-select-fd.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-select-fd.c
+END
+test-realloc-gnu.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-realloc-gnu.c
+END
+test-sleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sleep.c
+END
+test-wcwidth.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-wcwidth.c
+END
+test-ioctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ioctl.c
+END
+socket.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/socket.c
+END
+test-sockets.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sockets.c
+END
+test-wcrtomb-w32-2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-wcrtomb-w32-2.sh
+END
+test-nl_langinfo.sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-nl_langinfo.sh
+END
+test-isnanf.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-isnanf.h
+END
+test-printf-frexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-printf-frexp.c
+END
+test-localeconv.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-localeconv.c
+END
+test-i-ring.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-i-ring.c
+END
+test-file-has-acl.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-file-has-acl.c
+END
+test-dup-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-dup-safer.c
+END
+test-sys_socket.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sys_socket.c
+END
+test-read-file.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-read-file.c
+END
+test-binary-io.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-binary-io.c
+END
+signature.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/signature.h
+END
+test-ftruncate.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftruncate.c
+END
+test-mbsalign.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsalign.c
+END
+perror.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/perror.c
+END
+test-sha1.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sha1.c
+END
+test-verify.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-verify.sh
+END
+test-setenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-setenv.c
+END
+test-xstrtoul.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xstrtoul.c
+END
+test-striconv.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-striconv.c
+END
+test-exclude7.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-exclude7.sh
+END
+test-mknod.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mknod.c
+END
+test-fflush2.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fflush2.c
+END
+test-perror.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-perror.c
+END
+test-xalloc-die.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xalloc-die.sh
+END
+test-memchr.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-memchr.c
+END
+test-printf-posix.output
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-printf-posix.output
+END
+test-sigaction.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sigaction.c
+END
+test-calloc-gnu.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-calloc-gnu.c
+END
+test-strchrnul.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strchrnul.c
+END
+test-mbsstr3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsstr3.sh
+END
+test-dirent.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-dirent.c
+END
+test-strnlen.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strnlen.c
+END
+test-getopt_long.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getopt_long.h
+END
+test-lstat.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-lstat.c
+END
+test-sys_uio.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sys_uio.c
+END
+test-vasnprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-vasnprintf.c
+END
+test-fcntl-h.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fcntl-h.c
+END
+test-posix_spawn1.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-posix_spawn1.c
+END
+test-lstat.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-lstat.h
+END
+test-mbsstr3.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsstr3.c
+END
+test-freopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-freopen.c
+END
+test-fchdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fchdir.c
+END
+test-signbit.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-signbit.c
+END
+test-set-mode-acl-1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-set-mode-acl-1.sh
+END
+test-c-strncasecmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-c-strncasecmp.c
+END
+test-signal-h.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-signal-h.c
+END
+test-exclude2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-exclude2.sh
+END
+test-sys_ioctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sys_ioctl.c
+END
+connect.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/connect.c
+END
+test-mbrtowc-w32-5.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbrtowc-w32-5.sh
+END
+setsockopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/setsockopt.c
+END
+accept.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/accept.c
+END
+unlinkdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/unlinkdir.c
+END
+test-dirent-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-dirent-safer.c
+END
+w32sock.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/w32sock.h
+END
+test-yesno.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-yesno.sh
+END
+test-wcrtomb-w32.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-wcrtomb-w32.c
+END
+unlinkdir.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/unlinkdir.h
+END
+test-mbrtowc3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbrtowc3.sh
+END
+test-ftell3.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftell3.c
+END
+test-areadlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-areadlink.c
+END
+test-yesno.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-yesno.c
+END
+setlocale.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/setlocale.c
+END
+test-xstrtoumax.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xstrtoumax.c
+END
+test-areadlink.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-areadlink.h
+END
+test-accept.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-accept.c
+END
+test-readtokens.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-readtokens.c
+END
+test-wctype-h.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-wctype-h.c
+END
+test-strerror_r.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strerror_r.c
+END
+test-freadahead.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-freadahead.c
+END
+test-mkdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mkdir.c
+END
+test-string.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-string.c
+END
+test-freadptr.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-freadptr.c
+END
+test-memcasecmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-memcasecmp.c
+END
+test-mkdir.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mkdir.h
+END
+test-select-in.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-select-in.sh
+END
+test-vasprintf-posix.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-vasprintf-posix.c
+END
+test-sys_select.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sys_select.c
+END
+test-wcrtomb-w32-3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-wcrtomb-w32-3.sh
+END
+test-select.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-select.c
+END
+test-update-copyright.sh
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-update-copyright.sh
+END
+usleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/usleep.c
+END
+listen.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/listen.c
+END
+test-fadvise.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fadvise.c
+END
+test-cloexec.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-cloexec.c
+END
+test-hash.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-hash.c
+END
+test-ctype.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ctype.c
+END
+test-select.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-select.h
+END
+test-di-set.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-di-set.c
+END
+test-xstrtoumax.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xstrtoumax.sh
+END
+test-posix_spawn_file_actions_addclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-posix_spawn_file_actions_addclose.c
+END
+test-posix_spawn2.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-posix_spawn2.c
+END
+test-quotearg.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-quotearg.h
+END
+test-usleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-usleep.c
+END
+test-listen.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-listen.c
+END
+test-isnanl-nolibm.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-isnanl-nolibm.c
+END
+test-parse-datetime.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-parse-datetime.c
+END
+test-wcrtomb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-wcrtomb.sh
+END
+test-strsignal.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strsignal.c
+END
+test-unistd.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-unistd.c
+END
+test-exclude8.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-exclude8.sh
+END
+test-isatty.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-isatty.c
+END
+test-ftello.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftello.sh
+END
+test-wcrtomb.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-wcrtomb.c
+END
+test-areadlinkat.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-areadlinkat.c
+END
+at-func.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/at-func.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/Makefile.in
+END
+test-unlinkat.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-unlinkat.c
+END
+test-openat.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-openat.c
+END
+test-readtokens.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-readtokens.sh
+END
+test-lseek.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-lseek.sh
+END
+test-mbsrtowcs1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsrtowcs1.sh
+END
+test-langinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-langinfo.c
+END
+test-remove.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-remove.c
+END
+test-ftello4.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftello4.sh
+END
+test-open.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-open.c
+END
+test-set-mode-acl-2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-set-mode-acl-2.sh
+END
+test-snprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-snprintf.c
+END
+test-c-ctype.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-c-ctype.c
+END
+test-exclude3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-exclude3.sh
+END
+test-fcntl-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fcntl-safer.c
+END
+zerosize-ptr.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/zerosize-ptr.h
+END
+test-open.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-open.h
+END
+test-filenamecat.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-filenamecat.c
+END
+test-utimensat.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-utimensat.c
+END
+test-fseterr.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fseterr.c
+END
+test-spawn-pipe.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-spawn-pipe.sh
+END
+test-alignof.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-alignof.c
+END
+test-dirname.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-dirname.c
+END
+test-gettimeofday.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-gettimeofday.c
+END
+localename.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/localename.c
+END
+test-setlocale1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-setlocale1.sh
+END
+test-argmatch.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-argmatch.c
+END
+test-symlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-symlink.c
+END
+test-lock.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-lock.c
+END
+localename.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/localename.h
+END
+test-mbrtowc4.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbrtowc4.sh
+END
+test-futimens.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-futimens.c
+END
+test-alloca-opt.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-alloca-opt.c
+END
+test-symlink.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-symlink.h
+END
+test-faccessat.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-faccessat.c
+END
+test-filevercmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-filevercmp.c
+END
+test-futimens.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-futimens.h
+END
+test-xfprintf-posix.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xfprintf-posix.c
+END
+wctob.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/wctob.c
+END
+test-fseeko.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fseeko.sh
+END
+test-float.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-float.c
+END
+test-fopen-safer.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fopen-safer.c
+END
+test-rename.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-rename.c
+END
+test-fchownat.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fchownat.c
+END
+test-priv-set.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-priv-set.c
+END
+test-iswblank.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-iswblank.c
+END
+test-fclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fclose.c
+END
+test-mbrtowc-w32-1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbrtowc-w32-1.sh
+END
+test-rename.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-rename.h
+END
+test-iconv.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-iconv.c
+END
+test-chown.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-chown.c
+END
+test-btowc.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-btowc.c
+END
+test-getgroups.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getgroups.c
+END
+test-wcrtomb-w32-4.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-wcrtomb-w32-4.sh
+END
+pipe.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/pipe.c
+END
+test-linkat.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-linkat.c
+END
+test-fsync.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fsync.c
+END
+test-xprintf-posix.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xprintf-posix.sh
+END
+test-xstrtoimax.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-xstrtoimax.c
+END
+test-chown.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-chown.h
+END
+test-md5.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-md5.c
+END
+test-sched.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sched.c
+END
+test-getline.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getline.c
+END
+test-fflush.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fflush.c
+END
+test-posix_spawn1.in.sh
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-posix_spawn1.in.sh
+END
+test-sameacls.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-sameacls.c
+END
+test-spawn.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-spawn.c
+END
+test-getndelim2.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getndelim2.c
+END
+test-setlocale1.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-setlocale1.c
+END
+test-strftime.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-strftime.c
+END
+test-setsockopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-setsockopt.c
+END
+test-copy-acl.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-copy-acl.sh
+END
+test-frexpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-frexpl.c
+END
+test-unlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-unlink.c
+END
+test-getopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getopt.c
+END
+test-raise.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-raise.c
+END
+test-stdint.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-stdint.c
+END
+test-unlink.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-unlink.h
+END
+test-ftell.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftell.c
+END
+test-stdbool.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-stdbool.c
+END
+test-getopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-getopt.h
+END
+test-ftello3.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-ftello3.c
+END
+test-fdopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fdopen.c
+END
+test-read.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-read.c
+END
+test-fseeko.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fseeko.c
+END
+test-vasprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-vasprintf.c
+END
+test-termios.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-termios.c
+END
+test-errno.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-errno.c
+END
+test-rawmemchr.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-rawmemchr.c
+END
+test-fseeko2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fseeko2.sh
+END
+test-nl_langinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-nl_langinfo.c
+END
+test-btowc1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-btowc1.sh
+END
+test-chdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-chdir.c
+END
+test-exclude.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-exclude.c
+END
+test-mbsrtowcs2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsrtowcs2.sh
+END
+test-mbsinit.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-mbsinit.sh
+END
+symlinkat.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/symlinkat.c
+END
+test-time.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-time.c
+END
+test-vfprintf-posix.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-vfprintf-posix.c
+END
+bind.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/bind.c
+END
+test-fwrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-fwrite.c
+END
+minus-zero.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/minus-zero.h
+END
+test-set-mode-acl.sh
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-set-mode-acl.sh
+END
+test-exclude4.sh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-exclude4.sh
+END
+test-uname.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-uname.c
+END
+test-areadlink-with-size.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-areadlink-with-size.c
+END
+test-file-has-acl-1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-file-has-acl-1.sh
+END
+test-file-has-acl.sh
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-file-has-acl.sh
+END
+test-readlinkat.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-readlinkat.c
+END
+test-inttypes.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-inttypes.c
+END
+test-utimens-common.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-utimens-common.h
+END
+test-vprintf-posix.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/test-vprintf-posix.sh
+END

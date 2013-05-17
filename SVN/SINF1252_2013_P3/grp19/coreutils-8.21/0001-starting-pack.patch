@@ -1,0 +1,263 @@
+From f380621cad5453ce467cb2ba6dc4d87d61894a4a Mon Sep 17 00:00:00 2001
+From: Benoit Daloze <eregontp@gmail.com>
+Date: Tue, 30 Apr 2013 09:22:57 +0200
+Subject: [PATCH] starting pack
+
+---
+ Makefile.in                        | 170 ++++++++++++++++++++-----------------
+ build-aux/gen-lists-of-programs.sh |   1 +
+ src/encode.c                       |   7 ++
+ 3 files changed, 99 insertions(+), 79 deletions(-)
+ create mode 100644 src/encode.c
+
+diff --git a/Makefile.in b/Makefile.in
+index d0caccc..b747a83 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -585,31 +585,32 @@ am__EXEEXT_3 = src/[$(EXEEXT) src/base64$(EXEEXT) \
+ 	src/csplit$(EXEEXT) src/cut$(EXEEXT) src/date$(EXEEXT) \
+ 	src/dd$(EXEEXT) src/dir$(EXEEXT) src/dircolors$(EXEEXT) \
+ 	src/dirname$(EXEEXT) src/du$(EXEEXT) src/echo$(EXEEXT) \
+-	src/env$(EXEEXT) src/expand$(EXEEXT) src/expr$(EXEEXT) \
+-	src/factor$(EXEEXT) src/false$(EXEEXT) src/fmt$(EXEEXT) \
+-	src/fold$(EXEEXT) src/ginstall$(EXEEXT) src/groups$(EXEEXT) \
+-	src/head$(EXEEXT) src/id$(EXEEXT) src/join$(EXEEXT) \
+-	src/kill$(EXEEXT) src/link$(EXEEXT) src/ln$(EXEEXT) \
+-	src/logname$(EXEEXT) src/ls$(EXEEXT) src/md5sum$(EXEEXT) \
+-	src/mkdir$(EXEEXT) src/mkfifo$(EXEEXT) src/mknod$(EXEEXT) \
+-	src/mktemp$(EXEEXT) src/mv$(EXEEXT) src/nl$(EXEEXT) \
+-	src/nproc$(EXEEXT) src/nohup$(EXEEXT) src/numfmt$(EXEEXT) \
+-	src/od$(EXEEXT) src/paste$(EXEEXT) src/pathchk$(EXEEXT) \
+-	src/pr$(EXEEXT) src/printenv$(EXEEXT) src/printf$(EXEEXT) \
+-	src/ptx$(EXEEXT) src/pwd$(EXEEXT) src/readlink$(EXEEXT) \
+-	src/realpath$(EXEEXT) src/rm$(EXEEXT) src/rmdir$(EXEEXT) \
+-	src/runcon$(EXEEXT) src/seq$(EXEEXT) src/sha1sum$(EXEEXT) \
+-	src/sha224sum$(EXEEXT) src/sha256sum$(EXEEXT) \
+-	src/sha384sum$(EXEEXT) src/sha512sum$(EXEEXT) \
+-	src/shred$(EXEEXT) src/shuf$(EXEEXT) src/sleep$(EXEEXT) \
+-	src/sort$(EXEEXT) src/split$(EXEEXT) src/stat$(EXEEXT) \
+-	src/sum$(EXEEXT) src/sync$(EXEEXT) src/tac$(EXEEXT) \
+-	src/tail$(EXEEXT) src/tee$(EXEEXT) src/test$(EXEEXT) \
+-	src/timeout$(EXEEXT) src/touch$(EXEEXT) src/tr$(EXEEXT) \
+-	src/true$(EXEEXT) src/truncate$(EXEEXT) src/tsort$(EXEEXT) \
+-	src/tty$(EXEEXT) src/uname$(EXEEXT) src/unexpand$(EXEEXT) \
+-	src/uniq$(EXEEXT) src/unlink$(EXEEXT) src/vdir$(EXEEXT) \
+-	src/wc$(EXEEXT) src/whoami$(EXEEXT) src/yes$(EXEEXT)
++	src/encode$(EXEEXT) src/env$(EXEEXT) src/expand$(EXEEXT) \
++	src/expr$(EXEEXT) src/factor$(EXEEXT) src/false$(EXEEXT) \
++	src/fmt$(EXEEXT) src/fold$(EXEEXT) src/ginstall$(EXEEXT) \
++	src/groups$(EXEEXT) src/head$(EXEEXT) src/id$(EXEEXT) \
++	src/join$(EXEEXT) src/kill$(EXEEXT) src/link$(EXEEXT) \
++	src/ln$(EXEEXT) src/logname$(EXEEXT) src/ls$(EXEEXT) \
++	src/md5sum$(EXEEXT) src/mkdir$(EXEEXT) src/mkfifo$(EXEEXT) \
++	src/mknod$(EXEEXT) src/mktemp$(EXEEXT) src/mv$(EXEEXT) \
++	src/nl$(EXEEXT) src/nproc$(EXEEXT) src/nohup$(EXEEXT) \
++	src/numfmt$(EXEEXT) src/od$(EXEEXT) src/paste$(EXEEXT) \
++	src/pathchk$(EXEEXT) src/pr$(EXEEXT) src/printenv$(EXEEXT) \
++	src/printf$(EXEEXT) src/ptx$(EXEEXT) src/pwd$(EXEEXT) \
++	src/readlink$(EXEEXT) src/realpath$(EXEEXT) src/rm$(EXEEXT) \
++	src/rmdir$(EXEEXT) src/runcon$(EXEEXT) src/seq$(EXEEXT) \
++	src/sha1sum$(EXEEXT) src/sha224sum$(EXEEXT) \
++	src/sha256sum$(EXEEXT) src/sha384sum$(EXEEXT) \
++	src/sha512sum$(EXEEXT) src/shred$(EXEEXT) src/shuf$(EXEEXT) \
++	src/sleep$(EXEEXT) src/sort$(EXEEXT) src/split$(EXEEXT) \
++	src/stat$(EXEEXT) src/sum$(EXEEXT) src/sync$(EXEEXT) \
++	src/tac$(EXEEXT) src/tail$(EXEEXT) src/tee$(EXEEXT) \
++	src/test$(EXEEXT) src/timeout$(EXEEXT) src/touch$(EXEEXT) \
++	src/tr$(EXEEXT) src/true$(EXEEXT) src/truncate$(EXEEXT) \
++	src/tsort$(EXEEXT) src/tty$(EXEEXT) src/uname$(EXEEXT) \
++	src/unexpand$(EXEEXT) src/uniq$(EXEEXT) src/unlink$(EXEEXT) \
++	src/vdir$(EXEEXT) src/wc$(EXEEXT) src/whoami$(EXEEXT) \
++	src/yes$(EXEEXT)
+ am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(pkglibexecdir)" \
+ 	"$(DESTDIR)$(infodir)" "$(DESTDIR)$(man1dir)"
+ PROGRAMS = $(bin_PROGRAMS) $(noinst_PROGRAMS) $(pkglibexec_PROGRAMS)
+@@ -695,6 +696,11 @@ src_du_DEPENDENCIES = $(am__DEPENDENCIES_2) $(am__DEPENDENCIES_1)
+ src_echo_SOURCES = src/echo.c
+ src_echo_OBJECTS = src/echo.$(OBJEXT)
+ src_echo_DEPENDENCIES = $(am__DEPENDENCIES_2)
++src_encode_SOURCES = src/encode.c
++src_encode_OBJECTS = src/encode.$(OBJEXT)
++src_encode_LDADD = $(LDADD)
++src_encode_DEPENDENCIES = src/libver.a lib/libcoreutils.a \
++	$(am__DEPENDENCIES_1) lib/libcoreutils.a
+ src_env_SOURCES = src/env.c
+ src_env_OBJECTS = src/env.$(OBJEXT)
+ src_env_DEPENDENCIES = $(am__DEPENDENCIES_2)
+@@ -1010,29 +1016,29 @@ SOURCES = $(lib_libcoreutils_a_SOURCES) \
+ 	$(src_chown_SOURCES) src/chroot.c src/cksum.c src/comm.c \
+ 	$(src_cp_SOURCES) src/csplit.c src/cut.c src/date.c src/dd.c \
+ 	$(src_df_SOURCES) $(src_dir_SOURCES) src/dircolors.c \
+-	src/dirname.c src/du.c src/echo.c src/env.c src/expand.c \
+-	src/expr.c src/factor.c src/false.c src/fmt.c src/fold.c \
+-	src/getlimits.c $(src_ginstall_SOURCES) $(src_groups_SOURCES) \
+-	src/head.c src/hostid.c src/hostname.c $(src_id_SOURCES) \
+-	src/join.c $(src_kill_SOURCES) src/libstdbuf.c src/link.c \
+-	$(src_ln_SOURCES) src/logname.c $(src_ls_SOURCES) \
+-	src/make-prime-list.c src/md5sum.c $(src_mkdir_SOURCES) \
+-	src/mkfifo.c src/mknod.c src/mktemp.c $(src_mv_SOURCES) \
+-	src/nice.c src/nl.c src/nohup.c src/nproc.c src/numfmt.c \
+-	src/od.c src/paste.c src/pathchk.c src/pinky.c src/pr.c \
+-	src/printenv.c src/printf.c src/ptx.c src/pwd.c src/readlink.c \
+-	$(src_realpath_SOURCES) $(src_rm_SOURCES) $(src_rmdir_SOURCES) \
+-	src/runcon.c src/seq.c src/setuidgid.c $(src_sha1sum_SOURCES) \
+-	$(src_sha224sum_SOURCES) $(src_sha256sum_SOURCES) \
+-	$(src_sha384sum_SOURCES) $(src_sha512sum_SOURCES) src/shred.c \
+-	src/shuf.c src/sleep.c src/sort.c src/split.c \
+-	$(src_stat_SOURCES) src/stdbuf.c src/stty.c src/sum.c \
+-	src/sync.c src/tac.c src/tail.c src/tee.c src/test.c \
+-	$(src_timeout_SOURCES) src/touch.c src/tr.c src/true.c \
+-	src/truncate.c src/tsort.c src/tty.c $(src_uname_SOURCES) \
+-	src/unexpand.c src/uniq.c src/unlink.c src/uptime.c \
+-	src/users.c $(src_vdir_SOURCES) src/wc.c src/who.c \
+-	src/whoami.c src/yes.c
++	src/dirname.c src/du.c src/echo.c src/encode.c src/env.c \
++	src/expand.c src/expr.c src/factor.c src/false.c src/fmt.c \
++	src/fold.c src/getlimits.c $(src_ginstall_SOURCES) \
++	$(src_groups_SOURCES) src/head.c src/hostid.c src/hostname.c \
++	$(src_id_SOURCES) src/join.c $(src_kill_SOURCES) \
++	src/libstdbuf.c src/link.c $(src_ln_SOURCES) src/logname.c \
++	$(src_ls_SOURCES) src/make-prime-list.c src/md5sum.c \
++	$(src_mkdir_SOURCES) src/mkfifo.c src/mknod.c src/mktemp.c \
++	$(src_mv_SOURCES) src/nice.c src/nl.c src/nohup.c src/nproc.c \
++	src/numfmt.c src/od.c src/paste.c src/pathchk.c src/pinky.c \
++	src/pr.c src/printenv.c src/printf.c src/ptx.c src/pwd.c \
++	src/readlink.c $(src_realpath_SOURCES) $(src_rm_SOURCES) \
++	$(src_rmdir_SOURCES) src/runcon.c src/seq.c src/setuidgid.c \
++	$(src_sha1sum_SOURCES) $(src_sha224sum_SOURCES) \
++	$(src_sha256sum_SOURCES) $(src_sha384sum_SOURCES) \
++	$(src_sha512sum_SOURCES) src/shred.c src/shuf.c src/sleep.c \
++	src/sort.c src/split.c $(src_stat_SOURCES) src/stdbuf.c \
++	src/stty.c src/sum.c src/sync.c src/tac.c src/tail.c src/tee.c \
++	src/test.c $(src_timeout_SOURCES) src/touch.c src/tr.c \
++	src/true.c src/truncate.c src/tsort.c src/tty.c \
++	$(src_uname_SOURCES) src/unexpand.c src/uniq.c src/unlink.c \
++	src/uptime.c src/users.c $(src_vdir_SOURCES) src/wc.c \
++	src/who.c src/whoami.c src/yes.c
+ DIST_SOURCES = $(am__lib_libcoreutils_a_SOURCES_DIST) \
+ 	$(EXTRA_lib_libcoreutils_a_SOURCES) $(src___SOURCES) \
+ 	$(src_arch_SOURCES) src/base64.c src/basename.c src/cat.c \
+@@ -1040,29 +1046,29 @@ DIST_SOURCES = $(am__lib_libcoreutils_a_SOURCES_DIST) \
+ 	$(src_chown_SOURCES) src/chroot.c src/cksum.c src/comm.c \
+ 	$(src_cp_SOURCES) src/csplit.c src/cut.c src/date.c src/dd.c \
+ 	$(src_df_SOURCES) $(src_dir_SOURCES) src/dircolors.c \
+-	src/dirname.c src/du.c src/echo.c src/env.c src/expand.c \
+-	src/expr.c src/factor.c src/false.c src/fmt.c src/fold.c \
+-	src/getlimits.c $(src_ginstall_SOURCES) $(src_groups_SOURCES) \
+-	src/head.c src/hostid.c src/hostname.c $(src_id_SOURCES) \
+-	src/join.c $(src_kill_SOURCES) src/libstdbuf.c src/link.c \
+-	$(src_ln_SOURCES) src/logname.c $(src_ls_SOURCES) \
+-	src/make-prime-list.c src/md5sum.c $(src_mkdir_SOURCES) \
+-	src/mkfifo.c src/mknod.c src/mktemp.c $(src_mv_SOURCES) \
+-	src/nice.c src/nl.c src/nohup.c src/nproc.c src/numfmt.c \
+-	src/od.c src/paste.c src/pathchk.c src/pinky.c src/pr.c \
+-	src/printenv.c src/printf.c src/ptx.c src/pwd.c src/readlink.c \
+-	$(src_realpath_SOURCES) $(src_rm_SOURCES) $(src_rmdir_SOURCES) \
+-	src/runcon.c src/seq.c src/setuidgid.c $(src_sha1sum_SOURCES) \
+-	$(src_sha224sum_SOURCES) $(src_sha256sum_SOURCES) \
+-	$(src_sha384sum_SOURCES) $(src_sha512sum_SOURCES) src/shred.c \
+-	src/shuf.c src/sleep.c src/sort.c src/split.c \
+-	$(src_stat_SOURCES) src/stdbuf.c src/stty.c src/sum.c \
+-	src/sync.c src/tac.c src/tail.c src/tee.c src/test.c \
+-	$(src_timeout_SOURCES) src/touch.c src/tr.c src/true.c \
+-	src/truncate.c src/tsort.c src/tty.c $(src_uname_SOURCES) \
+-	src/unexpand.c src/uniq.c src/unlink.c src/uptime.c \
+-	src/users.c $(src_vdir_SOURCES) src/wc.c src/who.c \
+-	src/whoami.c src/yes.c
++	src/dirname.c src/du.c src/echo.c src/encode.c src/env.c \
++	src/expand.c src/expr.c src/factor.c src/false.c src/fmt.c \
++	src/fold.c src/getlimits.c $(src_ginstall_SOURCES) \
++	$(src_groups_SOURCES) src/head.c src/hostid.c src/hostname.c \
++	$(src_id_SOURCES) src/join.c $(src_kill_SOURCES) \
++	src/libstdbuf.c src/link.c $(src_ln_SOURCES) src/logname.c \
++	$(src_ls_SOURCES) src/make-prime-list.c src/md5sum.c \
++	$(src_mkdir_SOURCES) src/mkfifo.c src/mknod.c src/mktemp.c \
++	$(src_mv_SOURCES) src/nice.c src/nl.c src/nohup.c src/nproc.c \
++	src/numfmt.c src/od.c src/paste.c src/pathchk.c src/pinky.c \
++	src/pr.c src/printenv.c src/printf.c src/ptx.c src/pwd.c \
++	src/readlink.c $(src_realpath_SOURCES) $(src_rm_SOURCES) \
++	$(src_rmdir_SOURCES) src/runcon.c src/seq.c src/setuidgid.c \
++	$(src_sha1sum_SOURCES) $(src_sha224sum_SOURCES) \
++	$(src_sha256sum_SOURCES) $(src_sha384sum_SOURCES) \
++	$(src_sha512sum_SOURCES) src/shred.c src/shuf.c src/sleep.c \
++	src/sort.c src/split.c $(src_stat_SOURCES) src/stdbuf.c \
++	src/stty.c src/sum.c src/sync.c src/tac.c src/tail.c src/tee.c \
++	src/test.c $(src_timeout_SOURCES) src/touch.c src/tr.c \
++	src/true.c src/truncate.c src/tsort.c src/tty.c \
++	$(src_uname_SOURCES) src/unexpand.c src/uniq.c src/unlink.c \
++	src/uptime.c src/users.c $(src_vdir_SOURCES) src/wc.c \
++	src/who.c src/whoami.c src/yes.c
+ INFO_DEPS = $(srcdir)/doc/coreutils.info
+ TEXINFO_TEX = $(top_srcdir)/build-aux/texinfo.tex
+ am__TEXINFO_TEX_DIR = $(top_srcdir)/build-aux
+@@ -3042,14 +3048,14 @@ build_if_possible__progs = src/chroot src/df src/hostid \
+ default__progs = src/[ src/base64 src/basename src/cat src/chcon \
+ 	src/chgrp src/chmod src/chown src/cksum src/comm src/cp \
+ 	src/csplit src/cut src/date src/dd src/dir src/dircolors \
+-	src/dirname src/du src/echo src/env src/expand src/expr \
+-	src/factor src/false src/fmt src/fold src/ginstall src/groups \
+-	src/head src/id src/join src/kill src/link src/ln src/logname \
+-	src/ls src/md5sum src/mkdir src/mkfifo src/mknod src/mktemp \
+-	src/mv src/nl src/nproc src/nohup src/numfmt src/od src/paste \
+-	src/pathchk src/pr src/printenv src/printf src/ptx src/pwd \
+-	src/readlink src/realpath src/rm src/rmdir src/runcon src/seq \
+-	src/sha1sum src/sha224sum src/sha256sum src/sha384sum \
++	src/dirname src/du src/echo src/encode src/env src/expand \
++	src/expr src/factor src/false src/fmt src/fold src/ginstall \
++	src/groups src/head src/id src/join src/kill src/link src/ln \
++	src/logname src/ls src/md5sum src/mkdir src/mkfifo src/mknod \
++	src/mktemp src/mv src/nl src/nproc src/nohup src/numfmt src/od \
++	src/paste src/pathchk src/pr src/printenv src/printf src/ptx \
++	src/pwd src/readlink src/realpath src/rm src/rmdir src/runcon \
++	src/seq src/sha1sum src/sha224sum src/sha256sum src/sha384sum \
+ 	src/sha512sum src/shred src/shuf src/sleep src/sort src/split \
+ 	src/stat src/sum src/sync src/tac src/tail src/tee src/test \
+ 	src/timeout src/touch src/tr src/true src/truncate src/tsort \
+@@ -5203,6 +5209,11 @@ src/echo.$(OBJEXT): src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
+ src/echo$(EXEEXT): $(src_echo_OBJECTS) $(src_echo_DEPENDENCIES) $(EXTRA_src_echo_DEPENDENCIES) src/$(am__dirstamp)
+ 	@rm -f src/echo$(EXEEXT)
+ 	$(AM_V_CCLD)$(LINK) $(src_echo_OBJECTS) $(src_echo_LDADD) $(LIBS)
++src/encode.$(OBJEXT): src/$(am__dirstamp) \
++	src/$(DEPDIR)/$(am__dirstamp)
++src/encode$(EXEEXT): $(src_encode_OBJECTS) $(src_encode_DEPENDENCIES) $(EXTRA_src_encode_DEPENDENCIES) src/$(am__dirstamp)
++	@rm -f src/encode$(EXEEXT)
++	$(AM_V_CCLD)$(LINK) $(src_encode_OBJECTS) $(src_encode_LDADD) $(LIBS)
+ src/env.$(OBJEXT): src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
+ src/env$(EXEEXT): $(src_env_OBJECTS) $(src_env_DEPENDENCIES) $(EXTRA_src_env_DEPENDENCIES) src/$(am__dirstamp)
+ 	@rm -f src/env$(EXEEXT)
+@@ -6554,6 +6565,7 @@ distclean-compile:
+ @AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/dirname.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/du.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/echo.Po@am__quote@
++@AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/encode.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/env.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/expand.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/expr.Po@am__quote@
+diff --git a/build-aux/gen-lists-of-programs.sh b/build-aux/gen-lists-of-programs.sh
+index bf63ee3..c0e38c4 100755
+--- a/build-aux/gen-lists-of-programs.sh
++++ b/build-aux/gen-lists-of-programs.sh
+@@ -59,6 +59,7 @@ normal_progs='
+     dirname
+     du
+     echo
++    encode
+     env
+     expand
+     expr
+diff --git a/src/encode.c b/src/encode.c
+new file mode 100644
+index 0000000..45ac8ca
+--- /dev/null
++++ b/src/encode.c
+@@ -0,0 +1,7 @@
++#include <stdlib.h>
++
++int
++main(int argc, char **argv)
++{
++    return EXIT_SUCCESS;
++}
+-- 
+1.8.1.4
+

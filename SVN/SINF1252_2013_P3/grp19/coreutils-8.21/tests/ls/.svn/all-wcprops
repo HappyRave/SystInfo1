@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls
+END
+multihardlink.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/multihardlink.sh
+END
+readdir-mountpoint-inode.sh
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/readdir-mountpoint-inode.sh
+END
+rt-1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/rt-1.sh
+END
+no-arg.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/no-arg.sh
+END
+stat-vs-dirent.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/stat-vs-dirent.sh
+END
+nameless-uid.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/nameless-uid.sh
+END
+color-norm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/color-norm.sh
+END
+time-style-diag.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/time-style-diag.sh
+END
+file-type.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/file-type.sh
+END
+inode.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/inode.sh
+END
+color-clear-to-eol.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/color-clear-to-eol.sh
+END
+proc-selinux-segfault.sh
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/proc-selinux-segfault.sh
+END
+stat-free-symlinks.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/stat-free-symlinks.sh
+END
+block-size.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/block-size.sh
+END
+m-option.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/m-option.sh
+END
+root-rel-symlink-color.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/root-rel-symlink-color.sh
+END
+getxattr-speedup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/getxattr-speedup.sh
+END
+stat-free-color.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/stat-free-color.sh
+END
+infloop.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/infloop.sh
+END
+recursive.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/recursive.sh
+END
+x-option.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/x-option.sh
+END
+slink-acl.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/slink-acl.sh
+END
+no-cap.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/no-cap.sh
+END
+color-dtype-dir.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/color-dtype-dir.sh
+END
+follow-slink.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/follow-slink.sh
+END
+capability.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/capability.sh
+END
+abmon-align.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/abmon-align.sh
+END
+dired.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/dired.sh
+END
+dangle.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/dangle.sh
+END
+stat-failed.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/stat-failed.sh
+END
+symlink-slash.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/symlink-slash.sh
+END
+stat-dtype.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/tests/ls/stat-dtype.sh
+END

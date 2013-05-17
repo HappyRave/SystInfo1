@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/unistr
+END
+test-strncat.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/unistr/test-strncat.h
+END
+test-u8-uctomb.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/unistr/test-u8-uctomb.c
+END
+test-u8-mbtoucr.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/studentsvn/SINF1252_2013_P3/!svn/ver/273/grp19/coreutils-8.21/gnulib-tests/unistr/test-u8-mbtoucr.c
+END

@@ -1,0 +1,44 @@
+lib/unistr/u8-mbtoucr.o: lib/unistr/u8-mbtoucr.c lib/config.h \
+ lib/unistr.h lib/unitypes.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
+ /usr/include/features.h /usr/include/stdc-predef.h \
+ /usr/include/i386-linux-gnu/bits/predefs.h \
+ /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs-32.h \
+ /usr/include/i386-linux-gnu/bits/wchar.h lib/unused-parameter.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdbool.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h
+
+lib/config.h:
+
+lib/unistr.h:
+
+lib/unitypes.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/features.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/i386-linux-gnu/bits/predefs.h:
+
+/usr/include/i386-linux-gnu/sys/cdefs.h:
+
+/usr/include/i386-linux-gnu/bits/wordsize.h:
+
+/usr/include/i386-linux-gnu/gnu/stubs.h:
+
+/usr/include/i386-linux-gnu/gnu/stubs-32.h:
+
+/usr/include/i386-linux-gnu/bits/wchar.h:
+
+lib/unused-parameter.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.7/include/stdbool.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h:

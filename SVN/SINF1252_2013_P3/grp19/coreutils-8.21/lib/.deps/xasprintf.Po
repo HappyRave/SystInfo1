@@ -1,0 +1,8 @@
+lib/xasprintf.o: lib/xasprintf.c lib/config.h lib/xvasprintf.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h
+
+lib/config.h:
+
+lib/xvasprintf.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h:
