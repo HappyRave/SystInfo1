@@ -49,7 +49,8 @@ Commençons par le programme le plus simple possible que nous allons tester à l
 
 Après compilation et l'exécutions avec `valgrind(1)`_ nous obtenons à la console:
 
-      ..code-block:: console
+      
+        ..code-block:: console
 	
           gcc -o hello hello.c
           ./hello
