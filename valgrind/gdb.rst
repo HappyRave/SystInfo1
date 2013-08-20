@@ -38,7 +38,9 @@ Une fois un breakpoint placé, il est très utile de pouvoir afficher la valeur 
 	
 	.. code-block:: console
 
-		Il est possible de naviguer dans la pile des appels à l'aide de ``up`` et ``down``. Ces deux commandes montent et descendent respectivement dans la pile. Cela est très utile car il permet de modifier le contexte dans lequel on se trouve pour afficher les variables. 
+		Il est possible de naviguer dans la pile des appels à l'aide de ``up`` et ``down``. 
+		Ces deux commandes montent et descendent respectivement dans la pile. 
+		Cela est très utile car il permet de modifier le contexte dans lequel on se trouve pour afficher les variables. 
 
 	* ``list`` affiche les lignes de codes entourant le break. On peut donc facilement voir le code posant un problème ou analyser le code avant de faire une avancée pas à pas.
 
