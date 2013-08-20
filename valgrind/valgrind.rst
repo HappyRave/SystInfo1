@@ -79,6 +79,7 @@ L' ``ERROR SUMMARY`` indique le nombre d'erreurs détectées.
 La phrase que nous voulons voir après chaque exécutions de `valgrind(3)`_ est:
 
       .. code-block:: console
+
         All heap blocks were freed -- no leaks are possible
 
 Ce qui nous indique qu'aucun memory leak ne peut avoir lieu dans notre programme.
