@@ -82,7 +82,54 @@ La phrase que nous voulons voir après chaque exécutions de `valgrind(3)`_ est:
 
         All heap blocks were freed -- no leaks are possible
 
-Ce qui nous indique qu'aucun memory leak ne peut avoir lieu dans notre programme.
+Ce qui indique qu'aucun memory leak ne peut avoir lieu dans notre programme.
+
+Detecter les memory leaks
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A présent nous allons montrer comment détecter des fuites de mémoire dans un programme à l'aide de `valgrind(1)`_. Testons le programme :download:`src/nofree.c:
+
+      .. code-block:: console
+
+        gcc -o nofree nofree.c 
+        valgrind ./nofree
+        ==13791== Memcheck, a memory error detector
+        ==13791== Copyright (C) 2002-2010, and GNU GPL'd, by Julian Seward et al.
+        ==13791== Using Valgrind-3.6.0 and LibVEX; rerun with -h for copyright info
+        ==13791== Command: ./nofree
+        ==13791== 
+        ==13791== 
+        ==13791== HEAP SUMMARY:
+        ==13791==     in use at exit: 6 bytes in 1 blocks
+        ==13791==   total heap usage: 1 allocs, 0 frees, 6 bytes allocated
+        ==13791== 
+        ==13791== LEAK SUMMARY:
+        ==13791==    definitely lost: 6 bytes in 1 blocks
+        ==13791==    indirectly lost: 0 bytes in 0 blocks
+        ==13791==      possibly lost: 0 bytes in 0 blocks
+        ==13791==    still reachable: 0 bytes in 0 blocks
+        ==13791==         suppressed: 0 bytes in 0 blocks
+        ==13791== Rerun with --leak-check=full to see details of leaked memory
+        ==13791== 
+        ==13791== For counts of detected and suppressed errors, rerun with: -v
+        ==13791== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)
+
+Nous remarquons directement que cette fois ci des leks ont été trouvé par `valgrind(1)`_. Celui ci indique en effet la perte de 6 bytes de mémoire sur le tas qui ont été alloués par 1 `malloc(3)`_ et qui n'ont pas été libérés avant le ``return``.
+
+Maintenant nous savons que nous avons un memory leak, mais `valgrind(1)`_ peut faire plus que seulement les détecté, il peut aussi trouver où ont ils lieu. Nous remarquons dans le rapport qu'il conseil de relancer le test avec cette fois ci l'option ``--leak-check=full``pour avoir plus de détails sur notre fuite. Nous avons dés lors de nouvelles informations dans ``HEAP SUMMARY``:
+
+      .. code-block:: console
+
+        ==13818== 6 bytes in 1 blocks are definitely lost in loss record 1 of 1
+        ==13818==    at 0x4A05FDE: malloc (vg_replace_malloc.c:236)
+        ==13818==    by 0x4004DC: main (nofree.c:5)
+
+La fuite a donc lieu à la ligne 5 de notre programme qui correspond à:
+
+      .. code-block:: c
+        char *ptrChars = (char *)malloc(6 * sizeof(char));
+
+On sait maintenant quel est le `malloc(3)`_ responsable du leak, et il est facile de l'éviter en écrivant ``free(ptrChars);``avant le ``return``.
 
 .. _helgrind-ref:
 
