@@ -87,7 +87,7 @@ Ce qui indique qu'aucun memory leak ne peut avoir lieu dans notre programme.
 Detecter les memory leaks
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A présent nous allons montrer comment détecter des fuites de mémoire dans un programme à l'aide de `valgrind(1)`_. Testons le programme :download:`src/nofree.c:
+A présent nous allons montrer comment détecter des fuites de mémoire dans un programme à l'aide de `valgrind(1)`_. Testons le programme :download:`src/nofree.c`:
 
       .. code-block:: console
 
