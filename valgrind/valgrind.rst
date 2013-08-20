@@ -138,6 +138,7 @@ Double free
 Pour montrer cette fonction de `valgrind(1)`_ nous utilisons le petit programme :download:`src/twofree.c`.
 
       .. code-block:: console
+
         valgrind ./twofree
         ==13962== Memcheck, a memory error detector
         ==13962== Copyright (C) 2002-2010, and GNU GPL'd, by Julian Seward et al.
