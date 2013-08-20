@@ -114,7 +114,7 @@ A présent nous allons montrer comment détecter des fuites de mémoire dans un 
         ==13791== For counts of detected and suppressed errors, rerun with: -v
         ==13791== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)
 
-Nous remarquons directement que cette fois ci des leks ont été trouvé par `valgrind(1)`_. Celui ci indique en effet la perte de 6 bytes de mémoire sur le tas qui ont été alloués par 1 `malloc(3)`_ et qui n'ont pas été libérés avant le ``return``.
+Nous remarquons directement que cette fois ci des leaks ont été trouvé par `valgrind(1)`_. Celui ci indique en effet la perte de 6 bytes de mémoire sur le tas qui ont été alloués par 1 `malloc(3)`_ et qui n'ont pas été libérés avant le ``return``.
 
 Maintenant nous savons que nous avons un memory leak, mais `valgrind(1)`_ peut faire plus que seulement les détecté, il peut aussi trouver où ont ils lieu. Nous remarquons dans le rapport qu'il conseil de relancer le test avec cette fois ci l'option ``--leak-check=full`` pour avoir plus de détails sur notre fuite. Nous avons dés lors de nouvelles informations dans ``HEAP SUMMARY`` :
 
@@ -130,6 +130,38 @@ La fuite a donc lieu à la ligne 5 de notre programme qui correspond à:
         char *ptrChars = (char *)malloc(6 * sizeof(char));
 
 On sait maintenant quel est le `malloc(3)`_ responsable du leak, et il est facile de l'éviter en écrivant ``free(ptrChars);`` avant le ``return``.
+
+Double free
+^^^^^^^^^^^
+
+`valgrind(1)`_ ne se contente pas seulement de trouver des memory leaks, il est aussi capable de détecter des doubles free qui peuvent engendrer des corruptions de mémoire.
+Pour montrer cette fonction de `valgrind(1)`_ nous utilisons le petit programme :download:`src/twofree.c`.
+
+      .. code-block:: console
+        valgrind ./twofree
+        ==13962== Memcheck, a memory error detector
+        ==13962== Copyright (C) 2002-2010, and GNU GPL'd, by Julian Seward et al.
+        ==13962== Using Valgrind-3.6.0 and LibVEX; rerun with -h for copyright info
+        ==13962== Command: ./twofree
+        ==13962== 
+        ==13962== Invalid free() / delete / delete[]
+        ==13962==    at 0x4A0595D: free (vg_replace_malloc.c:366)
+        ==13962==    by 0x40053F: main (in twofree.c:8)
+        ==13962==  Address 0x4c2d040 is 0 bytes inside a block of size 6 free'd
+        ==13962==    at 0x4A0595D: free (vg_replace_malloc.c:366)
+        ==13962==    by 0x400533: main (in twofree.c:8)
+        ==13962== 
+        ==13962== 
+        ==13962== HEAP SUMMARY:
+        ==13962==     in use at exit: 0 bytes in 0 blocks
+        ==13962==   total heap usage: 1 allocs, 2 frees, 6 bytes allocated
+        ==13962== 
+        ==13962== All heap blocks were freed -- no leaks are possible
+        ==13962== 
+        ==13962== For counts of detected and suppressed errors, rerun with: -v
+        ==13962== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 6 from 6)
+
+Ici `valgrind(1)`_ nous indique qu'il a trouver une erreur et qu'il s'agit d'un ``Invalid free()`` à la ligne 8 de notre programme. Facilement trouvé et corrigé!
 
 .. _helgrind-ref:
 
