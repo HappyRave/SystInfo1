@@ -203,7 +203,7 @@ Il est important de compiler avec le drapeau -g pour dire au compilateur de gard
         ==14236== For counts of detected and suppressed errors, rerun with: -v
         ==14236== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 6 from 6)
 
-`valgrind(1)`_ trouve bien une erreur, à la ligne 7 de notre petit programme. On remarque aussi que tous nos malloc ont été free
+`valgrind(1)`_ trouve bien une erreur, à la ligne 7 de notre petit programme.
 
 .. _helgrind-ref:
 
