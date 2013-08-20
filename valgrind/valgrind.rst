@@ -164,6 +164,47 @@ Pour montrer cette fonction de `valgrind(1)`_ nous utilisons le petit programme 
 
 Ici `valgrind(1)`_ nous indique qu'il a trouver une erreur et qu'il s'agit d'un ``Invalid free()`` à la ligne 8 de notre programme. Facilement trouvé et corrigé!
 
+Segmentation Fault
+^^^^^^^^^^^^^^^^^^
+
+Les segmentation faults sont des erreurs courantes lors de la programmation en C/C++. Elles ont lieu lors de l'accès à des zones de mémoire non-allouées. `valgrind(1)`_ permet de facilement trouver l'origine des segfaults et de les corriger. Démonstration avec :download:`src/outofbounds.c`:
+
+      .. code-block:: console
+      
+        $ gcc -g -o outofbounds outofbounds.c
+
+Il est important de compiler avec le drapeau -g pour dire au compilateur de garder les informations de débuggage.
+
+      .. code-block:: console
+      
+        $ ./outofbounds
+        Segmentation fault
+        $ gcc -g -o outofbounds outofbounds.c
+        $ ./outofbounds
+        $ valgrind ./outofbounds
+        ==14236== Memcheck, a memory error detector
+        ==14236== Copyright (C) 2002-2010, and GNU GPL'd, by Julian Seward et al.
+        ==14236== Using Valgrind-3.6.0 and LibVEX; rerun with -h for copyright info
+        ==14236== Command: ./outofbounds
+        ==14236== 
+        ==14236== Invalid write of size 1
+        ==14236==    at 0x400530: main (outofbounds.c:7)
+        ==14236==  Address 0x4c2d04c is 6 bytes after a block of size 6 alloc'd
+        ==14236==    at 0x4A05FDE: malloc (vg_replace_malloc.c:236)
+        ==14236==    by 0x40051C: main (outofbounds.c:5)
+        ==14236== 
+        ==14236== 
+        ==14236== HEAP SUMMARY:
+        ==14236==     in use at exit: 0 bytes in 0 blocks
+        ==14236==   total heap usage: 1 allocs, 1 frees, 6 bytes allocated
+        ==14236== 
+        ==14236== All heap blocks were freed -- no leaks are possible
+        ==14236== 
+        ==14236== For counts of detected and suppressed errors, rerun with: -v
+        ==14236== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 6 from 6)
+
+`valgrind(1)`_ trouve bien une erreur, à la ligne 7 de notre petit programme. On remarque aussi que tous nos malloc ont été free
+
 .. _helgrind-ref:
 
 Détecter les deadlocks avec ``valgrind``

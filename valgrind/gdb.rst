@@ -14,21 +14,21 @@ GDB
 		gcc -g gdb.c -o my_program
 
 
-Lancez gdb avec la commande ``gdb my_program``. Ceci va vous ouvrir la console de gdb qui vous permet de lancer, le programme et de l'analyser. Pour démarrer le programme, tapez ``run``. gdb va arrêter l'exécution au  premier problème trouvé. Votre programme tourne encore pour l'instant. Arrètez-le avec la commande ``kill``.
+Lancez gdb avec la commande ``gdb my_program``. Celle ci ouvre la console de gdb et vous permet de lancer le programme et de l'analyser. Pour démarrer le programme, tapez ``run``. Gdb va arrêter l'exécution au  premier problème trouvé. Votre programme tourne encore pour l'instant. Arrètez-le avec la commande ``kill``.
 
-Pour analyser un programme, vous pouvez y placer des breakpoints. Un breakpoint permet de mettre en pause l'exécution d'un programme à un endroit donné pour pouvoir afficher l'état des variables et faire une exécution pas-à-pas. Pour mettre un breakpoint, vous avez plusieurs choix:
+Pour analyser un programme, vous pouvez y placer des breakpoints. Un breakpoint permet de mettre en pause l'exécution d'un programme à un endroit donné pour afficher l'état des variables et continuer l'exécution pas-à-pas. Pour mettre un breakpoint, vous avez plusieurs choix:
  
 	* ``break [function]`` met en pause l'exécution à l'appel de la fonction argument de la commande 
 	* ``break [filename:linenumber]`` spécifie le fichier du code source et la ligne à laquelle l'exécution doit s'arrêter
 	* ``delete [numberbreakpoint]`` supprime le breakpoint spécifié
 
-Une fois un breakpoint placé, il est très utile de pouvoir afficher la valeur des variables lorsque le programme est en pause :
+Une fois un breakpoint placé, plusieurs informations peuvent être extraite via gdb :
 	
-	* ``print [variablename]`` affiche la valeur de la variable dans son format de base. Il est possible de connaitre la valeur pointé en utilisant ``*`` ainsi que l'adresse de la variable avec ``&``. Pour afficher une registre utilisez ``$[registre]``.
+	* ``print [variablename]`` affiche la valeur de la variable dans son format de base. Utilisez ``*``pour connaitre la valeur pointé, ``&`` pour l'adresse de la variable et ``$[registre]`` pour afficher un registre.
 
 	.. code-block:: console
 
-		Il est interressant de noter qu'il est possible d'afficher la variable sous le format spécifié. Pour cela, remplacer ``print`` par :
+		Il est interressant de noter qu'il est possible d'afficher la variable sous le format voulu. Pour cela, remplacer ``print`` par :
 		* ``p/x`` - affiche en format hexadécimal la variable spécifiée
 		* ``p/d`` - en format d'un entier signé
 		* ``p/f`` - en format floating point
@@ -38,11 +38,11 @@ Une fois un breakpoint placé, il est très utile de pouvoir afficher la valeur 
 	
 	.. code-block:: console
 
-		Il est possible de naviguer dans la pile des appels à l'aide de ``up`` et ``down``. 
-		Ces deux commandes montent et descendent respectivement dans la pile. 
-		Cela est très utile car il permet de modifier le contexte dans lequel on se trouve pour afficher les variables. 
+		Naviguez dans la pile des appels de fonction avec ``up`` et ``down`` qui montent et descendent dans la pile.
+		Naviguer dans les différents contexte permet d'afficher des variables inaccessibles qui étaient innaccessibles.
+		Typiquement, nous l'utiliserons pour voir une variable local dans une autre fonction.
 
-	* ``list`` affiche les lignes de codes entourant le break. On peut donc facilement voir le code posant un problème ou analyser le code avant de faire une avancée pas à pas.
+	* ``list`` affiche les lignes de codes. On peut donc facilement voir le code posant un problème ou analyser le code avant de faire une avancée pas à pas. 
 
 	* ``show args`` affiche les arguments passé au programme.		
 	* ``info breakpoints`` affiche les breakpoints
@@ -57,7 +57,7 @@ Quand vous avez acquis suffisament d'information sur le programme, vous avez plu
 
 Lors d'un débuggage long et fastidieux, il est parfois indispensable d'effectuer certaines commandes à chaque breakpoint.
 
-	* ``commands [numerobreakpoint]`` definit une liste de commande à effectuer à un breakpoint. Il suffit de taper les commandes à effectuer les unes après les autres et de terminer par ``end``. Si vous ne fournissez pas de numero, les commands sont assigné au dernier break point créé.
+	* ``commands [numerobreakpoint]`` definit une liste de commande associé à un breakpoint. Celle ci seront exécuté quand on s'arretera sur ce breakpoint. Il suffit de taper les commandes à effectuer les unes après les autres et de terminer par ``end``. Si vous ne fournissez pas de numero, les commandes sont assignés au dernier breakpoint créé.
 	* ``display [variablename]`` affiche la variable à chaque breakpoint.
 
 Il est aussi possible de modifier une variable avec ``set variable [nom_variable] = [expression]`` et de façon similaire avec ``print [nom_variable] = [expression]``.
@@ -66,9 +66,9 @@ Pour arrêter la console de gdb, tappez ``quit``.
 
 
 
-A titre d'exemple, telecharger cette archive :download:`src/gdb.c`. L'archive contient un makefile qui vous permettra de compiler vos programmes. 
+A titre d'exemple, telechargez cette archive :download:`src/gdb.c`. L'archive contient un makefile qui vous permettra de compiler vos programmes. 
 
-	Le premier programme est ``calc``. Executez le pour vous apercevoir que le programme bug. A priori peu, ou pas, d'information sur l'erreur. Lancez donc gdb à l'aide de ``gdb calc`` puis lancez le programme avec ``run``.
+	Le premier programme est ``calc``. Executez le et observez le bug. A priori peu ou pas d'information sur l'erreur. Lancez donc gdb à l'aide de ``gdb calc`` puis lancez le programme avec ``run``.
 
 	.. code-block:: console
 
@@ -77,14 +77,14 @@ A titre d'exemple, telecharger cette archive :download:`src/gdb.c`. L'archive co
 
 		10			res = (a*5 -10) / (b-i);	=> Affichage de la ligne problématique
 
-	Le premier réflexe doit être ``list`` pour observer le code. Puisque le problème vient de la ligne 10 dans la boucle, nous allons nous arreter à la ligne 10 avec ``break 10`` et relancer le programme. 
-	Le programme va s'arrêter avant le début de la boucle. ``print a`` et ``print b`` pour connaitre les arguments reçus par calc.
+	Le premier réflexe doit être la commande``list`` pour observer le code. Puisque le problème provient de la boucle, faites un ``break 9`` et relancer le programme. 
+	Le programme va donc s'arrêter avant le début de la boucle. ``print a`` et ``print b`` pour connaitre la valeur des arguments reçus par ``calc``.
 	
 	.. code-block:: console	
 
 		Il est interressant de noter une particularité du language C par rapport à java : une variable déclaré n'est pas initialisé à 0 par défault, elle reprend juste la valeur de la mémoire avant son affectation. ``print i`` et ``print res`` vous donnerons donc des résultats aléatoires.
 	
-	Puisque le problème vient du calcul arithmetique, placez un break sur cette ligne pour pouvoir observer à chaque itération les variables. ``break 9`` puis ``commands`` qui permet d'automatiser des commandes. Nous rajouterons comme commandes :
+	Puisque le problème vient du calcul arithmetique, placez un break sur cette ligne pour pouvoir observer à chaque itération les variables. ``break 10`` puis ``commands`` qui permet d'automatiser des commandes. Ces commandes sont automatiquement attribué au dernier breakpoint créé. Rajoutez ces commandes :
 		* ``echo i : ``
 		* ``print i``
 		* ``echo b : ``
@@ -95,13 +95,14 @@ A titre d'exemple, telecharger cette archive :download:`src/gdb.c`. L'archive co
 		* ``print b-i``
 		* et enfin ``end`` pour terminer la liste de commande.
 	
-	Il ne reste plus qu'à avancer avec ``continue`` pour aller de breakpoint en breakpoint et d'observer les variables pour comprendre le problème. On va pouvoir deviner que le problème vient d'un dénominateur nulle. Pour résoudre ce problème, il faut envoyer une valeur plus grande que 6 à calc lors de son appel depuis la main. ``list main`` suivi de plusieurs ``list`` permet de visualiser la main. On peut repérer l'appel de la fonction calc à la ligne 18. 
-	Supprimez les anciens break avec ``delete [numerobreakpoint]`` le numero du breakpoint est connu via ``info break``. Rajoutez un break à la ligne 18, ``break 18`` et lancez le programme. ``set variable m = 10`` pour assigner la valeur 10 à m. Puis continuez le programme. Celui se terminera normalement puisque il n'y a plus de division par zéro.
+	Avancez avec ``continue`` pour aller de breakpoint en breakpoint et observez les variables pour comprendre le problème. Vous pourrez donc deviner que le problème vient d'un dénominateur nulle. Pour résoudre ce problème, il faut envoyer une valeur plus grande que 6 à ``calc`` lors de son appel depuis la main. 
+``list main`` suivi de plusieurs ``list`` permet de visualiser la main. L'appel de la fonction ``calc`` est à la ligne 18. 
+	Supprimez les anciens break avec ``delete [numerobreakpoint]``, le numero du breakpoint étant connu via ``info break``. Rajoutez ``break 18`` et relancez le programme. Une fois sur le break, assignez la valeur 10 à m avec``set variable m = 10``. Puis continuez le programme. Celui se terminera normalement puisque il n'y a plus de division par zéro.
 
 
 
-	Le deuxieme programme est ``recursive``. Celui ne présente aucun bug et se déroulera normalement. Toutefois, il est interressant d'utiliser GDB pour bien comprendre les différents contextes au sein d'un programme. Mettez un break sur la fonction factTmp avec ``break factTmp`` et ajouter automatiquement à ce breakpoint la commande ``backtrace``, via ``commands``, puis lancez le programme.
-	``backtrace`` permet de visualiser les appels de fonction effectué. Nous pouvons voir que la fonction factTmp a été appellé par factTerminal, elle même appellé par la main.
+	Le deuxieme programme est ``recursive``. Celui ne présente aucun bug et se déroulera normalement. Toutefois, il est interressant d'utiliser gdb pour bien comprendre les différents contextes au sein d'un programme. Mettez un break sur la fonction factTmp avec ``break factTmp`` et ajouter automatiquement à ce breakpoint la commande ``backtrace``, via ``commands``, puis lancez le programme.
+	``backtrace`` permet de visualiser les appels de fonction effectué. La fonction ``factTmp`` a donc été appellé par ``factTerminal``, elle même appellé par ``main``.
 
 	.. code-block:: console
 			
@@ -109,19 +110,28 @@ A titre d'exemple, telecharger cette archive :download:`src/gdb.c`. L'archive co
 			#1  0x000000000040057d in factTerminal (a=6) at recursive.c:17
 			#2  0x0000000000400598 in main (argc=1, argv=0x7fffffffe1b8) at recursive.c:23
 
-	Essayez d'afficher la variable ``globalVar`` puis``localVar``. Vous remarquerez qu'il n'est pas possible d'afficher ``localVar`` puisque cette variable puisqu'elle ne fait pas partie de l'environement contextuel de factTmp. Pour afficher cette variable, il faut remonter la liste des appels. ``up`` permettra de remonter les appels pour pouvoir afficher ``localVar``.
-	Une fois la variable affiché, redescendez avec ``down`` et continuez 4 fois le programme apres le breakpoint. Vous remarquerez que la liste des appels s'allongent à chaque appel récursif, ce qui est tout à fait normal. Naviguez dans les appels recursif de factTmp en affichant les valeur de ``globalTmp``, ``tmp``, ``acc`` et ``nbr``. Il est important de bien comprendre que la variable ``globalTmp``, qui est static, est commune à tout les appels de la fonction ``factTmp`` et un changement de cette variable dans un des appels recursifs modifie la variable des autres appels. A contrario, la variable local ainsi que les arguments sont propre à chaque appels.
+	Essayez d'afficher la variable ``globalVar`` puis``localVar``. Vous remarquerez qu'il n'est pas possible d'afficher ``localVar`` puisque cette variable ne fait pas partie de l'environement contextuel de ``factTmp``. Pour afficher cette variable, il faut remonter la liste des appels. ``up`` permettra de remonter les appels pour pouvoir afficher ``localVar``.
+	Une fois la variable affiché, redescendez avec ``down`` et continuez de breakpoint en breakpoint. Vous remarquerez que la liste des appels s'allongent à chaque appel récursif, ce qui est tout à fait normal. 
+Naviguez dans les appels recursif de ``factTmp`` en affichant les valeur de ``globalTmp``, ``tmp``, ``acc`` et ``nbr``. 
+
+	.. code-block:: console
+	
+	La variable static ``globalTmp`` est commune à tous les appels de la fonction ``factTmp``. Les variables pointent vers la même adresse mémoire. Un changement de cette variable dans un des appels va donc modifier la variable dans les autres appels. 
+	A contrario, la variable local ainsi que les arguments sont indépendant à chaque appels puisqu'ils pointent vers une adresse mémoire distincte.
+
 
 	Vous pouvez maintenant terminer le programme.
 
 
-	Le troisième programme est ``tab``. Ce programme se déroule correctement, et pourtant, il y a une erreur. Lancez le programme sur gsb et mettez un breakpoint sur la première instruction, à savoir la ligne 9. Pour comprendre un problème sans savoir où commencer, il est important de suivre les variables. 
+	Le troisième programme est ``tab``. Ce programme se déroule correctement, et pourtant, il y a une erreur. Lancez le programme sur gdb et mettez un breakpoint sur la première instruction, à la ligne 9. Pour comprendre un problème sans savoir où commencer, il est important de suivre les variables. 
 
 	.. code-block:: console
 			
-		Il est important de savoir que ``print``, ainsi que ``display``, comprend les expressions telque :
-			* tab[1], tab[i],...
-			* &i, *i,...
+		``print`` ainsi que ``display`` comprend les expressions telque :
+			* tab[1], tab[i],..
+			* &i, *i,..
+			* +, -, *, /, %
+			* ..
 
 	Avancez instruction par instruction, avec ``step`` ou ``next`` et portez attention aux valeurs de tab[i] par rapport à i. Une fois le problème trouvé avec gdb, solutionner le.
 
