@@ -47,7 +47,7 @@ Commençons par le programme le plus simple possible que nous allons tester à l
              return EXIT_SUCCESS;   
           }
 
-Après compilation et l'exécutions avec `valgrind(1)`_ nous obtenons à la console:
+Après compilation et l'exécutions avec `valgrind(1)`_ nous obtenons :
 
       
       .. code-block:: console
