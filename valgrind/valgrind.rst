@@ -61,3 +61,5 @@ Détecter les deadlocks avec ``valgrind``
 
 Plus d'informations sur:
         * http://valgrind.org/docs/manual/hg-manual.html
+
+.. `valgrind(1)`_: http://valgrind.org/
