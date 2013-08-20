@@ -52,10 +52,10 @@ Après compilation et l'exécutions avec `valgrind(1)`_ nous obtenons à la cons
       
       .. code-block:: console
 	
-          gcc -o hello hello.c
-          ./hello
+          $ gcc -o hello hello.c
+          $ ./hello
           Hello, 1252 !
-          valgrind ./hello
+          $ valgrind ./hello
           ==13415== Memcheck, a memory error detector
           ==13415== Copyright (C) 2002-2010, and GNU GPL'd, by Julian Seward et al.
           ==13415== Using Valgrind-3.6.0 and LibVEX; rerun with -h for copyright info
@@ -91,8 +91,8 @@ A présent nous allons montrer comment détecter des fuites de mémoire dans un 
 
       .. code-block:: console
 
-        gcc -o nofree nofree.c 
-        valgrind ./nofree
+        $ gcc -o nofree nofree.c 
+        $ valgrind ./nofree
         ==13791== Memcheck, a memory error detector
         ==13791== Copyright (C) 2002-2010, and GNU GPL'd, by Julian Seward et al.
         ==13791== Using Valgrind-3.6.0 and LibVEX; rerun with -h for copyright info
@@ -139,7 +139,7 @@ Pour montrer cette fonction de `valgrind(1)`_ nous utilisons le petit programme 
 
       .. code-block:: console
 
-        valgrind ./twofree
+        $ valgrind ./twofree
         ==13962== Memcheck, a memory error detector
         ==13962== Copyright (C) 2002-2010, and GNU GPL'd, by Julian Seward et al.
         ==13962== Using Valgrind-3.6.0 and LibVEX; rerun with -h for copyright info
