@@ -31,6 +31,44 @@ On vous encourage à lancer `valgrind(1)`_ sur votre projet pour vérifier que v
 	* http://www.cprogramming.com/debugging/valgrind.html
 	* http://valgrind.org
 
+Les bases de ``valgrind``
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Commençons par le programme le plus simple possible que nous allons tester à l'aide de `valgrind(1)`_:
+
+        .. code-block:: c
+	#include <stdio.h>
+    	#include <stdlib.h>
+ 
+	int main(void)
+	{
+    		printf("Hello, 1252 !\n");
+    		return EXIT_SUCCESS;   
+	}
+
+Après compilation et l'exécutions avec `valgrind(1)`_ nous obtenons à la console:
+
+	..code-block:: console
+	gcc -o hello hello.c
+	./hello
+	Hello, 1252 !
+	valgrind ./hello
+	==13415== Memcheck, a memory error detector
+	==13415== Copyright (C) 2002-2010, and GNU GPL'd, by Julian Seward et al.
+	==13415== Using Valgrind-3.6.0 and LibVEX; rerun with -h for copyright info
+	==13415== Command: ./hello
+	==13415== 
+	Hello, 1252 !
+	==13415== 
+	==13415== HEAP SUMMARY:
+	==13415==     in use at exit: 0 bytes in 0 blocks
+	==13415==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+	==13415== 
+	==13415== All heap blocks were freed -- no leaks are possible
+	==13415== 
+	==13415== For counts of detected and suppressed errors, rerun with: -v
+	==13415== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)
+
 .. _helgrind-ref:
 
 Détecter les deadlocks avec ``valgrind``
@@ -61,5 +99,3 @@ Détecter les deadlocks avec ``valgrind``
 
 Plus d'informations sur:
         * http://valgrind.org/docs/manual/hg-manual.html
-
-.. _`valgrind(1)`: http://valgrind.org/
