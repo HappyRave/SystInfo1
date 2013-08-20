@@ -72,6 +72,17 @@ Après compilation et l'exécutions avec `valgrind(1)`_ nous obtenons à la cons
           ==13415== For counts of detected and suppressed errors, rerun with: -v
           ==13415== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)
 
+Nous pouvons lire dans ce rapport plusieurs informations importante comme le ``HEAP SUMMARY`` qui résume l'utilisation du tas. Dans notre cas particulier, on peut voir que rien n'a été alloué (en effet, il n'y a pas eu de malloc) et rien n'a été libéré.
+
+L' ``ERROR SUMMARY`` indique le nombre d'erreurs détectées.
+
+La phrase que nous voulons voir après chaque exécutions de `valgrind(3)`_ est:
+
+      .. code-block:: console
+        All heap blocks were freed -- no leaks are possible
+
+Ce qui nous indique qu'aucun memory leak ne peut avoir lieu dans notre programme.
+
 .. _helgrind-ref:
 
 Détecter les deadlocks avec ``valgrind``
