@@ -37,14 +37,15 @@ Les bases de ``valgrind``
 Commençons par le programme le plus simple possible que nous allons tester à l'aide de `valgrind(1)`_:
 
       .. code-block:: c
-      #include <stdio.h>
-      #include <stdlib.h>
+
+          #include <stdio.h>
+          #include <stdlib.h>
  
-      int main(void)
-      {
-      printf("Hello, 1252 !\n");
-      return EXIT_SUCCESS;   
-      }
+          int main(void)
+          {
+          printf("Hello, 1252 !\n");
+          return EXIT_SUCCESS;   
+          }
 
 Après compilation et l'exécutions avec `valgrind(1)`_ nous obtenons à la console:
 
