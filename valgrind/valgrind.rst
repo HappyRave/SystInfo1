@@ -116,7 +116,7 @@ A présent nous allons montrer comment détecter des fuites de mémoire dans un 
 
 Nous remarquons directement que cette fois ci des leks ont été trouvé par `valgrind(1)`_. Celui ci indique en effet la perte de 6 bytes de mémoire sur le tas qui ont été alloués par 1 `malloc(3)`_ et qui n'ont pas été libérés avant le ``return``.
 
-Maintenant nous savons que nous avons un memory leak, mais `valgrind(1)`_ peut faire plus que seulement les détecté, il peut aussi trouver où ont ils lieu. Nous remarquons dans le rapport qu'il conseil de relancer le test avec cette fois ci l'option ``--leak-check=full``pour avoir plus de détails sur notre fuite. Nous avons dés lors de nouvelles informations dans ``HEAP SUMMARY``:
+Maintenant nous savons que nous avons un memory leak, mais `valgrind(1)`_ peut faire plus que seulement les détecté, il peut aussi trouver où ont ils lieu. Nous remarquons dans le rapport qu'il conseil de relancer le test avec cette fois ci l'option ``--leak-check=full`` pour avoir plus de détails sur notre fuite. Nous avons dés lors de nouvelles informations dans ``HEAP SUMMARY`` :
 
       .. code-block:: console
 
@@ -129,7 +129,7 @@ La fuite a donc lieu à la ligne 5 de notre programme qui correspond à:
       .. code-block:: c
         char *ptrChars = (char *)malloc(6 * sizeof(char));
 
-On sait maintenant quel est le `malloc(3)`_ responsable du leak, et il est facile de l'éviter en écrivant ``free(ptrChars);``avant le ``return``.
+On sait maintenant quel est le `malloc(3)`_ responsable du leak, et il est facile de l'éviter en écrivant ``free(ptrChars);`` avant le ``return``.
 
 .. _helgrind-ref:
 
