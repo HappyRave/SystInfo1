@@ -72,3 +72,21 @@ Synchronisation de fichiers entre ordinateurs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Quand nous avons besoin de synchroniser des fichiers entre 2 ordinateurs différents, Unix nous vient en aide avec l'utilitaire `rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_.
+
+L'utilisation la plus basique de `rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_ est:
+
+    .. code-block:: console
+
+      rsync *.c [hostname]:src/
+
+`rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_ va copier tout les fichiers qui correspondent au pattern ``*.c`` du répertoire courant vers le dossier sur la machine hôte. De plus, si certains ou tout les fichiers sont déjà présents chez l'hôte, `rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_ va procéder à une mise à jour différentiel de ces fichiers (seuls les changements sont transférés).
+
+L'ajout du drapeau ``-avz`` permet de synchroniser les fichiers en mode archive. Cela veut dire que tous les liens, permissions, propriétaires, etc de ces fichiers seront préservés durant le transfert. 
+
+Nous pouvons aussi utiliser `rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_
+
+    .. code-block:: console
+
+      rsync -avz [hostname]:src/bar /data/tmp
+
+Maintenant tout les fichiers de la machine hôte, dans le dossier src/bar vont être copié vers le répertoire local /data/tmp.
