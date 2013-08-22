@@ -1,5 +1,5 @@
 .. -*- coding: utf-8 -*-
-.. Copyright |copy| 2012 by `Olivier Bonaventure <http://inl.info.ucl.ac.be/obo>`_, Christoph Paasch et Grégory Detal
+.. Copyright |copy| 2013 by Maxime De Mol
 .. Ce fichier est distribué sous une licence `creative commons <http://creativecommons.org/licenses/by-sa/3.0/>`_
 
 
@@ -21,7 +21,7 @@ Nous allons écrire un premier script bash pour présenter la manière général
       #!/bin/bash
       echo "Hello, 1252"
 
-Nous allons enregistrer ce texte sous le nom hello.sh, puis changer ses permissions pour le rendre exécutable.
+Nous allons enregistrer ce texte sous le nom `hello.sh <https://raw.github.com/HappyRave/SystInfo1/master/valgrind/hello.sh>`_, puis changer ses permissions pour le rendre exécutable.
 
     .. code-block:: console
 
