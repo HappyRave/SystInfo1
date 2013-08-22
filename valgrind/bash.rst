@@ -70,7 +70,69 @@ Comme dans chaque langage de programmation, bash offre les structures de contrô
 
 Comme dit précédemment, il n'y a pas de type en bash, true et false n'existe pas. Les conditions que les boucles vont utiliser seront les valeurs renvoyées par l'exécution d'une commande. Un 0 renvoyé correspond à un true, tandis que tout le reste est considéré comme un false.
 
-Dans le but de tester ces boucles nous utiliserons un petit programme en C, return.c, qui va renvoyer la valeur qu'il reçoit en argument.
+Dans le but de tester ces boucles nous utiliserons un petit programme en C, `return.c <https://raw.github.com/HappyRave/SystInfo1/master/valgrind/return.c>`_, qui va renvoyer la valeur qu'il reçoit en argument. Le script de test est `structures.sh <https://raw.github.com/HappyRave/SystInfo1/master/valgrind/structures.sh>`_.
+
+    .. code-block:: bash
+
+      #!/bin/bash
+
+      if ./return 0; then
+      #la valeur de renvoi sera 0 dans la boucle sera exécutée
+      echo "Hello"
+      fi
+
+      if ./return 1; then
+      #ici c'est la condition else qui sera remplie
+      echo "Hello"
+      else
+      echo "Bye"
+      fi
+
+      for i in 1 2 5 2
+      #les boucles for peuvent s'écrire de cette façon
+      do
+      echo $i
+      done
+
+      echo Hello again!
+
+      for (( j=1; j<=5; j++))
+      #ou encore utiliser la synthaxe classique comme en C ou Java
+      do
+      echo $j
+      done
+
+      k=4
+      while ((k>0))
+      do
+      echo $k
+      k=$((k-1))
+      done
+
+Le résultat à l'exécution est
+
+    .. code-block:: console
+
+      $ ./structures.sh
+      Hello
+      Bye
+      1
+      2
+      5
+      2
+      Hello again!
+      1
+      2
+      3
+      4
+      5
+      4
+      3
+      2
+      1
+
+
+
 
 
 
