@@ -50,6 +50,12 @@ Pour générer ces clés et choisir votre mot de passe, il suffit d'entrer la co
       The key fingerprint is:
       17:bc:98:ab:39:f6:a2:db:1d:07:9a:63:d7:c7:9b:e0 "login"
 
+Maintenant que les clés ont été crées, il faut communiquer votre clé publique à l'hôte sur lequel vous voulez vous connecter. Pour cela, le plus simple est d'utiliser la commande suivante
 
+    .. code-block:: console
+      
+      $ cat ~/.ssh/id_rsa.pub | ssh [username]@[hostname] "cat - >> ~/.ssh/authorized_keys"
+
+Cette commande va récupérer votre clé publique dans votre dossier ``~/.ssh``, se connecter en ssh à l'hôte et va placer votre clé dans son répertoire de clé autorisées. Maintenant vous pouvez utilisez en toute sérénité votre connexion ssh sécurisée!
 
 
