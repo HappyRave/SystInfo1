@@ -37,7 +37,7 @@ Après il ne reste plus qu'à l'exécuter et observer le résultat.
 Les variables
 ^^^^^^^^^^^^^
 
-Bash permet l'utilisation de variables dans les scripts. Il peut s'agir de simples variables ou, de tableaux. Bash n'est pas un langage typé, des Int ou des String n'existe pas, toutes les variables sont traitées de la même façon. Pour illustrer ceci nous allons écrire le script variables.sh
+Bash permet l'utilisation de variables dans les scripts. Il peut s'agir de simples variables ou, de tableaux. Bash n'est pas un langage typé, des Int ou des String n'existe pas, toutes les variables sont traitées de la même façon. Pour illustrer ceci nous allons écrire le script `variables.sh <https://raw.github.com/HappyRave/SystInfo1/master/valgrind/variables.sh>`_
 
     .. code-block:: bash
 
@@ -66,7 +66,13 @@ Ce script produit comme résultat
 Les structures de contrôles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Comme dans chaque langage de programmation, bash offre les structures de contrôles habituelles telles que les boucles if et for que nous allons démontrer maintenant.
+Comme dans chaque langage de programmation, bash offre les structures de contrôles habituelles telles que les boucles if, for ou encore while que nous allons démontrer maintenant.
+
+Comme dit précédemment, il n'y a pas de type en bash, true et false n'existe pas. Les conditions que les boucles vont utiliser seront les valeurs renvoyées par l'exécution d'une commande. Un 0 renvoyé correspond à un true, tandis que tout le reste est considéré comme un false.
+
+Dans le but de tester ces boucles nous utiliserons un petit programme en C, return.c, qui va renvoyer la valeur qu'il reçoit en argument.
+
+
 
 
 
