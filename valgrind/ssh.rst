@@ -71,4 +71,4 @@ Les bits de permissions sont définis comme ``drwx------`` ce qui fait du propri
 Synchronisation de fichiers entre ordinateurs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Quand nous avons besoin de synchroniser des fichiers entre 2 ordinateurs différents, Unix nous vient en aide avec l'utilitaire `rsync<http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_.
+Quand nous avons besoin de synchroniser des fichiers entre 2 ordinateurs différents, Unix nous vient en aide avec l'utilitaire `rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_.
