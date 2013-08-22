@@ -24,15 +24,15 @@ Le site `Getting started with SSH <http://www.ibm.com/developerworks/aix/library
 Authentification par clé
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Face à la faiblesse au niveau sécurité de l'authentification par mot de passe, l'authentification par clé se révèle être un moyen nettement plus sûr.
+Face à la faiblesse au niveau sécurité de l'authentification par mot de passe, l'authentification par clé se révèle être un moyen nettement plus efficace.
 
 L'authentification par clé consiste en un premier temps à générer une paire de clés et son mot de passe:
 
-        * ``clé publique`` que l'on exporte vers chaque hôte sur lequel on veut se connecter
-        * ``clé privée`` que l'on garde précieusement sur notre ordinateur, et qui sert à prouver à l'hôte son identité
-        * le mot de passe permet de sécuriser sa clé privée
+        * la ``clé publique`` que l'on exporte vers chaque hôte sur lequel on veut se connecter
+        * la ``clé privée`` que l'on garde précieusement sur notre ordinateur, et qui sert à prouver à l'hôte notre identité
+        * le ``mot de passe`` permet de sécuriser sa clé privée
 
-Le mot de passe ne servant à rien sans les clé et vice versa, on devine aisément que la sécurité d'une telle connexion est largement accrue par rapport à une simple authentification par mot de passe.
+Le mot de passe ne servant à rien sans les clé et vice versa, on devine aisément que le niveau de sécurité d'une telle connexion est largement accru par rapport à une simple authentification par mot de passe.
 
 Pour générer ces clés et choisir votre mot de passe, il suffit d'entrer la commande
 
@@ -56,7 +56,7 @@ Maintenant que les clés ont été crées, il faut communiquer votre clé publiq
       
       $ cat ~/.ssh/id_rsa.pub | ssh [username]@[hostname] "cat - >> ~/.ssh/authorized_keys"
 
-Cette commande va récupérer votre clé publique dans votre dossier ``~/.ssh``, se connecter en ssh à l'hôte et va placer votre clé dans son répertoire de clé autorisées. Maintenant nous pouvons utilisez en toute sérénité votre connexion ssh sécurisée!
+Cette commande va récupérer votre clé publique dans votre dossier ``~/.ssh``, se connecter en ssh à l'hôte et va placer votre clé dans son répertoire de clés autorisées. Maintenant nous pouvons utilisez en toute sérénité votre connexion ssh sécurisée!
 
 Petit mot sur les permissions du dossier ``~/.ssh`` où sont stockées les clés:
 
@@ -79,7 +79,7 @@ L'utilisation la plus basique de `rsync <http://linux.about.com/library/cmd/blcm
 
       rsync *.c [hostname]:src/
 
-`rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_ va copier tout les fichiers qui correspondent au pattern ``*.c`` du répertoire courant vers le dossier sur la machine hôte. De plus, si certains ou tout les fichiers sont déjà présents chez l'hôte, `rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_ va procéder à une mise à jour différentiel de ces fichiers (seuls les changements sont transférés).
+`rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_ va copier tout les fichiers qui correspondent au pattern ``*.c`` du répertoire courant vers le dossier ``src/`` sur la machine hôte. De plus, si certains ou tout les fichiers sont déjà présents chez l'hôte, `rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_ va procéder à une mise à jour différentielle de ces fichiers (seuls les changements sont transférés).
 
 L'ajout du drapeau ``-avz`` permet de synchroniser les fichiers en mode archive. Cela veut dire que tous les liens, permissions, propriétaires, etc de ces fichiers seront préservés durant le transfert. 
 
@@ -89,4 +89,4 @@ Nous pouvons aussi utiliser `rsync <http://linux.about.com/library/cmd/blcmdl1_r
 
       rsync -avz [hostname]:src/bar /data/tmp
 
-Maintenant tout les fichiers de la machine hôte, dans le dossier src/bar vont être copié vers le répertoire local /data/tmp.
+Maintenant tout les fichiers de la machine hôte, dans le dossier src/bar vont être copiés vers le répertoire local /data/tmp.
