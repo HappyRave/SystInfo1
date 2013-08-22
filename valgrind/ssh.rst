@@ -83,7 +83,7 @@ L'utilisation la plus basique de `rsync <http://linux.about.com/library/cmd/blcm
 
 L'ajout du drapeau ``-avz`` permet de synchroniser les fichiers en mode archive. Cela veut dire que tous les liens, permissions, propriétaires, etc de ces fichiers seront préservés durant le transfert. 
 
-Nous pouvons aussi utiliser `rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_
+Nous pouvons aussi utiliser `rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_ dans l'autre sens:
 
     .. code-block:: console
 
