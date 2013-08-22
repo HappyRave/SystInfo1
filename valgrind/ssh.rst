@@ -56,6 +56,19 @@ Maintenant que les clés ont été crées, il faut communiquer votre clé publiq
       
       $ cat ~/.ssh/id_rsa.pub | ssh [username]@[hostname] "cat - >> ~/.ssh/authorized_keys"
 
-Cette commande va récupérer votre clé publique dans votre dossier ``~/.ssh``, se connecter en ssh à l'hôte et va placer votre clé dans son répertoire de clé autorisées. Maintenant vous pouvez utilisez en toute sérénité votre connexion ssh sécurisée!
+Cette commande va récupérer votre clé publique dans votre dossier ``~/.ssh``, se connecter en ssh à l'hôte et va placer votre clé dans son répertoire de clé autorisées. Maintenant nous pouvons utilisez en toute sérénité votre connexion ssh sécurisée!
+
+Petit mot sur les permissions du dossier ``~/.ssh`` où sont stockées les clés:
+
+    .. code-block:: console
+
+      .ssh user$ ls -ld
+      drwx------  6 user  staff  204 22 aoû 10:29 .
 
 
+Les bits de permissions sont définis comme ``drwx------`` ce qui fait du propriétaire de ce dossier la seul personne capable de lire, d'écrire et d'exécuter le contenu de se dossier. La clé privée est donc belle et bien privée!
+
+Synchronisation de fichiers entre ordinateurs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Quand nous avons besoin de synchroniser des fichiers entre 2 ordinateurs différents, Unix nous vient en aide avec l'utilitaire 'rsync<http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_.
