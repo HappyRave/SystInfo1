@@ -32,5 +32,24 @@ L'authentification par clé consiste en un premier temps à générer une paire 
         * ``clé privée`` que l'on garde précieusement sur notre ordinateur, et qui sert à prouver à l'hôte son identité
         * le mot de passe permet de sécuriser sa clé privée
 
-Le mot de passe ne servant à rien sans les clé et vice versa, on devine aisément que la sécurité d'une telle connexion est largement accrue par rapport à une simple authentification par mot de passe
+Le mot de passe ne servant à rien sans les clé et vice versa, on devine aisément que la sécurité d'une telle connexion est largement accrue par rapport à une simple authentification par mot de passe.
+
+Pour générer ces clés et choisir votre mot de passe, il suffit d'entrer la commande
+
+    .. code-block:: console
+
+      $ ssh-keygen -t rsa -C "login"
+      # remplacer "login" par votre nom d'utilisateur
+
+      Generating public/private rsa key pair.
+      Enter file in which to save the key (~/.ssh/id_rsa): 
+      Enter passphrase (empty for no passphrase): 
+      Enter same passphrase again: 
+      Your identification has been saved in ~/.ssh/id_rsa.
+      Your public key has been saved in ~/.ssh/id_rsa.pub.
+      The key fingerprint is:
+      17:bc:98:ab:39:f6:a2:db:1d:07:9a:63:d7:c7:9b:e0 "login"
+
+
+
 
