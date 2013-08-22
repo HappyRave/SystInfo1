@@ -8,7 +8,7 @@
 Bash
 ----
 
-Tapez des commandes dans la console est inévitable lors d'opérations avancées sur un système Unix, et peut devenir très vite répétitif et fastidieux pour l'utilisateur. Le Bash est justement là pour éviter ces répétitions et automatiser certaines tâche à l'aide de scripts, qui sont des fichiers texte composés de différentes commandes Unix, lus, interprétés et exécuté par Bash.
+Tapez des commandes dans la console est inévitable lors d'opérations avancées sur un système Unix, et peut devenir très vite répétitif et fastidieux pour l'utilisateur. Le Bash est justement là pour éviter ces répétitions et automatiser certaines tâche à l'aide de scripts, qui sont des fichiers texte composés de différentes commandes Unix, lus, interprétés et exécutés par Bash.
 
 
 Premier script
@@ -33,4 +33,40 @@ Après il ne reste plus qu'à l'exécuter et observer le résultat.
 
       $ ./hello.sh
       Hello, 1252
+
+Les variables
+^^^^^^^^^^^^^
+
+Bash permet l'utilisation de variables dans les scripts. Il peut s'agir de simples variables ou, de tableaux. Bash n'est pas un langage typé, des Int ou des String n'existe pas, toutes les variables sont traitées de la même façon. Pour illustrer ceci nous allons écrire le script variables.sh
+
+    .. code-block:: bash
+
+      #!/bin/bash
+
+      bonjour='Hello, '
+      #il est important de ne pas mettre d'espace autour du =
+      nombre[0]=12
+      nombre[1]=52
+
+      echo $bonjour${nombre[0]}${nombre[1]}
+      #on accède à une variable simple avec un $ devant son nom
+      #on accède à un élément d'un tableau avec un $ devant et des {} autour
+      echo $bonjour${nombre[*]}
+      #le caractère * indique qu'on veut utiliser tout les éléments du tableau (séparer
+      #par un espace à chaque fois)
+
+Ce script produit comme résultat
+
+    .. code-block:: console
+
+      $ ./variables.sh
+      Hello,1252
+      Hello,12 52
+
+Les structures de contrôles
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Comme dans chaque langage de programmation, bash offre les structures de contrôles habituelles telles que les boucles if et for que nous allons démontrer maintenant.
+
+
 
