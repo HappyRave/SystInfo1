@@ -12,7 +12,7 @@ La plupart des commandes en consoles sont exécutées instantanément, mais ce n
 Evidemment, quand un job est en cours d'exécution à la console, nous ne pouvons plus rien faire sur celle ci à part attendre. Unix nous vient en aide dans ce cas là avec les le raccourci ``Ctrl+z`` et les commandes `jobs(1)`_, `bg(1)`_ et `fg(1)`_.
 
     * ``Ctrl+z`` permet de suspendre le job actuellement en cours d'exécution à la console. Le job suspendu est mis en pause et placé en arrière plan (``background``)
-    * ``jobs``affiche à la console tous les jobs présent en arrière plan
+    * ``jobs`` affiche à la console tous les jobs présent en arrière plan
     * ``bg`` passe un job présent en arrière plan de l'état ``suspended`` à l'état ``running``. Le job va donc rester en arrière plan mais va continuer à s'exécuter.
     * ``fg`` permet de faire passer un job de l'arrière plan à nouveau en avant plan
 
