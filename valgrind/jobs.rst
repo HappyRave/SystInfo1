@@ -13,7 +13,7 @@ Evidemment, quand un job est en cours d'exécution à la console, nous ne pouvon
 
     * ``Ctrl+z`` permet de suspendre le job actuellement en cours d'exécution à la console. Le job suspendu est mis en pause et placé en arrière plan (``background``)
     * ``jobs``affiche à la console tous les jobs présent en arrière plan
-    * ``bg``passe un job présent en arrière plan de l'état ``suspended`` à l'état ``running``. Le job va donc rester en arrière plan mais va continuer à s'exécuter.
+    * ``bg`` passe un job présent en arrière plan de l'état ``suspended`` à l'état ``running``. Le job va donc rester en arrière plan mais va continuer à s'exécuter.
     * ``fg`` permet de faire passer un job de l'arrière plan à nouveau en avant plan
 
 Démonstration du fonctionnement des jobs avec la série de commandes suivantes:
