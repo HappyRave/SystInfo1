@@ -73,15 +73,15 @@ Les bits de permissions sont définis comme ``drwx------`` ce qui fait du propri
 Synchronisation de fichiers entre ordinateurs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Quand nous avons besoin de synchroniser des fichiers entre 2 ordinateurs différents, Unix nous vient en aide avec l'utilitaire `rsync <http://linux.about.com/library/cmd/blcmdl1_rsync.htm>`_.
+Quand nous avons besoin de synchroniser des fichiers entre 2 ordinateurs différents, Unix nous vient en aide avec l'utilitaire `rsync(1)`_ .
 
-L'utilisation la plus basique de `rsync(1)`_est:
+L'utilisation la plus basique de `rsync(1)`_ est:
 
     .. code-block:: console
 
       rsync *.c [user]@[hostname]:src/
 
-`rsync(1)`_va copier tout les fichiers qui correspondent au pattern ``*.c`` du répertoire courant vers le dossier ``src/`` sur la machine hôte. De plus, si certains ou tout les fichiers sont déjà présents chez l'hôte, `rsync(1)`_va procéder à une mise à jour différentielle de ces fichiers (seuls les changements sont transférés).
+`rsync(1)`_ va copier tout les fichiers qui correspondent au pattern ``*.c`` du répertoire courant vers le dossier ``src/`` sur la machine hôte. De plus, si certains ou tout les fichiers sont déjà présents chez l'hôte, `rsync(1)`_ va procéder à une mise à jour différentielle de ces fichiers (seuls les changements sont transférés).
 
 L'intérêt de `rsync(1)`_ est son utilisation à travers le réseau en utilisant le protocole `ssh(1)`_ . Cela permet des transferts de données entre ordinateurs bénéficiant de la sécurité du SSH. Exemple d'utilisation avec SSH:
 
@@ -96,7 +96,7 @@ L'intérêt de `rsync(1)`_ est son utilisation à travers le réseau en utilisan
       # -z pour activer la compression des données lors du transfert.
 
 
-Nous pouvons aussi utiliser `rsync(1)`_dans l'autre sens:
+Nous pouvons aussi utiliser `rsync(1)`_ dans l'autre sens:
 
     .. code-block:: console
 
